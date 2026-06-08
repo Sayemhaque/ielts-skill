@@ -15,7 +15,7 @@
 |---|---|
 | Format | Conversation between 2 people |
 | Context | Booking accommodation · enrolling in a course · reporting a problem · making a reservation |
-| Primary Task | Form / Note Completion |
+| Primary Task | Note Completion (form filling) |
 | Difficulty | Accessible (Band 4.5–6.0) |
 | Script Length | 250–300 words spoken |
 
@@ -24,7 +24,18 @@
 - **SELF-CORRECTION:** One speaker changes a detail just given (e.g., "the 14th... no wait, it's the 15th")
 - **DISTRACTOR:** An incorrect option mentioned then clearly discarded before correct answer confirmed
 
-**Form completion rules:**
+**Structure template:**
+| Turn | Speaker | Purpose | Trap |
+|---|---|---|---|
+| 1 | Official | Greeting + ask for first detail | — |
+| 2 | Customer | Answer + give name to spell | SPELLING TRAP |
+| 3 | Official | Confirm detail + ask next | — |
+| 4 | Customer | Answer with number/date → self-correct | SELF-CORRECTION |
+| 5 | Official | Ask next detail | — |
+| 6–8 | Both | Exchange remaining details | DISTRACTOR (wrong option mentioned, then rejected) |
+| 9–10 | Both | Confirm final details + closing | — |
+
+**Note completion rules:**
 - Answers must be factual: names, dates, numbers, times, places
 - Word limit: NO MORE THAN TWO WORDS AND/OR A NUMBER
 - Questions follow chronological order of script
@@ -37,23 +48,19 @@
 |---|---|
 | Format | One speaker presenting practical information |
 | Context | Tour of a facility · local radio announcement · community event briefing |
-| Primary Task | Map / Plan Labelling (5 questions) |
-| Secondary Task | Multiple Choice or Matching (5 questions) |
+| Primary Task | Multiple Choice (Single) (5 questions) |
+| Secondary Task | Matching or Note Completion (5 questions) |
 | Difficulty | Moderate (Band 5.5–6.5) |
 | Script Length | 350–400 words spoken |
 
-**Mandatory script features:**
-- **SPATIAL PREPOSITIONS** — minimum required: adjacent to · opposite · tucked away · to the north/south of · directly behind · between X and Y · facing
-- **MAP LAYOUT:** 8 total locations — 5 unlabelled (student answers) + 3 pre-labelled anchors
-- **CONSISTENCY:** Every spoken direction must match the drawn map exactly
-
-⚠ **Complete the Spatial Mapping Grid (`references/spatial-mapping-grid.md`) BEFORE writing the script or drawing the map.**
-
-**Map labelling rules:**
-- Labels come from a provided word list — students never invent labels
-- Word list must have MORE options than gaps (at least 2 extra)
-- Route through map must be logically walkable
-- Attach completed Spatial Mapping Grid to answer key
+**Script structure:**
+| Section | Content | Questions |
+|---|---|---|
+| Opening | Speaker introduces themselves, welcomes audience, states purpose | — |
+| Background | Brief history or context of the venue/topic | MCQ 1 |
+| Key details | Facilities, opening times, services, practical info | MCQ 2–3 |
+| Directions/Locations | Description of where things are located | Matching Qs |
+| Closing | Final instructions, thanks, next steps | MCQ 4–5 |
 
 ---
 
@@ -63,8 +70,8 @@
 |---|---|
 | Format | 2–3 speakers (students + tutor, or research partners) |
 | Context | Discussing research project · reviewing assignment · planning presentation |
-| Primary Task | Matching Speakers to Opinions |
-| Secondary Task | Multiple Choice |
+| Primary Task | Matching (speakers to opinions) |
+| Secondary Task | Multiple Choice (Single) |
 | Difficulty | Challenging (Band 6.0–7.5) |
 | Script Length | 400–450 words spoken |
 
@@ -74,7 +81,17 @@
 - **HEDGED LANGUAGE:** "I'm not entirely convinced," "That's a fair point, but...," "I'd argue that..."
 - **OPINION CHANGE:** At least one speaker changes or softens their view
 
-**Opinion matching rules:**
+**Script structure:**
+| Section | Content | Questions |
+|---|---|---|
+| Opening | Tutor sets agenda, asks for update | — |
+| Topic selection | Students discuss focus, disagree → one convinces the other (OPINION CHANGE) | Matching 1–2 |
+| Methodology | Debate on research methods, agreement/rejection | Matching 3–4 |
+| Concerns | Practical concerns raised, solutions offered | MCQ 1–2 |
+| Guidance | Tutor gives timeline/methodology advice | MCQ 3–4 |
+| Closing | Summary of decisions, next steps | MCQ 5 |
+
+**Matching rules:**
 - Each question asks who holds a specific view
 - Options: A. [Name] only / B. [Name] only / C. Both [Name] and [Name]
 - Distractor: another speaker mentions same topic but does NOT hold same opinion
@@ -88,7 +105,7 @@
 | Format | Single academic speaker, no interruptions |
 | Context | University lecture — science · history · social science · research findings |
 | Primary Task | Note / Summary Completion |
-| Secondary Task | Academic Attribution (match researcher to finding) |
+| Secondary Task | Matching Features (match researcher to finding) |
 | Difficulty | Most challenging (Band 7.0–8.5) |
 | Script Length | 800–900 words spoken (~6 minutes) |
 
@@ -105,18 +122,131 @@
 
 ---
 
-## QA Checklist — Run Before Output
+## Markdown Format Template — Copy This Structure
 
-- [ ] Part 1 contains a spelling trap and a self-correction trap
-- [ ] Part 1 contains a distractor that is clearly rejected before the correct answer
-- [ ] Part 2 Spatial Mapping Grid is completed and signed off
-- [ ] Part 2 script uses at least 5 spatial prepositions matching the map layout exactly
-- [ ] Part 2 map word list has at least 2 extra options beyond the number of gaps
-- [ ] Part 3 clearly attributes each opinion to a specific named speaker
-- [ ] Part 3 includes at least one speaker who changes or softens their view
-- [ ] Part 4 names at least 3 researchers with distinct, attributable findings
-- [ ] Part 4 researcher names are phonetically distinct from each other
-- [ ] All note/summary answers obey the stated word limit
-- [ ] No answer words are identical to the words used in the question (Synonym Rule)
-- [ ] Every answer is explicitly spoken in the script — no inferring or guessing
-- [ ] Questions follow chronological order of their script
+Every listening test must follow this exact heading hierarchy and section order. AI must read the example in `examples/listening/example.md` before generating, but this template shows the bare skeleton.
+
+```markdown
+# IELTS Listening — Full Practice Test
+
+**Time:** Approx. 30 minutes | **Questions:** 40
+
+---
+
+## LISTENING PART 1
+
+*You will hear a conversation between a [role] and a [role].*
+*First, you have 30 seconds to read Questions 1–10.*
+
+---
+
+### Questions 1–10
+
+Complete the notes below.
+Write **NO MORE THAN TWO WORDS AND/OR A NUMBER** for each answer.
+
+| | |
+|---|---|
+| **Example:** Membership type: | Annual |
+| **Membership Application** | |
+| 1 Name: | \_\_\_\_\_\_\_\_\_\_\_ |
+| 2 Date of birth: | \_\_\_\_\_\_\_\_\_\_\_ |
+...
+
+---
+
+### Answer Key — Questions 1–10
+
+| Q | Answer | Needle |
+|---|--------|--------|
+| 1 | Kowalczyk | "that's K-O-W-A-L-C-Z-Y-K" |
+
+**Mandatory traps used:** Spelling: Q1 — Self-correction: Q2 — Distractor: Q7
+
+---
+
+## LISTENING PART 2
+
+*You will hear a [role] speaking to [audience].*
+*First, you have 30 seconds to read Questions 11–20.*
+
+---
+
+### Questions 11–15
+
+Choose the correct letter, A, B, or C.
+
+11. ...
+...
+
+### Questions 16–20
+
+What is the location of each of the following...?
+
+---
+
+### Answer Key — Questions 11–20
+
+| Q | Answer | Needle |
+|---|--------|--------|
+
+---
+
+## LISTENING PART 3
+
+*You will hear [two/three] students discussing [topic] with their [tutor/supervisor].*
+*First, you have 30 seconds to read Questions 21–30.*
+
+---
+
+### Questions 21–25
+
+What opinion does each person express...?
+
+---
+
+### Questions 26–30
+
+Choose the correct letter, A, B, or C.
+
+---
+
+### Answer Key — Questions 21–30
+
+| Q | Answer | Needle |
+|---|--------|--------|
+
+---
+
+## LISTENING PART 4
+
+*You will hear a lecture on [topic].*
+*First, you have 30 seconds to read Questions 31–40.*
+
+---
+
+### Questions 31–40
+
+Complete the notes below.
+Write **NO MORE THAN TWO WORDS** for each answer.
+
+---
+
+### Answer Key — Questions 31–40
+
+| Q | Answer | Needle |
+|---|--------|--------|
+```
+
+**Critical format rules:**
+- `## LISTENING PART N` — level 2 heading for each part
+- `### Questions N–M` — level 3 heading, en-dash between numbers
+- `### Answer Key — Questions N–M` — level 3 heading
+- Questions numbered sequentially across the whole test (1–40)
+- Each question set followed immediately by its answer key
+- `---` horizontal rule between sections
+- Script content embedded inside its part section (see example for script placement)
+
+---
+
+## QA Checklist — Run Before Output

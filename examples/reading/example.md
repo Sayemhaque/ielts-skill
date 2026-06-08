@@ -44,44 +44,18 @@ Do the following statements agree with the information given in Reading Passage 
 
 ### Questions 8–12
 
-*The diagram below shows the process of silk production (sericulture).*
+*Complete the notes below.*
 
-*Label the diagram. Choose **NO MORE THAN TWO WORDS** from the passage for each answer.*
+*Choose **NO MORE THAN TWO WORDS AND/OR A NUMBER** from the passage for each answer.*
 
-```
-                    SERICULTURE PROCESS
+**Silk Production Notes**
 
-        ┌─────────────────────────────────────┐
-        │        SILK MOTH EGGS               │
-        │             │                       │
-        │             ▼                       │
-        │   ┌─────────────────┐              │
-        │   │    ??? (8)      │ ◄── fed on   │
-        │   │                 │     mulberry  │
-        │   └────────┬────────┘     leaves    │
-        │            │                       │
-        │            ▼                       │
-        │   ┌─────────────────┐              │
-        │   │    ??? (9)      │              │
-        │   │  secreted from  │              │
-        │   │  salivary glands│              │
-        │   └────────┬────────┘              │
-        │            │                       │
-        │            ▼                       │
-        │   ┌─────────────────┐              │
-        │   │    ??? (10)     │ ◄── immersed │
-        │   │                 │     in ???   │
-        │   └────────┬────────┘     (11)     │
-        │            │                       │
-        │            ▼                       │
-        │   ┌─────────────────┐              │
-        │   │  ??? (12)       │              │
-        │   │  + twisted      │              │
-        │   └─────────────────┘              │
-        └─────────────────────────────────────┘
-```
-
-*Word list:* eggs · larvae · silk thread · boiling water · protein fibre · cocoons · caterpillars · raw silk
+- Discovery credited to Empress Leizu (around 2640 BCE)
+- Silk moth eggs kept at controlled temperatures until they hatch into (8) \_\_\_\_\_\_
+- Larvae exclusively consume (9) \_\_\_\_\_\_ leaves
+- A single cocoon filament measures between 600 and 900 (10) \_\_\_\_\_\_
+- Cocoons are placed in (11) \_\_\_\_\_\_ water to dissolve the natural gum
+- Approximately 2,500 cocoons required to produce one kilogram of (12) \_\_\_\_\_\_
 
 ---
 
@@ -113,10 +87,10 @@ Do the following statements agree with the information given in Reading Passage 
 | Q | Answer | Needle |
 |---|--------|--------|
 | 8 | larvae | "hatch into tiny larvae" |
-| 9 | protein fibre | "secretes a single continuous strand of protein fibre" |
-| 10 | cocoons | "wrapping itself in a protective cocoon" — "cocoons are immersed" |
-| 11 | boiling water | "the cocoons are immersed in boiling water" |
-| 12 | silk thread | "unwound and twisted together to form a single thread" |
+| 9 | mulberry | "fed an exclusive diet of mulberry leaves" |
+| 10 | metres | "measure between 600 and 900 metres in length" |
+| 11 | boiling | "cocoons are immersed in boiling water" |
+| 12 | raw silk | "2,500 cocoons are required to produce just one kilogram of raw silk" |
 
 ### Answer Key: Question 13
 
@@ -150,16 +124,29 @@ Do the following statements agree with the information given in Reading Passage 
 
 *Reading Passage 2 has six paragraphs, **A–F**.*
 
-*Which paragraph contains the following information?*
+*Choose the correct heading for each paragraph from the list of headings below.*
 
-*You may use any letter more than once.*
+*Write the correct number **i–x** next to **14–19**.*
 
-14. A reference to the negative impact of app-based transport services on overall traffic levels
-15. Findings about the fairness of charging drivers to enter central urban areas
-16. The argument that removing vehicle space simply relocates congestion
-17. An example of a city that created neighbourhood districts with restricted vehicle access
-18. A prediction concerning the ability of electric cars to decrease pollution levels
-19. The recommendation that transport strategies should be customised to individual urban environments
+**List of Headings**
+
+| | |
+|---|---|
+| i | A shared problem with competing solutions |
+| ii | Charging as a tool to reduce city-centre traffic |
+| iii | Why electric cars will not reduce road congestion |
+| iv | Rethinking streets for walking and cycling |
+| v | The role of private vehicles in modern cities |
+| vi | The unexpected effect of app-based transport |
+| vii | A history of urban transport planning |
+| viii | The case for context-specific combinations |
+
+14. Paragraph A
+15. Paragraph B
+16. Paragraph C
+17. Paragraph D
+18. Paragraph E
+19. Paragraph F
 
 ---
 
@@ -208,12 +195,12 @@ Do the following statements agree with the information given in Reading Passage 
 
 | Q | Answer | Needle |
 |---|--------|--------|
-| 14 | E | "ride-hailing has increased total vehicle kilometres travelled" — negative impact on traffic |
-| 15 | B | "disproportionately affect lower-income residents... raised concerns about social equity" — fairness |
-| 16 | C | IFM "contends that reducing road capacity for cars merely displaces congestion to surrounding areas" |
-| 17 | C | "Barcelona's 'superblock' model restricts vehicle access within nine-block clusters" |
-| 18 | D | Dr Aisha Rahman "projected that widespread adoption of electric vehicles could reduce urban transport emissions by up to 70 per cent by 2040" |
-| 19 | F | "the most effective policies appear to be those tailored to local conditions" |
+| 14 | i | Paragraph A: "Cities around the world are confronting a common challenge... Three broad approaches have emerged" — a shared problem with competing solutions |
+| 15 | ii | Paragraph B: "London and Stockholm have implemented congestion charging zones" — charging as a tool |
+| 16 | iv | Paragraph C: "reallocation of street space from cars to active mobility — cycling and walking" — rethinking streets |
+| 17 | iii | Paragraph D: "Dr Miguel Santos cautions that electric vehicles do nothing to address traffic congestion" — why EVs won't reduce congestion |
+| 18 | vi | Paragraph E: "ride-hailing has increased total vehicle kilometres travelled" — unexpected effect |
+| 19 | viii | Paragraph F: "the most effective policies appear to be those tailored to local conditions" — context-specific combinations |
 
 ---
 
@@ -257,7 +244,7 @@ A different line of criticism comes from philosopher Dr Daniel Dennett, who chal
 
 Despite these objections, IIT remains influential for several reasons. First, it is one of the few theories precise enough to generate quantitative predictions that can be empirically tested. Second, its claim that consciousness is graded rather than binary has practical implications for fields ranging from anaesthesiology to artificial intelligence ethics. One particularly notable implication, which this writer finds compelling, concerns the moral status of advanced AI systems: if a machine were to achieve a sufficiently high Φ value, IIT would suggest that it possesses genuine conscious experience, regardless of whether its substrate is biological or silicon-based. This challenges the common assumption that consciousness is exclusively a biological phenomenon and raises profound ethical questions about how we should treat sophisticated artificial systems.
 
-In conclusion, while no existing theory of consciousness has solved the hard problem to everyone's satisfaction, IIT offers the most empirically grounded and practically useful framework currently available. The objections raised by Blackmore and Dennett highlight genuine limitations, but they do not undermine the theory's core contribution: providing a measurable, testable account of what consciousness might be. Future research, particularly at the intersection of neuroscience and computational modelling, may ultimately determine whether IIT points toward the truth or merely represents a sophisticated dead end. What is clear is that the debate itself is driving progress, forcing theorists to articulate their assumptions with increasing precision. As neuroimaging techniques continue to improve and computational models become more sophisticated, the gap between philosophical speculation and empirical investigation continues to narrow.
+In conclusion, while no existing theory of consciousness has solved the hard problem to everyone's satisfaction, IIT offers the most empirically grounded and practically useful framework currently available. The objections raised by Blackmore and Dennett highlight genuine limitations, but they do not undermine the theory's core contribution: providing a measurable, testable account of what consciousness might be. Future research, particularly at the intersection of neuroscience and computational modelling, may ultimately determine whether IIT points toward the truth or merely represents a sophisticated dead end. What is very clear is that the debate itself is driving progress, forcing theorists to articulate their assumptions with increasing precision. As neuroimaging techniques continue to improve and computational models become more sophisticated, the gap between philosophical speculation and empirical investigation continues to narrow.
 
 ---
 
