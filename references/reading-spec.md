@@ -5,8 +5,26 @@
 - ~2,500 words total
 - 40 questions total
 - 60 minutes (students self-allocate)
+- Official-style output: paraphrased stems, fair distractors, unambiguous answers, no end-of-test answer dump
 
 ---
+
+## Official-Style Reading Standard
+
+Use these checks as the quality bar for every generated Reading test:
+
+| Area | Standard |
+|---|---|
+| Passage authenticity | Neutral IELTS-like topics from `topic-bank.md`; no highly specialised research, politics, or culture-specific assumptions |
+| Question wording | Stems must paraphrase the source; avoid copying 4+ consecutive content words from the answer sentence |
+| Skill tested | Questions should test locating, comparison, inference, writer view, and text organisation; avoid pure word matching |
+| Distractors | Wrong MCQ/matching options must be real source details that are wrong for a specific reason |
+| Answer order | Completion and T/F/NG or Y/N/NG questions should normally follow passage order |
+| Ambiguity | One answer only; if two source lines could support different answers, rewrite the item |
+| NOT GIVEN | The exact claim must be absent. Do not use NOT GIVEN when the passage implies or contradicts the statement |
+| Needles | TRUE/FALSE/YES/NO/MCQ/completion need one exact supporting sentence; NOT GIVEN needs a precise absence note |
+
+**Question rewrite rule:** after drafting, compare each item to its source sentence. If the stem repeats the same key nouns and verbs, rewrite with synonyms, changed syntax, or a broader paraphrase.
 
 ## Passage 1 — Factual / Descriptive
 
@@ -27,6 +45,8 @@
 - Facts only. No opinions, no arguments.
 - Short-to-medium sentences. Avoid complex subordinate clauses.
 - At least one concrete example or statistic per paragraph.
+- T/F/NG statements should include at least two tempting traps: wrong period, wrong quantity, wrong origin, or over-generalised claim.
+- Completion/table answers must be short, concrete, and exactly copied from the passage.
 
 **Structure template (5 paragraphs):**
 | Para | Purpose | Content |
@@ -63,6 +83,8 @@
 - Use hedging: "suggests," "appears to indicate," "according to."
 - Include at least one counterargument paragraph.
 - Label paragraphs A–F.
+- Matching Headings must test paragraph purpose, not a single detail.
+- Matching Features must include at least 2 extra options where practical, and every option must be named in the passage.
 
 **Structure template (6 paragraphs, A–F):**
 | Para | Purpose | Content |
@@ -99,6 +121,8 @@
 - Use complex sentences, nominalisation, hedged academic claims.
 - Include at least one named theory, study, or framework.
 - Use nuanced language: "this may partly account for," "one interpretation holds that."
+- Keep the argument readable: abstract but not overloaded with named researchers or technical terms.
+- MCQs should test global purpose, inference, function of examples, or the writer's evaluation, not isolated facts.
 
 **Structure template (6 paragraphs):**
 | Para | Purpose | Content |
@@ -155,11 +179,28 @@ Passage text goes here — 5 paragraphs, 700–800 words, factual only. No opini
 
 ---
 
-### Answer Key — Questions 1–13
+### Answer Key — Questions 1–7
 
 | Q | Answer | Needle |
 |---|--------|--------|
 | 1 | TRUE | "exact sentence from passage" |
+
+---
+
+### Questions 8–13
+
+[Question type instructions]
+
+8. ________
+...
+
+---
+
+### Answer Key — Questions 8–13
+
+| Q | Answer | Needle |
+|---|--------|--------|
+| 8 | answer | "exact sentence from passage" |
 
 ---
 
@@ -198,7 +239,33 @@ Passage text — label paragraphs A–F. 800–850 words. Multiple viewpoints.
 
 ---
 
-### Answer Key — Questions 14–26
+### Answer Key — Questions 14–19
+
+| Q | Answer | Needle |
+|---|--------|--------|
+
+---
+
+### Questions 20–23
+
+[Match each statement with the correct person...]
+
+---
+
+### Answer Key — Questions 20–23
+
+| Q | Answer | Needle |
+|---|--------|--------|
+
+---
+
+### Questions 24–26
+
+[Complete the sentences below...]
+
+---
+
+### Answer Key — Questions 24–26
 
 | Q | Answer | Needle |
 |---|--------|--------|
@@ -233,7 +300,33 @@ Passage text — 900+ words. Writer must have a clear thesis.
 
 ---
 
-### Answer Key — Questions 27–40
+### Answer Key — Questions 27–32
+
+| Q | Answer | Needle |
+|---|--------|--------|
+
+---
+
+### Questions 33–35
+
+[Multiple Choice]
+
+---
+
+### Answer Key — Questions 33–35
+
+| Q | Answer | Needle |
+|---|--------|--------|
+
+---
+
+### Questions 36–40
+
+[Summary Completion]
+
+---
+
+### Answer Key — Questions 36–40
 
 | Q | Answer | Needle |
 |---|--------|--------|
@@ -251,3 +344,14 @@ Passage text — 900+ words. Writer must have a clear thesis.
 ---
 
 ## QA Checklist — Run Before Output
+
+- 40 questions exactly; ranges are continuous and non-overlapping.
+- Every question set is followed immediately by its matching answer key.
+- Passage 1 uses T/F/NG plus completion/table-style questions; no Y/N/NG.
+- Passage 2 uses Matching Headings, Matching Features, and completion or equivalent.
+- Passage 3 uses Y/N/NG, MCQ, and summary/note completion; no T/F/NG.
+- Matching lists include at least two extra options unless the official-style format genuinely requires otherwise.
+- MCQ distractors are source-based and plausible.
+- No completion answer breaks the stated word limit.
+- Each answer has one needle; NOT GIVEN has an absence note, not a fake quote.
+- Stems are paraphrased from answer sentences.

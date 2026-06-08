@@ -44,6 +44,20 @@ The decline of the Silk Road began in the fifteenth century with the rise of mar
 
 ---
 
+### Answer Key — Questions 1–7
+
+| Q | Answer | Needle |
+|---|--------|--------|
+| 1 | TRUE | "The Silk Road was not a single road but a network of trade routes" |
+| 2 | FALSE | "silk was the most significant commodity transported along these routes. However, the network also facilitated the exchange of spices, textiles, precious metals, glassware" |
+| 3 | NOT GIVEN | The passage states "Chinese Han dynasty" — Tang dynasty is not mentioned anywhere |
+| 4 | NOT GIVEN | The passage mentions Roman complaints about spending but does not describe government policy toward importation |
+| 5 | TRUE | "Buddhism travelled from India into China along these routes... Nestorian Christianity and Manichaeism also spread eastward" |
+| 6 | FALSE | "papermaking, which moved from China to the Islamic world in the eighth century" |
+| 7 | TRUE | "UNESCO designated a section of the routes in Central Asia as a World Heritage site" |
+
+---
+
 ### Questions 8–13
 
 *Complete the table below.*
@@ -61,17 +75,10 @@ The decline of the Silk Road began in the fifteenth century with the rise of mar
 
 ---
 
-### Answer Key — Questions 1–13
+### Answer Key — Questions 8–13
 
 | Q | Answer | Needle |
 |---|--------|--------|
-| 1 | TRUE | "The Silk Road was not a single road but a network of trade routes" |
-| 2 | FALSE | "silk was the most significant commodity transported along these routes. However, the network also facilitated the exchange of spices, textiles, precious metals, glassware" |
-| 3 | NOT GIVEN | The passage states "Chinese Han dynasty" — Tang dynasty is not mentioned anywhere |
-| 4 | NOT GIVEN | The passage mentions Roman complaints about spending but does not describe government policy toward importation |
-| 5 | TRUE | "Buddhism travelled from India into China along these routes... Nestorian Christianity and Manichaeism also spread eastward" |
-| 6 | FALSE | "papermaking, which moved from China to the Islamic world in the eighth century" |
-| 7 | TRUE | "UNESCO designated a section of the routes in Central Asia as a World Heritage site" |
 | 8 | Zhang Qian | "the Chinese Han dynasty sent an envoy named Zhang Qian" |
 | 9 | Rome | "could fetch the equivalent of several months' wages in Rome" |
 | 10 | papermaking | "papermaking, which moved from China to the Islamic world in the eighth century" |
@@ -137,6 +144,19 @@ In conclusion, no single strategy appears capable of resolving the urban housing
 
 ---
 
+### Answer Key — Questions 14–19
+
+| Q | Answer | Needle |
+|---|--------|--------|
+| 14 | ix | Paragraph A: "approximately 55 percent of the global population currently resides in urban areas, a figure projected to reach 68 percent by 2050" |
+| 15 | vi | Paragraph B: "manufacturing building components in controlled factory settings reduces construction time by as much as 50 percent" |
+| 16 | viii | Paragraph C: "Converting vacant office towers into residential units can deliver housing far more quickly" |
+| 17 | i | Paragraph D: "neither approach reduces the cost of land, which represents a major component of final housing prices" |
+| 18 | iii | Paragraph E: "co-housing reduces individual housing costs by 20 to 30 percent while fostering social connections" |
+| 19 | vii | Paragraph F: "no single strategy appears capable of resolving the urban housing challenge on its own" |
+
+---
+
 ### Questions 20–23
 
 *Look at the following statements (Questions **20–23**) and the list of people below.*
@@ -160,6 +180,17 @@ In conclusion, no single strategy appears capable of resolving the urban housing
 
 ---
 
+### Answer Key — Questions 20–23
+
+| Q | Answer | Needle |
+|---|--------|--------|
+| 20 | B | "Professor James Cai... points out that many cities contain large numbers of underutilised structures" |
+| 21 | C | "Dr Fatima Al-Rashid... contends that neither approach reduces the cost of land" |
+| 22 | A | "Dr Helena Morrow... notes that prefabrication also generates significantly less construction waste" |
+| 23 | C | "Dr Fatima Al-Rashid... argues. 'Without policy interventions... even the most efficient building techniques will fail'" |
+
+---
+
 ### Questions 24–26
 
 *Complete the sentences below.*
@@ -172,20 +203,10 @@ In conclusion, no single strategy appears capable of resolving the urban housing
 
 ---
 
-### Answer Key — Questions 14–26
+### Answer Key — Questions 24–26
 
 | Q | Answer | Needle |
 |---|--------|--------|
-| 14 | ix | Paragraph A: "approximately 55 percent of the global population currently resides in urban areas, a figure projected to reach 68 percent by 2050" |
-| 15 | vi | Paragraph B: "manufacturing building components in controlled factory settings reduces construction time by as much as 50 percent" |
-| 16 | viii | Paragraph C: "Converting vacant office towers into residential units can deliver housing far more quickly" |
-| 17 | i | Paragraph D: "neither approach reduces the cost of land, which represents a major component of final housing prices" |
-| 18 | iii | Paragraph E: "co-housing reduces individual housing costs by 20 to 30 percent while fostering social connections" |
-| 19 | vii | Paragraph F: "no single strategy appears capable of resolving the urban housing challenge on its own" |
-| 20 | B | "Professor James Cai... points out that many cities contain large numbers of underutilised structures" |
-| 21 | C | "Dr Fatima Al-Rashid... contends that neither approach reduces the cost of land" |
-| 22 | A | "Dr Helena Morrow... notes that prefabrication also generates significantly less construction waste" |
-| 23 | C | "Dr Fatima Al-Rashid... argues. 'Without policy interventions... even the most efficient building techniques will fail'" |
 | 24 | 68 percent | "a figure projected to reach 68 percent by 2050" |
 | 25 | industrial | "successful conversions of former industrial buildings into loft-style apartments" |
 | 26 | increasing | "a proportion that has increased steadily over the past two decades" |
@@ -235,6 +256,19 @@ In conclusion, the evidence supports the view that forgetting is not a flaw in t
 
 ---
 
+### Answer Key — Questions 27–32
+
+| Q | Answer | Needle |
+|---|--------|--------|
+| 27 | YES | "People routinely expect their memories to be accurate, yet a growing body of research suggests that forgetting is not a failure" |
+| 28 | NO | "the most significant losses happen during the storage phase" |
+| 29 | NOT GIVEN | The passage states Bjork proposed the theory but does not mention where it was first tested |
+| 30 | NO | "studies of eyewitness testimony show that when witnesses rehearse certain details... their memory for peripheral details deteriorates" |
+| 31 | NO | "individuals with this condition often report significant psychological distress from their inability to forget" |
+| 32 | NO | "Strategies for improving memory should focus not merely on techniques for encoding information but on understanding when and why forgetting occurs" |
+
+---
+
 ### Questions 33–35
 
 *Choose the correct letter, **A, B, C, or D**.*
@@ -264,6 +298,16 @@ In conclusion, the evidence supports the view that forgetting is not a flaw in t
 
 ---
 
+### Answer Key — Questions 33–35
+
+| Q | Answer | Needle |
+|---|--------|--------|
+| 33 | B | "the most significant losses happen during the storage phase" |
+| 34 | B | "it shows forgetting is not passive decay but an active, dynamic process" |
+| 35 | B | "the capacity to forget has been evolutionarily conserved because it offers cognitive advantages" |
+
+---
+
 ### Questions 36–40
 
 *Complete the summary using the list of words, **A–I**, below.*
@@ -286,19 +330,10 @@ The adaptive forgetting framework proposes that the brain uses forgetting as a m
 
 ---
 
-### Answer Key — Questions 27–40
+### Answer Key — Questions 36–40
 
 | Q | Answer | Needle |
 |---|--------|--------|
-| 27 | YES | "People routinely expect their memories to be accurate, yet a growing body of research suggests that forgetting is not a failure" |
-| 28 | NO | "the most significant losses happen during the storage phase" |
-| 29 | NOT GIVEN | The passage states Bjork proposed the theory but does not mention where it was first tested |
-| 30 | NO | "studies of eyewitness testimony show that when witnesses rehearse certain details... their memory for peripheral details deteriorates" |
-| 31 | NO | "individuals with this condition often report significant psychological distress from their inability to forget" |
-| 32 | NO | "Strategies for improving memory should focus not merely on techniques for encoding information but on understanding when and why forgetting occurs" |
-| 33 | B | "the most significant losses happen during the storage phase" |
-| 34 | B | "it shows forgetting is not passive decay but an active, dynamic process" |
-| 35 | B | "the capacity to forget has been evolutionarily conserved because it offers cognitive advantages" |
 | 36 | A | "reduces the retrieval competition among similar memories" |
 | 37 | B | "the act of retrieving a memory actively inhibits related memories" |
 | 38 | D | "the phenomenon of retrieval-induced forgetting is primarily a laboratory artefact" |

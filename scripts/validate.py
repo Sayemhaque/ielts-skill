@@ -117,6 +117,58 @@ def count_gap_questions(text):
     return [int(g) for g in gaps]
 
 
+def extract_question_sections(text):
+    """Return question sections with ranges, body text, and position."""
+    pattern = re.compile(
+        r"^### Questions? (\d+)(?:[–-](\d+))?\s*$"
+        r"(.*?)(?=^### (?:Questions|Answer Key)|^## |\Z)",
+        re.MULTILINE | re.DOTALL,
+    )
+    return [
+        {
+            "start": int(m.group(1)),
+            "end": int(m.group(2) or m.group(1)),
+            "content": m.group(3),
+            "pos": m.start(),
+        }
+        for m in pattern.finditer(text)
+    ]
+
+
+def extract_answer_key_sections(text):
+    """Return answer key sections with ranges, body text, and position."""
+    pattern = re.compile(
+        r"^### Answer Key\s*[—:-]\s*Questions? (\d+)(?:[–-](\d+))?\s*$"
+        r"(.*?)(?=^### (?:Questions|Answer Key)|^## |\Z)",
+        re.MULTILINE | re.DOTALL,
+    )
+    return [
+        {
+            "start": int(m.group(1)),
+            "end": int(m.group(2) or m.group(1)),
+            "content": m.group(3),
+            "pos": m.start(),
+        }
+        for m in pattern.finditer(text)
+    ]
+
+
+def extract_numbered_questions_from_section(section):
+    """Find question numbers stated as numbered items or table gaps inside one section."""
+    numbered = [int(q) for q in re.findall(r"^(\d+)\.", section, re.MULTILINE)]
+    gaps = [int(q) for q in re.findall(r"\b(\d+)\s+_+", section)]
+    parenthesised_gaps = [int(q) for q in re.findall(r"\((\d+)\)\s*_{3,}", section)]
+    return sorted(set(numbered + gaps + parenthesised_gaps))
+
+
+def add_check(checks, check, passed, detail=""):
+    checks.append({
+        "check": check,
+        "status": "PASS" if passed else "FAIL",
+        "detail": detail,
+    })
+
+
 def extract_passages(text):
     """Extract passage content for reading tests.
     
@@ -239,20 +291,11 @@ def check_signpost_language(text):
 
 def count_researcher_names(text):
     """Count named researchers in Part 4 script."""
-    # Match titled researchers
-    titled = r"(?:Dr|Professor|Sir)\s+[A-Z][a-z]+(?:\s+[A-Z][a-z]+)?"
-    names = set(re.findall(titled, text))
-    # Match full names without titles (e.g., "Daniel Kahneman")
-    full_names = r"[A-Z][a-z]+\s+[A-Z][a-z]+"
-    all_names = re.findall(full_names, text)
-    # Filter out non-researcher names (locations, generic terms)
-    researcher_keywords = {"Kahneman", "Tversky", "Thaler", "Sunstein", "Tononi",
-                          "Blackmore", "Dennett", "Marchetti", "Tanaka", "Santos",
-                          "Rahman", "Cross"}
-    for name in all_names:
-        parts = name.split()
-        if parts[-1] in researcher_keywords or any(kw in name for kw in [" researcher", " scientist", " professor"]):
-            names.add(name)
+    title_pattern = r"\b(?:Dr|Professor|Sir)\s+[A-Z][a-z]+(?:\s+[A-Z][a-z]+)?"
+    names = set(re.findall(title_pattern, text))
+    role_pattern = r"\b[A-Z][a-z]+\s+[A-Z][a-z]+,\s+(?:a|an)\s+[a-z]+(?:\s+[a-z]+){0,3}"
+    for match in re.findall(role_pattern, text):
+        names.add(match.split(",")[0])
     return len(names)
 
 
@@ -306,7 +349,6 @@ def check_listening_format(text):
 
 def validate_reading(text, filepath):
     checks = []
-    total_questions = 0
 
     # Structural format checks
     format_issues = check_reading_format(text)
@@ -341,10 +383,16 @@ def validate_reading(text, filepath):
                 "detail": f"{wc} words"
             })
 
-    # Count total questions - find ALL question numbers across formats
-    numbered = extract_questions(text)
-    gaps = count_gap_questions(text)
-    # Also find questions in answer key tables
+    q_sections = extract_question_sections(text)
+    key_sections = extract_answer_key_sections(text)
+
+    # Count total questions from declared ranges, question bodies, and answer keys.
+    body_qs = []
+    declared_qs = []
+    for section in q_sections:
+        declared_qs.extend(range(section["start"], section["end"] + 1))
+        body_qs.extend(extract_numbered_questions_from_section(section["content"]))
+
     table_qs = set()
     for t in find_answer_tables(text):
         for r in t:
@@ -352,32 +400,109 @@ def validate_reading(text, filepath):
                 table_qs.add(int(r["q"]))
             except ValueError:
                 pass
-    all_qs = sorted(set(numbered + gaps + list(table_qs)))
-    total_questions = len([q for q in all_qs if 1 <= q <= 40])
-    checks.append({
-        "check": "Total questions (40)",
-        "status": "PASS" if total_questions == 40 else "FAIL",
-        "detail": f"{total_questions} found (from {len(numbered)} numbered + {len(gaps)} gaps + {len(table_qs)} in answer keys)"
-    })
 
-    # Check question type variety per passage
-    q_sections = re.findall(r"### Questions (\d+)[–-](\d+)(.*?)(?=###|\Z)", text, re.DOTALL)
-    for start, end, content in q_sections:
-        start, end = int(start), int(end)
+    all_qs = sorted(set(declared_qs + body_qs + list(table_qs)))
+    total_questions = len([q for q in all_qs if 1 <= q <= 40])
+    add_check(
+        checks,
+        "Total questions (40)",
+        total_questions == 40,
+        f"{total_questions} unique questions found; {len(table_qs)} answer-key rows",
+    )
+    add_check(
+        checks,
+        "Exact question coverage (1-40)",
+        all_qs == list(range(1, 41)),
+        f"found {all_qs[:5]}...{all_qs[-5:] if all_qs else []}",
+    )
+    add_check(
+        checks,
+        "Answer key rows (40)",
+        sorted(table_qs) == list(range(1, 41)),
+        f"{len(table_qs)} keyed answers",
+    )
+
+    expected_start = 1
+    continuous = bool(q_sections)
+    range_details = []
+    for section in q_sections:
+        if section["start"] != expected_start or section["end"] < section["start"]:
+            continuous = False
+        range_details.append(f"{section['start']}-{section['end']}")
+        expected_start = section["end"] + 1
+    if expected_start != 41:
+        continuous = False
+    add_check(
+        checks,
+        "Question ranges continuous",
+        continuous,
+        ", ".join(range_details) if range_details else "no question sections found",
+    )
+
+    immediate_keys = True
+    immediate_details = []
+    for i, section in enumerate(q_sections):
+        next_key = key_sections[i] if i < len(key_sections) else None
+        if not next_key or next_key["start"] != section["start"] or next_key["end"] != section["end"]:
+            immediate_keys = False
+            immediate_details.append(f"Q{section['start']}-{section['end']}")
+        elif next_key["pos"] < section["pos"]:
+            immediate_keys = False
+            immediate_details.append(f"Q{section['start']}-{section['end']}")
+    add_check(
+        checks,
+        "Answer key immediately follows each set",
+        immediate_keys and len(q_sections) == len(key_sections),
+        "mismatched: " + ", ".join(immediate_details) if immediate_details else f"{len(key_sections)} keys",
+    )
+
+    # Check question type placement per passage.
+    passage_types = {1: set(), 2: set(), 3: set()}
+    for section in q_sections:
+        start, end, content = section["start"], section["end"], section["content"]
         if start <= 13:
             passage = 1
-        elif start <= 27:
+        elif start <= 26:
             passage = 2
         else:
             passage = 3
-        # Check for T/F/NG in P3 or Y/N/NG in P1
         content_lower = content.lower()
-        if passage == 1 and "yes / no / not given" in content_lower:
+        if "true" in content_lower and "false" in content_lower and "not given" in content_lower:
+            passage_types[passage].add("tfng")
+        if "yes" in content_lower and "no" in content_lower and "not given" in content_lower:
+            passage_types[passage].add("ynng")
+        if "choose the correct heading" in content_lower or "list of headings" in content_lower:
+            passage_types[passage].add("headings")
+        if "match each statement" in content_lower or "list of people" in content_lower or "list of experts" in content_lower:
+            passage_types[passage].add("features")
+        if "complete the" in content_lower or "write no more than" in content_lower:
+            passage_types[passage].add("completion")
+        if "choose the correct letter" in content_lower:
+            passage_types[passage].add("mcq")
+
+        if passage == 1 and "yes" in content_lower and "no" in content_lower and "not given" in content_lower:
             checks.append({"check": "Y/N/NG not in Passage 1", "status": "FAIL", "detail": f"Found in Q{start}-{end}"})
-        elif passage == 1 and "yes/no/not given" in content_lower:
-            checks.append({"check": "Y/N/NG not in Passage 1", "status": "FAIL", "detail": f"Found in Q{start}-{end}"})
-        if passage == 3 and ("true / false / not given" in content_lower or "true/false/not given" in content_lower):
+        if passage == 3 and "true" in content_lower and "false" in content_lower and "not given" in content_lower:
             checks.append({"check": "T/F/NG not in Passage 3", "status": "FAIL", "detail": f"Found in Q{start}-{end}"})
+
+    add_check(
+        checks,
+        "Passage 1 required types",
+        {"tfng", "completion"}.issubset(passage_types[1]),
+        ", ".join(sorted(passage_types[1])),
+    )
+    add_check(
+        checks,
+        "Passage 2 required types",
+        {"headings", "features", "completion"}.issubset(passage_types[2]),
+        ", ".join(sorted(passage_types[2])),
+    )
+    add_check(
+        checks,
+        "Passage 3 required types",
+        {"ynng", "mcq", "completion"}.issubset(passage_types[3]),
+        ", ".join(sorted(passage_types[3])),
+    )
 
     # Check answer key format
     tables = find_answer_tables(text)
@@ -395,6 +520,21 @@ def validate_reading(text, filepath):
             "check": "All answers have Needle entries",
             "status": "PASS" if not no_needle else "FAIL",
             "detail": f"{len(no_needle)} answers missing needle"
+        })
+
+        ng_without_absence_note = [
+            r for t in tables for r in t
+            if r["answer"].strip().upper() == "NOT GIVEN"
+            and not re.search(
+                r"\b(does not|not mention|not mentioned|not stated|not described|no information|no statement|impossible to say)\b",
+                r["needle"],
+                re.IGNORECASE,
+            )
+        ]
+        checks.append({
+            "check": "NOT GIVEN uses absence note",
+            "status": "PASS" if not ng_without_absence_note else "FAIL",
+            "detail": f"{len(ng_without_absence_note)} weak NOT GIVEN needles"
         })
 
     # Matching Features word list check

@@ -94,6 +94,18 @@ Generate a complete test in a single output. Do NOT generate passages/parts indi
 6. Format output using Answer Placement Format
 ```
 
+## Official-Style Quality Gate
+
+Before final output, reject and rewrite any test that fails these checks:
+
+- Question stems are paraphrased; no stem should copy the answer sentence structure.
+- Every wrong MCQ/matching option is sourced from the text or script, not invented.
+- Completion answers are verbatim from the source and obey the word limit.
+- TRUE/FALSE/NO answers have direct contradiction/support; NOT GIVEN has no confirmation or contradiction anywhere.
+- Question difficulty rises across passages/parts without making Passage 1 artificially tricky.
+- Answer keys appear immediately after each question set, not at the end of a passage or full test.
+- Run `python3 scripts/validate.py <generated-file.md>` when working in this repo and fix every FAIL.
+
 ---
 
 ## Module Reference Files
