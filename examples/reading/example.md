@@ -68,7 +68,7 @@ Do the following statements agree with the information given in Reading Passage 
 
 ---
 
-### Answer Key: Questions 1–7
+### Answer Key — Questions 1–7
 
 | Q | Answer | Needle |
 |---|--------|--------|
@@ -77,12 +77,12 @@ Do the following statements agree with the information given in Reading Passage 
 | 3 | NOT GIVEN | Filament length (600–900m per cocoon) is given, but fibres from *multiple* cocoons are twisted together for a single thread; no statement about one cocoon being enough for a garment |
 | 4 | TRUE | "later named the Silk Road by the German geographer Ferdinand von Richthofen in 1877" — a German scholar in the 19th century |
 | 5 | TRUE | "around 200 BCE, Korean immigrants introduced sericulture to Japan" |
-| 6 | FALSE | China accounts for ~80%, India ~15% — India is second, not first |
+| 6 | FALSE | "China accounting for approximately 80 per cent of this output. India ranks as the second-largest producer" — India is second, not first |
 | 7 | NOT GIVEN | Current production figures are given, but no information on demand trends over the past decade |
 
 ---
 
-### Answer Key: Questions 8–12
+### Answer Key — Questions 8–12
 
 | Q | Answer | Needle |
 |---|--------|--------|
@@ -92,7 +92,7 @@ Do the following statements agree with the information given in Reading Passage 
 | 11 | boiling | "cocoons are immersed in boiling water" |
 | 12 | raw silk | "2,500 cocoons are required to produce just one kilogram of raw silk" |
 
-### Answer Key: Question 13
+### Answer Key — Question 13
 
 | Q | Answer | Needle |
 |---|--------|--------|
@@ -191,33 +191,33 @@ Do the following statements agree with the information given in Reading Passage 
 
 ---
 
-### Answer Key: Questions 14–19
+### Answer Key — Questions 14–19
 
 | Q | Answer | Needle |
 |---|--------|--------|
 | 14 | i | Paragraph A: "Cities around the world are confronting a common challenge... Three broad approaches have emerged" — a shared problem with competing solutions |
 | 15 | ii | Paragraph B: "London and Stockholm have implemented congestion charging zones" — charging as a tool |
 | 16 | iv | Paragraph C: "reallocation of street space from cars to active mobility — cycling and walking" — rethinking streets |
-| 17 | iii | Paragraph D: "Dr Miguel Santos cautions that electric vehicles do nothing to address traffic congestion" — why EVs won't reduce congestion |
+| 17 | iii | Paragraph D: "Dr Miguel Santos of the University of São Paulo cautions that electric vehicles do nothing to address traffic congestion" — why EVs won't reduce congestion |
 | 18 | vi | Paragraph E: "ride-hailing has increased total vehicle kilometres travelled" — unexpected effect |
 | 19 | viii | Paragraph F: "the most effective policies appear to be those tailored to local conditions" — context-specific combinations |
 
 ---
 
-### Answer Key: Questions 20–25
+### Answer Key — Questions 20–25
 
 | Q | Answer | Needle |
 |---|--------|--------|
 | 20 | C | "Professor Yuki Tanaka... suggests that cities with high cycling modal share... report significantly lower rates of respiratory illness" |
 | 21 | H | "Dr Eleanor Cross... found that ride-hailing services added approximately 2.8 vehicle kilometres for every kilometre of personal car travel they replaced" |
 | 22 | A | "Dr Helena Marchetti... these schemes have reduced traffic volumes by 15–20 per cent" |
-| 23 | G | "Dr Miguel Santos cautions that electric vehicles do nothing to address traffic congestion or spatial inefficiency" |
+| 23 | G | "Dr Miguel Santos of the University of São Paulo cautions that electric vehicles do nothing to address traffic congestion or spatial inefficiency" |
 | 24 | A | "Dr Marchetti concurs, noting that the most effective policies appear to be those tailored to local conditions" |
 | 25 | F | Dr Aisha Rahman "projected that widespread adoption of electric vehicles could reduce urban transport emissions by up to 70 per cent by 2040" |
 
 ---
 
-### Answer Key: Questions 26–27
+### Answer Key — Questions 26–27
 
 | Q | Answer | Needle |
 |---|--------|--------|
@@ -261,7 +261,7 @@ In conclusion, while no existing theory of consciousness has solved the hard pro
 30. Experiments involving brain stimulation revealed a significant relationship between neural response complexity and awareness.
 31. Dr Susan Blackmore believes that IIT successfully explains how neural activity generates subjective experience.
 32. Dr Daniel Dennett regards the attempt to formulate a unified theory of consciousness as a mistaken endeavour.
-33. The writer finds the implications of IIT for artificial intelligence to be the most persuasive aspect of the theory.
+33. The writer considers the implications for artificial intelligence to be the most significant practical application of IIT.
 34. Future investigations will almost certainly confirm that IIT represents the correct explanation of consciousness.
 
 ---
@@ -303,7 +303,7 @@ The integrated information theory, developed by Giulio Tononi, assesses consciou
 
 ---
 
-### Answer Key: Questions 28–34
+### Answer Key — Questions 28–34
 
 | Q | Answer | Needle |
 |---|--------|--------|
@@ -312,22 +312,22 @@ The integrated information theory, developed by Giulio Tononi, assesses consciou
 | 30 | YES | "the complexity of neural responses... correlated strongly with levels of reported consciousness" |
 | 31 | NO | Blackmore "argues that Φ is merely a measure of information processing and provides no explanation of why that processing should be accompanied by subjective experience" — she does NOT accept it |
 | 32 | YES | Dennett argues "the search for a unified theory of consciousness... is fundamentally misguided" |
-| 33 | YES | "One particularly notable implication, which this writer finds compelling, concerns the moral status of advanced AI systems" |
+| 33 | NOT GIVEN | "One particularly notable implication, which this writer finds compelling, concerns the moral status of advanced AI systems" — no statement that it is the *most* significant application |
 | 34 | NO | "may ultimately determine whether IIT points toward the truth or merely represents a sophisticated dead end" — writer expresses uncertainty, not certainty |
 
 ---
 
-### Answer Key: Questions 35–37
+### Answer Key — Questions 35–37
 
 | Q | Answer | Needle |
 |---|--------|--------|
-| 35 | B | "the theory's strength is that it generates testable predictions" / "one of the few theories precise enough to generate quantitative predictions that can be empirically tested" |
+| 35 | B | "one of the few theories precise enough to generate quantitative predictions that can be empirically tested" |
 | 36 | C | "Φ is merely a measure of information processing and provides no explanation of why that processing should be accompanied by subjective experience" |
 | 37 | C | "consciousness is not a single thing to be explained but an illusion generated by multiple cognitive processes operating in parallel" |
 
 ---
 
-### Answer Key: Questions 38–40
+### Answer Key — Questions 38–40
 
 | Q | Answer | Needle |
 |---|--------|--------|

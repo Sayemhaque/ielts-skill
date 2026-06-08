@@ -41,10 +41,10 @@ Do the following statements agree with the information given in Reading Passage 
 3. The reflective coating was added to limit heat loss through radiation.
 4. Dewar immediately protected his invention with a commercial patent.
 5. The name Thermos was selected through a public contest.
-6. By the 1920s, vacuum flasks were used only by people travelling by train.
+6. During the 1920s, insulated bottles were used solely by individuals travelling by train.
 7. Modern stainless-steel flasks are always more effective than early glass models.
 
-### Answer Key - Questions 1-7
+### Answer Key — Questions 1–7
 
 | Q | Answer | Needle |
 |---|--------|--------|
@@ -73,7 +73,7 @@ Do the following statements agree with the information given in Reading Passage 
 - Screw caps helped reduce (12) _____.
 - Current designs often include silicone (13) _____.
 
-### Answer Key - Questions 8-13
+### Answer Key — Questions 8–13
 
 | Q | Answer | Needle |
 |---|--------|--------|
@@ -140,7 +140,7 @@ This selective approach also affects how success is measured. A roof designed ma
 18. Paragraph E
 19. Paragraph F
 
-### Answer Key - Questions 14-19
+### Answer Key — Questions 14–19
 
 | Q | Answer | Needle |
 |---|--------|--------|
@@ -174,7 +174,7 @@ This selective approach also affects how success is measured. A roof designed ma
 | **D** | Luis Ortega |
 | **E** | Dr Hannah Clarke |
 
-### Answer Key - Questions 20-23
+### Answer Key — Questions 20–23
 
 | Q | Answer | Needle |
 |---|--------|--------|
@@ -191,11 +191,11 @@ This selective approach also affects how success is measured. A roof designed ma
 
 *Choose **NO MORE THAN TWO WORDS** from the passage for each answer.*
 
-24. Dark conventional roofs help create the urban heat island effect because they absorb heat and release it at _____.
-25. The Urban Water Alliance found that green roofs gave the largest benefit during _____ rainfall.
-26. In new projects, Ortega thinks planners should include green roofs from the _____.
+24. Traditional dark roofs contribute to rising city temperatures because they absorb warmth and emit it at _____.
+25. A study by the Urban Water Alliance showed that planted roofs offered the maximum advantage during _____ rainfall.
+26. For upcoming developments, Ortega believes architects must incorporate planted roofs right from the _____.
 
-### Answer Key - Questions 24-26
+### Answer Key — Questions 24–26
 
 | Q | Answer | Needle |
 |---|--------|--------|
@@ -250,14 +250,14 @@ Do the following statements agree with the views of the writer in Reading Passag
 31. The writer believes age-related memory disorders are usually beneficial.
 32. A good memory system should balance preservation with flexibility.
 
-### Answer Key - Questions 27-32
+### Answer Key — Questions 27–32
 
 | Q | Answer | Needle |
 |---|--------|--------|
 | 27 | NO | "A mind that retained every detail with equal force would not necessarily be wiser or more efficient." |
 | 28 | YES | "By weakening details that no longer guide useful action, the mind reduces competition" |
 | 29 | NO | "practising a target item suppresses related but currently unhelpful alternatives" |
-| 30 | YES | "categories depend on the reduction of incidental features" |
+| 30 | NOT GIVEN | "Cognitive scientist Daniel Mercer argues that categories depend on the reduction of incidental features" — the passage does not state whether he was the first to propose it |
 | 31 | NO | "age-related memory disorders cannot be explained as useful adaptation" |
 | 32 | YES | "A useful memory is one that keeps enough of the past to guide action while allowing irrelevant or outdated details to recede." |
 
@@ -291,7 +291,7 @@ B. To support the claim that forgetting never has advantages
 C. To show the need to separate useful forgetting from impairment
 D. To argue that ageing improves independent living
 
-### Answer Key - Questions 33-36
+### Answer Key — Questions 33–36
 
 | Q | Answer | Needle |
 |---|--------|--------|
@@ -310,7 +310,7 @@ D. To argue that ageing improves independent living
 
 The writer argues that memory is not a perfect (37) _____ for storing every experience. In some situations, forgetting works as a (38) _____ that reduces competition among possible responses. It can also help people form general concepts by removing (39) _____ features. However, this argument must not be confused with cases of broad (40) _____ that damage independence.
 
-### Answer Key - Questions 37-40
+### Answer Key — Questions 37–40
 
 | Q | Answer | Needle |
 |---|--------|--------|

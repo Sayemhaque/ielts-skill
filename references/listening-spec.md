@@ -250,3 +250,19 @@ Write **NO MORE THAN TWO WORDS** for each answer.
 ---
 
 ## QA Checklist — Run Before Output
+
+- 40 questions exactly; ranges are continuous and non-overlapping (1–10, 11–20, 21–30, 31–40).
+- Every question set is followed immediately by its matching answer key.
+- Part 1 uses Note Completion only; script includes a spelling trap, a self-correction, and a distractor.
+- Part 2 uses Multiple Choice (Single) plus Matching or Note Completion.
+- Part 3 uses Matching (speakers to opinions) plus Multiple Choice (Single); script includes opinion change and hedged language.
+- Part 4 uses Note/Summary Completion plus Matching Features; script includes ≥3 named researchers with phonetically distinct names and signpost language.
+- Script word counts are within spec: Part 1 (250–300), Part 2 (350–400), Part 3 (400–450), Part 4 (800–900).
+- All completion answers are verbatim from the script and obey the stated word limit.
+- Matching lists include at least two extra options beyond the number of questions.
+- Each answer has one needle quoting the exact script line; NOT GIVEN is not used in Listening.
+- Stems are paraphrased from script sentences — no stem copies 4+ consecutive content words from the answer line.
+- Part 1 questions follow chronological script order.
+- Part 4 questions follow chronological lecture order.
+- Dialogue in Parts 1 and 3 sounds natural, not robotic.
+- Part 4 lecture uses academic attribution, not personal opinion ("Studies show..." not "I believe...").

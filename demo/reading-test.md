@@ -187,7 +187,7 @@ In conclusion, no single strategy appears capable of resolving the urban housing
 | 20 | B | "Professor James Cai... points out that many cities contain large numbers of underutilised structures" |
 | 21 | C | "Dr Fatima Al-Rashid... contends that neither approach reduces the cost of land" |
 | 22 | A | "Dr Helena Morrow... notes that prefabrication also generates significantly less construction waste" |
-| 23 | C | "Dr Fatima Al-Rashid... argues. 'Without policy interventions... even the most efficient building techniques will fail'" |
+| 23 | C | "Without policy interventions that address land value speculation and zoning restrictions, even the most efficient building techniques will fail" |
 
 ---
 

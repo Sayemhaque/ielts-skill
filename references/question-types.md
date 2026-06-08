@@ -63,12 +63,6 @@ Each question type below shows its answer format template. Follow these exactly 
 - Headings test the main idea — not a detail within the paragraph
 - Reserved for Passage 2 and Passage 3
 
-## Matching Headings
-- One heading maps to one paragraph
-- Always more headings than paragraphs (at least 2 extras)
-- Headings test the main idea — not a detail within the paragraph
-- Reserved for Passage 2 and Passage 3
-
 **Answer format:**
 ```
 | Q | Answer | Needle |

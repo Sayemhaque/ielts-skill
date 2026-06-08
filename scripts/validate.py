@@ -300,16 +300,22 @@ def count_researcher_names(text):
 
 
 def check_synonym_rule(source_text, questions_text):
-    """Basic synonym check - find exact multi-word overlaps between source and questions."""
-    source_words = set(re.findall(r"\b[a-z]{4,}\b", source_text.lower()))
-    question_words = set(re.findall(r"\b[a-z]{4,}\b", questions_text.lower()))
-    # Remove common function words
-    common = {"this", "that", "with", "from", "which", "what", "when", "where", "there",
-              "their", "they", "have", "been", "were", "would", "could", "should", "about",
-              "between", "through", "after", "before", "other", "than", "more", "some"}
-    source_words -= common
-    question_words -= common
-    overlap = source_words & question_words
+    """Find exact 3+ word phrase overlaps between source and questions."""
+    import string
+    def get_clean_words(text):
+        text = text.translate(str.maketrans('', '', string.punctuation))
+        return [w.lower() for w in text.split() if w.strip()]
+    
+    source_words = get_clean_words(source_text)
+    question_words = get_clean_words(questions_text)
+    
+    source_4grams = set(" ".join(source_words[i:i+4]) for i in range(len(source_words)-3))
+    question_4grams = set(" ".join(question_words[i:i+4]) for i in range(len(question_words)-3))
+    
+    common_phrases = {"complete the summary below", "choose the correct letter", "write no more than", "choose no more than", "more than two words", "do the following statements", "agree with the information", "choose the correct heading", "read passage 1", "reading passage 2", "reading passage 3", "in boxes on your", "boxes on your answer", "on your answer sheet", "write the correct letter", "write the correct number"}
+    
+    overlap = {g for g in (source_4grams & question_4grams) if not any(c in g for c in common_phrases)}
+    
     return len(overlap), overlap
 
 
@@ -455,9 +461,10 @@ def validate_reading(text, filepath):
         immediate_keys and len(q_sections) == len(key_sections),
         "mismatched: " + ", ".join(immediate_details) if immediate_details else f"{len(key_sections)} keys",
     )
-
-    # Check question type placement per passage.
+    # Check question type placement per passage and extract word limits.
     passage_types = {1: set(), 2: set(), 3: set()}
+    word_limits = {}  # Map Q num to word limit
+    
     for section in q_sections:
         start, end, content = section["start"], section["end"], section["content"]
         if start <= 13:
@@ -473,10 +480,20 @@ def validate_reading(text, filepath):
             passage_types[passage].add("ynng")
         if "choose the correct heading" in content_lower or "list of headings" in content_lower:
             passage_types[passage].add("headings")
-        if "match each statement" in content_lower or "list of people" in content_lower or "list of experts" in content_lower:
-            passage_types[passage].add("features")
         if "complete the" in content_lower or "write no more than" in content_lower:
             passage_types[passage].add("completion")
+            # Extract word limit
+            limit_match = re.search(r"no more than (one|two|three|four) word", content_lower)
+            if limit_match:
+                num_map = {"one": 1, "two": 2, "three": 3, "four": 4}
+                limit = num_map[limit_match.group(1)]
+                # "AND/OR A NUMBER" usually means they can add a number, so effectively limit + 1
+                if "and/or a number" in content_lower or "or a number" in content_lower:
+                    limit += 1
+                for q in range(start, end + 1):
+                    word_limits[q] = limit
+        if "match each statement" in content_lower or "list of people" in content_lower or "list of experts" in content_lower:
+            passage_types[passage].add("features")
         if "choose the correct letter" in content_lower:
             passage_types[passage].add("mcq")
 
@@ -484,6 +501,17 @@ def validate_reading(text, filepath):
             checks.append({"check": "Y/N/NG not in Passage 1", "status": "FAIL", "detail": f"Found in Q{start}-{end}"})
         if passage == 3 and "true" in content_lower and "false" in content_lower and "not given" in content_lower:
             checks.append({"check": "T/F/NG not in Passage 3", "status": "FAIL", "detail": f"Found in Q{start}-{end}"})
+
+        if passages and passage <= len(passages):
+            p_content = passages[passage-1]["content"]
+            overlap_count, overlap_words = check_synonym_rule(p_content, content)
+            threshold = 2  # If they share more than 2 distinct 4-grams, flag it
+            add_check(
+                checks,
+                f"Passage {passage} (Q{start}-{end}) synonym overlap",
+                overlap_count <= threshold,
+                f"{overlap_count} shared 4-grams: {', '.join(list(overlap_words)[:5])}" if overlap_count > 0 else "No 4-gram overlaps found",
+            )
 
     add_check(
         checks,
@@ -520,6 +548,103 @@ def validate_reading(text, filepath):
             "check": "All answers have Needle entries",
             "status": "PASS" if not no_needle else "FAIL",
             "detail": f"{len(no_needle)} answers missing needle"
+        })
+
+        # Check needle in passage
+        if passages:
+            needles_missing_from_passage = []
+            for t in tables:
+                for r in t:
+                    if r["needle"].strip():
+                        # Figure out passage number roughly based on Q num
+                        try:
+                            q_num = int(r["q"])
+                            # If there's a quoted string, extract it
+                            match = re.search(r'"([^"]+)"', r["needle"])
+                            if match:
+                                clean_needle = match.group(1)
+                            else:
+                                clean_needle = re.sub(r'^Paragraph [A-Z]:\s*', '', r["needle"].strip())
+                                clean_needle = clean_needle.strip('"\'')
+                            
+                            # Normalize whitespace across all passages to avoid question boundary issues
+                            p_content = " ".join(" ".join(p["content"].split()) for p in passages).lower()
+                            n_content = " ".join(clean_needle.split()).lower()
+                            
+                            # Handle ellipses
+                            parts = [p.strip() for p in re.split(r'\.{2,}', n_content)]
+                            missing = False
+                            for part in parts:
+                                if len(part) > 5 and part not in p_content:
+                                    missing = True
+                                    
+                            if missing and len(n_content) > 10:
+                                # Ignore NOT GIVEN where they might say "The passage discusses X but not Y"
+                                if r["answer"].strip().upper() != "NOT GIVEN":
+                                    needles_missing_from_passage.append(f"Q{q_num}")
+                        except ValueError:
+                            pass
+            
+            checks.append({
+                "check": "Needles found in passage text",
+                "status": "PASS" if not needles_missing_from_passage else "FAIL",
+                "detail": f"{len(needles_missing_from_passage)} needles not in passage: {', '.join(needles_missing_from_passage[:5])}"
+            })
+
+        # Check completion word limits
+        if word_limits:
+            completion_limit_violations = []
+            for t in tables:
+                for r in t:
+                    try:
+                        q_num = int(r["q"])
+                        if q_num in word_limits:
+                            ans_words = len([w for w in r["answer"].split() if w.strip()])
+                            if ans_words > word_limits[q_num]:
+                                completion_limit_violations.append(f"Q{q_num} (limit {word_limits[q_num]}, got {ans_words})")
+                    except ValueError:
+                        pass
+            
+            checks.append({
+                "check": "Completion word limits respected",
+                "status": "PASS" if not completion_limit_violations else "FAIL",
+                "detail": f"{len(completion_limit_violations)} violations: {', '.join(completion_limit_violations[:5])}" if completion_limit_violations else "All limits respected"
+            })
+
+        # Check T/F/NG distribution
+        tfng_counts = {1: {"T": 0, "F": 0, "NG": 0}, 2: {"T": 0, "F": 0, "NG": 0}, 3: {"T": 0, "F": 0, "NG": 0}}
+        ynng_counts = {1: {"Y": 0, "N": 0, "NG": 0}, 2: {"Y": 0, "N": 0, "NG": 0}, 3: {"Y": 0, "N": 0, "NG": 0}}
+        for t in tables:
+            for r in t:
+                try:
+                    q_num = int(r["q"])
+                    p_idx = 0 if q_num <= 13 else (1 if q_num <= 26 else 2)
+                    ans = r["answer"].strip().upper()
+                    if ans == "TRUE": tfng_counts[p_idx+1]["T"] += 1
+                    if ans == "FALSE": tfng_counts[p_idx+1]["F"] += 1
+                    if ans == "NOT GIVEN": 
+                        tfng_counts[p_idx+1]["NG"] += 1
+                        ynng_counts[p_idx+1]["NG"] += 1
+                    if ans == "YES": ynng_counts[p_idx+1]["Y"] += 1
+                    if ans == "NO": ynng_counts[p_idx+1]["N"] += 1
+                except ValueError:
+                    pass
+        
+        tfng_violations = []
+        for p in [1, 2, 3]:
+            if "tfng" in passage_types[p]:
+                counts = tfng_counts[p]
+                if counts["T"] < 1 or counts["F"] < 1 or counts["NG"] < 1:
+                    tfng_violations.append(f"P{p} T/F/NG: {counts}")
+            if "ynng" in passage_types[p]:
+                counts = ynng_counts[p]
+                if counts["Y"] < 1 or counts["N"] < 1 or counts["NG"] < 1:
+                    tfng_violations.append(f"P{p} Y/N/NG: {counts}")
+                    
+        checks.append({
+            "check": "Boolean questions have all 3 types",
+            "status": "PASS" if not tfng_violations else "FAIL",
+            "detail": ", ".join(tfng_violations) if tfng_violations else "All required boolean types have at least 1 of each answer"
         })
 
         ng_without_absence_note = [
