@@ -13,17 +13,28 @@ description: >
 
 ## How to Use This Skill
 
-### ⚠ CRITICAL — Do NOT Skip Step 1
+### ⚠ CRITICAL — Do NOT Skip Steps 1 and 2
 
-1. **Read the matching example file FIRST** — before reading anything else, before generating anything. The example in `examples/` is the single source of truth for format, structure, and quality.
+1. **Check topic availability FIRST** — before choosing any topic, run:
+   ```bash
+   python3 scripts/topic_tracker.py check "<your intended topic>"
+   ```
+   If BLOCKED, choose a different topic and check again. Only proceed once you get OK.
+
+2. **Read the matching example file** — before generating anything. The example in `examples/` is the single source of truth for format, structure, and quality.
    - Reading: `examples/reading/example.md` (340 lines)
    - Listening: `examples/listening/example.md` (480 lines)
    - If you skip this step, your output will have structural errors.
 
-2. Read the module spec from `references/` for whichever module you are generating
-3. Generate following the spec and example pattern exactly
-4. Run the QA checklist (at bottom of each module reference) before outputting anything
-5. Format output following the Answer Placement Format below
+3. Read the module spec from `references/` for whichever module you are generating.
+4. Generate following the spec and example pattern exactly.
+5. Run the QA checklist (at bottom of each module reference) before outputting anything.
+6. Format output following the Answer Placement Format below.
+7. **After output is accepted** — log the topics:
+   ```bash
+   python3 scripts/topic_tracker.py log <generated-file.md>
+   python3 scripts/validate.py <generated-file.md>
+   ```
 
 ---
 
@@ -56,7 +67,9 @@ Passage 1 / Part 1 = accessible. Passage 3 / Part 4 = abstract and challenging. 
 
 ### Rule 2 — Synonym Rule (No Word-Matching)
 Question stems must NEVER repeat exact words from the source text or script.
-Always paraphrase. See `references/synonym-reference.md` for synonym pairs.
+Always paraphrase. The validator now catches **3-gram AND 4-gram** content-word overlaps.
+A question that shares even a 3-word content phrase with its answer sentence will FAIL validation.
+See `references/synonym-reference.md` for synonym pairs.
 
 | Source Says | Question Must Say |
 |---|---|
@@ -85,13 +98,15 @@ Generate a complete test in a single output. Do NOT generate passages/parts indi
 **Listening:** all 4 parts + 40 questions at once.
 
 ```
-1. Choose topics / contexts from the module spec
-2. Write ALL source content FIRST (3 passages / 4 scripts)
+1. Check topic availability (topic_tracker.py check) — REQUIRED
+2. Choose topics / contexts from the module spec
+3. Write ALL source content FIRST (3 passages / 4 scripts)
    → Embed distractors and traps BEFORE writing questions
-3. Draft ALL questions — apply Synonym Rule to every stem
-4. Confirm every answer has a Needle
-5. Run the module QA checklist
-6. Format output using Answer Placement Format
+4. Draft ALL questions — apply Synonym Rule to every stem
+5. Confirm every answer has a Needle
+6. Run the module QA checklist
+7. Format output using Answer Placement Format
+8. After acceptance: run topic_tracker.py log + validate.py
 ```
 
 ## Official-Style Quality Gate
@@ -105,6 +120,7 @@ Before final output, reject and rewrite any test that fails these checks:
 - Question difficulty rises across passages/parts without making Passage 1 artificially tricky.
 - Answer keys appear immediately after each question set, not at the end of a passage or full test.
 - Run `python3 scripts/validate.py <generated-file.md>` when working in this repo and fix every FAIL.
+- **Boolean distribution: T/F/NG sets must have ≥2 TRUE, ≥2 FALSE, ≥2 NOT GIVEN.**
 
 ---
 
@@ -119,6 +135,7 @@ Read the relevant file before generating:
 | Question Types | `references/question-types.md` | — |
 | Synonyms | `references/synonym-reference.md` | — |
 | Topic Bank | `references/topic-bank.md` | — |
+| Used Topics | `references/used-topics.json` | (auto-maintained by topic_tracker.py) |
 
 ---
 
@@ -144,9 +161,10 @@ Read the relevant file before generating:
 | Listening dialogue sounds robotic | "Could you please provide your date of birth?" | Write naturally: "And when were you born?" |
 | Part 1 dialogue is symmetrical (equal turns) | Real conversations have one speaker driving | Official asks most questions; customer gives short answers |
 | MCQ distractors are invented | Wrong options must come from the source text | Every distractor must be traceable to a real sentence |
-| Question stem copies passage wording exactly | Violates Synonym Rule | Read each stem → find the source sentence → change 80% of the words |
+| Question stem copies passage wording exactly | Violates Synonym Rule — now caught at 3-gram level | Read each stem → find the source sentence → change 80% of the words |
 | Passage 3 summary uses simple vocabulary | Must match academic register | Use nominalisation, hedging, complex structures |
 | Part 4 lecture has opinion language | Lectures present research findings, not personal views | "Studies show..." not "I believe..." |
+| Repeat topic from previous test | Bores Vasha Academy students, reduces exam realism | Always run topic_tracker.py check before choosing a topic |
 
 ---
 
@@ -154,10 +172,12 @@ Read the relevant file before generating:
 
 | Mistake | Fix |
 |---|---|
-| Same words in question as source | Remap every stem with synonyms |
+| Same words in question as source | Remap every stem with synonyms — validator catches 3-gram hits now |
 | FALSE when text just doesn't mention it | Only FALSE if text directly contradicts |
 | Gap answer exceeds word limit | Rewrite sentence so answer fits |
 | Distractor is obviously wrong | Use real source info, make it plausible |
 | Part 4 researcher names sound similar | Use phonetically distinct names |
 | Answer needs two sentences to prove | Rewrite — one Needle only |
 | Matching Features word list has too few options | At least 2 extra options beyond number of questions |
+| T/F/NG set has no NOT GIVEN | Add at least 2 genuinely absent claims |
+| Topic already used in a previous test | Check used-topics.json; if similar — pick something else |
