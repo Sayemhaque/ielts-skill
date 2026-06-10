@@ -338,3 +338,89 @@ The integrated information theory, developed by Giulio Tononi, assesses consciou
 ---
 
 *End of the Reading Test*
+
+
+---
+
+## SUPPLEMENT — Additional Question Type Examples
+
+*These examples demonstrate question types not shown in the main test above.
+Use these as templates when generating tests that require these types.*
+
+---
+
+### Example: Table Completion (Passage 1 style)
+
+*Complete the table below.*
+*Choose **NO MORE THAN TWO WORDS AND/OR A NUMBER** from the passage for each answer.*
+
+| Period | Event | Detail |
+|---|---|---|
+| Around 2640 BCE | Discovery credited to | Empress (A) ______ |
+| Shang Dynasty | Silk fragments found in | Henan (B) ______ |
+| 552 CE | Silk production reached | Byzantine (C) ______ |
+| 12th century | European production centre | Italian city of (D) ______ |
+
+**Answer Key — Table Completion Example**
+
+| Q | Answer | Needle |
+|---|--------|--------|
+| A | Leizu | "the discovery of silk is credited to Empress Leizu" |
+| B | province | "recovered from tombs in the Henan province" |
+| C | Empire | "establishing silk production in Constantinople... Byzantine Empire" |
+| D | Lucca | "The Italian city of Lucca became particularly renowned" |
+
+---
+
+### Example: Multiple Choice (Multiple Answers) — Passage 2 style
+
+*Choose **TWO** letters, **A–E**.*
+
+*Which TWO of the following are identified in the passage as benefits of congestion charging schemes?*
+
+A. They eliminate all private vehicle use in city centres.
+B. They generate income that can fund public transport improvements.
+C. They have been shown to reduce traffic volumes significantly.
+D. They are equally affordable for all income groups.
+E. They remove the need for acoustic barriers on boundary roads.
+
+**Answer Key — MCQ Multiple Example**
+
+| Q | Answer | Needle |
+|---|--------|--------|
+| — | B, C | B: "generated substantial revenue for public transport improvements" · C: "these schemes have reduced traffic volumes by 15–20 per cent" |
+
+*Distractor logic:*
+- A is FALSE — the passage says reduced, not eliminated
+- D is FALSE — critics say it disproportionately affects lower-income residents
+- E is FALSE — boundary roads saw increased traffic, not reduced
+
+---
+
+### Example: Matching Sentence Endings — Passage 2 style
+
+*Complete each sentence with the correct ending, **A–G**, below.*
+
+1. The 'push and pull' strategy combines penalties for car use with ______
+2. Barcelona's superblock model restricts vehicle access in order to ______
+3. Dr Miguel Santos argues that electric vehicles cannot resolve ______
+
+**Sentence Endings**
+
+| | |
+|---|---|
+| A | generate revenue for urban cycling infrastructure. |
+| B | create pedestrian-friendly zones where residents can access amenities on foot. |
+| C | investment in public transport infrastructure. |
+| D | problems related to road space and traffic density. |
+| E | reduce carbon emissions from the electricity grid. |
+| F | discourage the use of ride-hailing applications. |
+| G | meet WHO guidelines on acceptable noise levels. |
+
+**Answer Key — Matching Sentence Endings Example**
+
+| Q | Answer | Needle |
+|---|--------|--------|
+| 1 | C | "combines disincentives for private vehicle use with investment in public transport infrastructure" |
+| 2 | B | "creating pedestrian-friendly zones where residents can walk to most daily amenities" |
+| 3 | D | "electric vehicles do nothing to address traffic congestion or spatial inefficiency" |
