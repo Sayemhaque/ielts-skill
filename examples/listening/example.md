@@ -478,3 +478,79 @@ To summarise, the study of decision-making has moved from abstract models of rat
 ---
 
 *End of the Listening Test*
+
+
+---
+
+## SUPPLEMENT — Additional Question Type Examples
+
+*These examples demonstrate question types not shown in the main test above.
+Use these as templates when generating tests that require these types.*
+
+---
+
+### Example: Multiple Choice (Multiple Answers) — Part 3 style
+
+*Choose **TWO** letters, **A–E**.*
+
+*Which TWO concerns do the students agree need to be addressed before their presentation?*
+
+A. The length of their written report
+B. The accuracy of the survey data
+C. The number of case studies included
+D. The time available to complete their analysis
+E. The visual quality of their diagrams
+
+**Answer Key — MCQ Multiple Example**
+
+| Q | Answer | Needle |
+|---|--------|--------|
+| — | B, D | B: "we need to make sure the survey data is solid before we present anything" · D: "I'm worried we won't have enough time for a proper analysis before the deadline" |
+
+*Distractor logic:*
+- A: mentioned but not agreed upon as a concern
+- C: not raised as a concern by either student
+- E: James volunteers to handle diagrams without concern
+
+---
+
+### Example: Table Completion — Part 3 style
+
+*Complete the table below.*
+*Write **NO MORE THAN TWO WORDS** for each answer.*
+
+| Section | Focus | Key Source |
+|---|---|---|
+| Introduction | Define concept of biophilic design | — |
+| Section 1 | Natural (A) ______ in workplaces | Existing research |
+| Section 2 | How rooftop gardens reduce (B) ______ | Energy cost data |
+| Section 3 | The urban (C) ______ effect | Plant cooling data |
+| Conclusion | Long-term (D) ______ of the designs | Developer appeal |
+
+**Answer Key — Table Completion Example**
+
+| Q | Answer | Needle |
+|---|--------|--------|
+| A | lighting | "discuss the importance of natural lighting in offices" |
+| B | insulation | "analyse how rooftop gardens can improve insulation" |
+| C | microclimate | "examine the reduction of the urban microclimate effect" |
+| D | benefits | "summarise the long-term economic benefits of these designs" |
+
+---
+
+### Example: Sentence Completion — Part 4 style
+
+*Complete the sentences below.*
+*Write **NO MORE THAN TWO WORDS** for each answer.*
+
+1. Unlike migratory birds, monarch butterflies making the southward journey have no prior ______ of the route.
+2. The butterfly's sun compass adjusts for the time of day, helping it maintain a ______ southward direction.
+3. Scientists track population health by recovering butterflies that carry tiny ______ attached to their wings.
+
+**Answer Key — Sentence Completion Example**
+
+| Q | Answer | Needle |
+|---|--------|--------|
+| 1 | experience | "have absolutely no prior experience of the route" |
+| 2 | consistent | "allowing them to maintain a consistent southward bearing" |
+| 3 | stickers | "Volunteers gently place tiny, harmless stickers on the wings" |
