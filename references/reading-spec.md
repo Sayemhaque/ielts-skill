@@ -9,6 +9,24 @@
 
 ---
 
+## ⚠ MATCHING RULE — Read Before Planning Questions
+
+Each Reading test must use **exactly ONE** of these three matching types:
+- Matching Headings
+- Matching Features
+- Matching Sentence Endings
+
+All other question types (non-matching) **must all appear** in every test.
+Never use two or more matching types in the same test.
+
+**Rotate the matching type across tests:**
+- Test 1 → Matching Headings
+- Test 2 → Matching Features
+- Test 3 → Matching Sentence Endings
+- Test 4 → Matching Headings (cycle repeats)
+
+---
+
 ## Official-Style Reading Standard
 
 Use these checks as the quality bar for every generated Reading test:
@@ -16,7 +34,7 @@ Use these checks as the quality bar for every generated Reading test:
 | Area | Standard |
 |---|---|
 | Passage authenticity | Neutral IELTS-like topics from `topic-bank.md`; no highly specialised research, politics, or culture-specific assumptions |
-| Question wording | Stems must paraphrase the source; avoid copying 4+ consecutive content words from the answer sentence |
+| Question wording | Stems must paraphrase the source; avoid copying 3+ consecutive content words from the answer sentence |
 | Skill tested | Questions should test locating, comparison, inference, writer view, and text organisation; avoid pure word matching |
 | Distractors | Wrong MCQ/matching options must be real source details that are wrong for a specific reason |
 | Answer order | Completion and T/F/NG or Y/N/NG questions should normally follow passage order |
@@ -25,6 +43,27 @@ Use these checks as the quality bar for every generated Reading test:
 | Needles | TRUE/FALSE/YES/NO/MCQ/completion need one exact supporting sentence; NOT GIVEN needs a precise absence note |
 
 **Question rewrite rule:** after drafting, compare each item to its source sentence. If the stem repeats the same key nouns and verbs, rewrite with synonyms, changed syntax, or a broader paraphrase.
+
+---
+
+## Required Question Type Coverage Per Test
+
+All of the following must appear in every Reading test:
+
+| # | Type | Passage |
+|---|---|---|
+| 1 | True / False / Not Given | Passage 1 or 2 |
+| 2 | Yes / No / Not Given | Passage 3 only |
+| 3 | Multiple Choice (Single) | Passage 2 or 3 |
+| 4 | Multiple Choice (Multiple) | Passage 2 or 3 |
+| 5 | Note Completion | Passage 1 or 2 |
+| 6 | Sentence Completion | Passage 1–3 |
+| 7 | Summary Completion (From Text) | Passage 2 or 3 |
+| 8 | Summary Completion (From List) | Passage 2 or 3 |
+| 9 | Table Completion | Passage 1 or 2 |
+| 10 | **ONE matching type** (rotate per test) | See matching rule above |
+
+---
 
 ## Passage 1 — Factual / Descriptive
 
@@ -38,8 +77,8 @@ Use these checks as the quality bar for every generated Reading test:
 
 **Required types (use at least 3):**
 - True / False / Not Given — 6–7 statements; at least 2 TRUE, 2 FALSE, 2 NOT GIVEN
-- Note / Sentence / Summary Completion — max 2 words per gap; answers verbatim from text
-- Table Completion or Matching Features
+- Note Completion or Table Completion — max 2 words per gap; answers verbatim from text
+- Sentence Completion
 
 **Writing rules:**
 - Facts only. No opinions, no arguments.
@@ -57,7 +96,7 @@ Use these checks as the quality bar for every generated Reading test:
 | 4 | Significance | Practical importance or modern relevance |
 | 5 | Conclusion | Current status, summary statistic, or future outlook |
 
-**Permitted:** True / False / Not Given · Table Completion · Sentence Completion · Matching Features · Note Completion · Summary Completion (From Text) · Summary Completion (From List)
+**Permitted:** True / False / Not Given · Table Completion · Sentence Completion · Note Completion · Summary Completion (From Text) · Summary Completion (From List) · Matching Features (only if this test's chosen matching type)
 **Avoid:** Yes / No / Not Given · Matching Headings · Multiple Choice
 
 ---
@@ -73,9 +112,10 @@ Use these checks as the quality bar for every generated Reading test:
 | Questions | 13–14 across at least 3 different types |
 
 **Required types (use at least 3):**
-- Matching Headings — match headings to paragraphs; at least 2 extra headings
-- Matching Features — match experts/organisations to stated opinions
-- Sentence Completion — NO MORE THAN TWO WORDS from the passage
+- The test's chosen matching type (if Matching Headings — place here; if Matching Features — place here or P1; if Matching Sentence Endings — place here)
+- Multiple Choice (Multiple Answers)
+- Summary Completion (From List)
+- Sentence Completion
 
 **Writing rules:**
 - At least 2 named experts or organisations with distinct, attributable opinions.
@@ -84,7 +124,7 @@ Use these checks as the quality bar for every generated Reading test:
 - Include at least one counterargument paragraph.
 - Label paragraphs A–F.
 - Matching Headings must test paragraph purpose, not a single detail.
-- Matching Features must include at least 2 extra options where practical, and every option must be named in the passage.
+- Matching Features must include at least 2 extra options, and every option must be named in the passage.
 
 **Structure template (6 paragraphs, A–F):**
 | Para | Purpose | Content |
@@ -96,8 +136,8 @@ Use these checks as the quality bar for every generated Reading test:
 | E | Further complexity | Additional factor, debate, or emerging trend |
 | F | Conclusion | Synthesis — no single solution, integrated approach needed |
 
-**Permitted:** Matching Headings · Matching Features · Matching Sentence Endings · Summary Completion (From Text) · Summary Completion (From List) · Multiple Choice (Single) · Sentence Completion · Table Completion · Note Completion
-**Avoid:** True / False / Not Given (unless writer's view is very prominent)
+**Permitted:** Matching Headings · Matching Features · Matching Sentence Endings (one only) · Summary Completion (From Text) · Summary Completion (From List) · Multiple Choice (Single) · Multiple Choice (Multiple) · Sentence Completion · Table Completion · Note Completion
+**Avoid:** True / False / Not Given · Yes / No / Not Given
 
 ---
 
@@ -112,9 +152,10 @@ Use these checks as the quality bar for every generated Reading test:
 | Questions | 13–14 across at least 3 different types |
 
 **Required types (use at least 3):**
-- Yes / No / Not Given — tests WRITER'S OPINION only
+- Yes / No / Not Given — tests WRITER'S OPINION only (at least 1 YES, 1 NO, 1 NOT GIVEN)
 - Multiple Choice (Single) — tests inference and global understanding
-- Summary / Note Completion with academic vocabulary
+- Summary Completion (From Text)
+- The test's chosen matching type (if Matching Sentence Endings or Matching Features — may be placed here)
 
 **Writing rules:**
 - Writer must have a clear, traceable argument or thesis.
@@ -134,8 +175,8 @@ Use these checks as the quality bar for every generated Reading test:
 | 5 | Alternative | Different perspective or counter-framework |
 | 6 | Evaluation | Writer's final assessment — strengths vs limitations |
 
-**Permitted:** Yes / No / Not Given · Multiple Choice (Single) · Multiple Choice (Multiple) · Summary Completion (From Text) · Summary Completion (From List) · Matching Features · Matching Sentence Endings
-**Avoid:** Table Completion · True / False / Not Given
+**Permitted:** Yes / No / Not Given · Multiple Choice (Single) · Multiple Choice (Multiple) · Summary Completion (From Text) · Summary Completion (From List) · Matching Features · Matching Sentence Endings (one only)
+**Avoid:** Table Completion · True / False / Not Given · Matching Headings
 
 ---
 
@@ -156,180 +197,72 @@ Every reading test must follow this exact heading hierarchy and section order. A
 
 ### The Passage Title Here
 
-Passage text goes here — 5 paragraphs, 700–800 words, factual only. No opinions. See structure template above.
+Passage text goes here — 5 paragraphs, 700–800 words, factual only.
 
 ---
 
 ### Questions 1–7
-
-[Question type instructions — e.g., TRUE / FALSE / NOT GIVEN]
-
-1. Statement one.
-2. Statement two.
-...
-
----
-
-### Questions 8–13
-
-[Question type instructions]
-
-8. ________
-...
-
----
+[T/F/NG]
 
 ### Answer Key — Questions 1–7
-
 | Q | Answer | Needle |
 |---|--------|--------|
-| 1 | TRUE | "exact sentence from passage" |
-
----
 
 ### Questions 8–13
-
-[Question type instructions]
-
-8. ________
-...
-
----
+[Note Completion / Table Completion / Sentence Completion]
 
 ### Answer Key — Questions 8–13
-
 | Q | Answer | Needle |
 |---|--------|--------|
-| 8 | answer | "exact sentence from passage" |
 
 ---
 
 ## READING PASSAGE 2
 
-*You should spend about 20 minutes on Questions 14–26, which are based on Reading Passage 2 below.*
-
-### A
-
-Passage text — label paragraphs A–F. 800–850 words. Multiple viewpoints.
-
-### B
-...
-
----
+### A ... F
+Passage text — 800–850 words.
 
 ### Questions 14–19
-
-[List of Headings — Heading i, ii, iii...]
-
-14. Paragraph A
-15. Paragraph B
-...
-
----
-
-### Questions 20–23
-
-[Match each statement with the correct person...]
-
----
-
-### Questions 24–26
-
-[Complete the sentences below...]
-
----
+[Chosen matching type OR MCQ Multiple OR Summary From List]
 
 ### Answer Key — Questions 14–19
-
-| Q | Answer | Needle |
-|---|--------|--------|
-
----
+...
 
 ### Questions 20–23
-
-[Match each statement with the correct person...]
-
----
+[Another type]
 
 ### Answer Key — Questions 20–23
-
-| Q | Answer | Needle |
-|---|--------|--------|
-
----
+...
 
 ### Questions 24–26
-
-[Complete the sentences below...]
-
----
+[Sentence Completion]
 
 ### Answer Key — Questions 24–26
-
-| Q | Answer | Needle |
-|---|--------|--------|
+...
 
 ---
 
 ## READING PASSAGE 3
 
-*You should spend about 20 minutes on Questions 27–40, which are based on Reading Passage 3 below.*
-
-### The Passage Title Here
-
-Passage text — 900+ words. Writer must have a clear thesis.
-
----
+Passage text — 900+ words.
 
 ### Questions 27–32
-
-[YES / NO / NOT GIVEN]
-
----
-
-### Questions 33–35
-
-[Multiple Choice]
-
----
-
-### Questions 36–40
-
-[Summary Completion]
-
----
+[Y/N/NG]
 
 ### Answer Key — Questions 27–32
+...
 
-| Q | Answer | Needle |
-|---|--------|--------|
+### Questions 33–36
+[MCQ Single]
 
----
+### Answer Key — Questions 33–36
+...
 
-### Questions 33–35
+### Questions 37–40
+[Summary Completion From Text]
 
-[Multiple Choice]
-
----
-
-### Answer Key — Questions 33–35
-
-| Q | Answer | Needle |
-|---|--------|--------|
-
----
-
-### Questions 36–40
-
-[Summary Completion]
-
----
-
-### Answer Key — Questions 36–40
-
-| Q | Answer | Needle |
-|---|--------|--------|
+### Answer Key — Questions 37–40
+...
 ```
 
 **Critical format rules:**
@@ -347,11 +280,13 @@ Passage text — 900+ words. Writer must have a clear thesis.
 
 - 40 questions exactly; ranges are continuous and non-overlapping.
 - Every question set is followed immediately by its matching answer key.
+- ALL non-matching question types appear somewhere in the test.
+- Exactly ONE matching type used across the entire test (Headings, Features, OR Sentence Endings — never two).
 - Passage 1 uses T/F/NG plus completion/table-style questions; no Y/N/NG.
-- Passage 2 uses Matching Headings, Matching Features, and completion or equivalent.
-- Passage 3 uses Y/N/NG, MCQ, and summary/note completion; no T/F/NG.
-- Matching lists include at least two extra options unless the official-style format genuinely requires otherwise.
+- Passage 3 uses Y/N/NG, MCQ Single, and summary completion; no T/F/NG.
+- Matching lists include at least two extra options.
 - MCQ distractors are source-based and plausible.
 - No completion answer breaks the stated word limit.
+- Boolean distributions: T/F/NG has ≥2 TRUE, ≥2 FALSE, ≥2 NOT GIVEN; Y/N/NG has ≥1 YES, ≥1 NO, ≥1 NOT GIVEN.
 - Each answer has one needle; NOT GIVEN has an absence note, not a fake quote.
-- Stems are paraphrased from answer sentences.
+- Stems are paraphrased from answer sentences — no 3-gram content-word overlap.
