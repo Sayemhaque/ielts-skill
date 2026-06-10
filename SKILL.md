@@ -21,25 +21,39 @@ description: >
    ```
    If BLOCKED, choose a different topic and check again. Only proceed once you get OK.
 
-2. **Read the matching example file** — before generating anything. The example in `examples/` is the single source of truth for format, structure, and quality.
+2. **Determine category rotation for hardest passage/part** — topic diversity at the advanced level:
+   - **Reading Passage 3** — run:
+     ```bash
+     python3 scripts/topic_tracker.py get_reading_p3_category
+     ```
+     Select a topic from the returned category only.
+   - **Listening Part 4** — run:
+     ```bash
+     python3 scripts/topic_tracker.py get_listening_p4_category
+     ```
+     Select a topic from the returned category only.
+
+3. **Read the matching example file** — before generating anything. The example in `examples/` is the single source of truth for format, structure, and quality.
    - Reading: `examples/reading/example.md`
    - Listening: `examples/listening/example.md`
 
-3. **Read the module spec** from `references/` for whichever module you are generating.
+4. **Read the module spec** from `references/` for whichever module you are generating.
 
-4. **Plan your question types** — follow the coverage rule:
+5. **Plan your question types** — follow the coverage rule:
    - All non-matching question types must appear in the test.
    - Exactly ONE matching type per test (rotate: see spec).
 
-5. Generate following the spec and example pattern exactly.
+6. Generate following the spec and example pattern exactly.
 
-6. Run the QA checklist (at bottom of each module reference) before outputting anything.
+7. Run the QA checklist (at bottom of each module reference) before outputting anything.
 
-7. Format output following the Answer Placement Format below.
+8. Format output following the Answer Placement Format below.
 
-8. **After output is accepted** — log topics and validate:
+9. **After output is accepted** — log topics, category usage, and validate:
    ```bash
    python3 scripts/topic_tracker.py log <generated-file.md>
+   python3 scripts/topic_tracker.py log_reading_p3_category  # if Reading
+   python3 scripts/topic_tracker.py log_listening_p4_category  # if Listening
    python3 scripts/validate.py <generated-file.md>
    ```
 
@@ -123,17 +137,18 @@ Generate a complete test in a single output. Do NOT generate passages/parts indi
 
 ```
 1. Check topic availability (topic_tracker.py check) — REQUIRED
-2. Choose topics / contexts from the module spec
-3. Decide which matching type to use this test (rotate)
-4. Write ALL source content FIRST (3 passages / 4 scripts)
+2. Get category rotation for Passage 3 / Part 4 (run get_reading_p3_category / get_listening_p4_category)
+3. Choose topics / contexts from the module spec
+4. Decide which matching type to use this test (rotate)
+5. Write ALL source content FIRST (3 passages / 4 scripts)
    → Embed distractors and traps BEFORE writing questions
-5. Draft ALL questions — apply Synonym Rule to every stem
+6. Draft ALL questions — apply Synonym Rule to every stem
    → Confirm every non-matching type is covered
    → Confirm only one matching type is used
-6. Confirm every answer has a Needle
-7. Run the module QA checklist
-8. Format output using Answer Placement Format
-9. After acceptance: run topic_tracker.py log + validate.py
+7. Confirm every answer has a Needle
+8. Run the module QA checklist
+9. Format output using Answer Placement Format
+10. After acceptance: run topic_tracker.py log, log_reading_p3_category / log_listening_p4_category, then validate.py
 ```
 
 ---
@@ -148,6 +163,7 @@ Generate a complete test in a single output. Do NOT generate passages/parts indi
 | Synonyms | `references/synonym-reference.md` | — |
 | Topic Bank | `references/topic-bank.md` | — |
 | Used Topics | `references/used-topics.json` | (auto-maintained by topic_tracker.py) |
+| Category Rotation | `references/usage-state.json` | (auto-maintained by topic_tracker.py) |
 
 ---
 
@@ -178,6 +194,10 @@ Generate a complete test in a single output. Do NOT generate passages/parts indi
 | Passage 3 uses simple vocabulary | Must match academic register | Use nominalisation, hedging, complex structures |
 | Part 4 lecture has opinion language | Lectures present findings, not personal views | "Studies show..." not "I believe..." |
 | Repeat topic from previous test | Reduces exam realism | Always run topic_tracker.py check before choosing |
+| Passage 3 category repeats | Reduces topic diversity across tests | Run get_reading_p3_category before choosing |
+| Part 4 category repeats | Reduces topic diversity across tests | Run get_listening_p4_category before choosing |
+| Passage 3 lacks academic vocabulary | FRE > 50 means too easy | Aim for FRE < 40; use nominalisation, hedging, complex clauses |
+| Part 4 too simple | FRE > 50 means not academic enough | Use complex sentence structures, academic attribution, signpost language |
 
 ---
 

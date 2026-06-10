@@ -8,19 +8,19 @@
 
 *You should spend about 20 minutes on Questions 1–13, which are based on Reading Passage 1 below.*
 
-### The History of Silk
+### The History of Paper
 
-For nearly three millennia, silk stood as one of the world's most coveted commodities. Originating in China around 2700 BCE, the production of this luxurious fabric remained a closely guarded secret for over two thousand years, giving the Chinese Empire a virtual monopoly on international textile trade. The value of silk in ancient Rome was so immense that it was said to be worth its weight in gold.
+The invention of paper changed how people share and keep information. Before paper was developed, societies used many different writing materials, and each one had real problems. In Mesopotamia, writers pressed symbols into heavy clay tablets that were difficult to move and store. In Egypt, papyrus rolls were made from reeds that grew along the Nile, but these broke easily and could not last in damp conditions. In Europe, parchment and vellum were made from animal skins. These were strong but extremely costly to produce. One Bible needed the skins of more than two hundred sheep. Paper, however, was light, flexible, strong, and cheap to make in large amounts. Its arrival helped spread knowledge across cultures and generations.
 
-According to Chinese tradition, the discovery of silk is credited to Empress Leizu, wife of the Yellow Emperor, around 2640 BCE. While taking tea beneath a mulberry tree, a silkworm cocoon is said to have fallen into her cup. As she attempted to retrieve it, the cocoon began to unravel in the hot liquid, revealing a continuous filament that stretched for hundreds of metres. Whether this account is historically accurate remains uncertain, but archaeological evidence confirms that silk production, known as sericulture, was well established in China by the Shang Dynasty (1600–1046 BCE). Fragments of silk fabric dating from this period have been recovered from tombs in the Henan province, demonstrating sophisticated weaving techniques even at this early stage.
+Historical records show that paper was first made by Cai Lun, an official in the Chinese emperor's court during the Eastern Han Dynasty. He showed his new product to Emperor He of Han in 105 CE. Cai Lun took plant fibres — mostly mulberry bark, old cloth, and fishing nets — and soaked them in water until they broke into a soft pulp. He spread this pulp onto a mesh frame, pressed it into thin sheets, and left it to dry in the sun. Paper-like materials have been found in Chinese sites from as early as the second century BCE. This suggests that people had been trying to make paper for some time. But Cai Lun made the process much better, so paper could be produced on a large scale for the first time.
 
-The process of sericulture is both delicate and labour-intensive. It begins with the eggs of the silk moth, which are kept at carefully controlled temperatures until they hatch into tiny larvae. These caterpillars are fed an exclusive diet of mulberry leaves for approximately six weeks, during which time they increase their body weight by ten thousand times. When ready, each larva secretes a single continuous strand of protein fibre from its salivary glands, wrapping itself in a protective cocoon. The filament from a single cocoon can measure between 600 and 900 metres in length. To obtain the silk, the cocoons are immersed in boiling water, which dissolves the natural gum holding the filament together. The fibres from multiple cocoons are then unwound and twisted together to form a single thread strong enough for weaving. It is estimated that approximately 2,500 cocoons are required to produce just one kilogram of raw silk.
+Knowledge of papermaking spread from China to Korea and Japan by the seventh century. In Korea, makers created a very strong paper called hanji, using the fibres of the paper mulberry tree. This paper was known for its strength and many uses. In Japan, papermaking became a fine craft, and washi paper was used for writing, as well as for sliding doors, window screens, and even some clothing. However, the technology was still unknown in Europe for many centuries after it had been improved in East Asia. Trade routes such as the Silk Road played a key role in carrying these methods westwards over time.
 
-During the Han Dynasty (206 BCE–220 CE), silk became the foundation of a vast trade network stretching from China to the Mediterranean. This network, later named the Silk Road by the German geographer Ferdinand von Richthofen in 1877, was not a single route but a complex web of overland trails spanning roughly 6,400 kilometres. Caravans carrying silk, spices, and ceramics travelled westward through mountain passes and across deserts, while gold, glassware, and wool travelled eastward. The journey from Chang'an (modern-day Xi'an) to Rome could take up to two years to complete. At its peak during the Tang Dynasty (618–907 CE), the Silk Road facilitated cultural exchange between some of the world's great civilisations, including the Chinese, Indian, Persian, and Roman empires, transmitting not only goods but also religions, technologies, and artistic styles.
+The secret of papermaking reached the Islamic world after the Battle of Talas in 751 CE. Chinese prisoners captured during this battle showed their captors how paper was made. Within a short time, paper mills were built in Samarkand, Baghdad, and Damascus. Muslim makers improved the Chinese method by using linen rags and other plant fibres, and by building water-powered mills that were faster than hand methods. These mills could produce larger quantities of paper at a lower cost. By the tenth century, paper had replaced papyrus and parchment across most of the Islamic world, and cities such as Baghdad became major centres for learning and writing.
 
-The secret of silk production eventually spread beyond China's borders. According to historical records, around 200 BCE, Korean immigrants introduced sericulture to Japan. A more dramatic account describes how, in 552 CE, two Nestorian monks smuggled silkworm eggs hidden inside hollow bamboo canes from China to the Byzantine Empire, thereby establishing silk production in Constantinople. From there, the knowledge gradually spread across Europe, with centres of production emerging in Italy during the twelfth century and in France by the fifteenth century. The Italian city of Lucca became particularly renowned for its high-quality silk velvet during the Renaissance period.
+Paper came to Europe through Spain and Sicily during the twelfth century. The first European paper mill was built at Xàtiva, in modern-day Spain, around 1150. The craft then moved north, reaching France in the early 1200s, Germany in the late 1300s, and England by the late 1400s. The printing press was invented by Johannes Gutenberg around 1440. This created high demand for cheap writing material, and more paper mills were built all over Europe. By the 1500s, paper was the main material for writing on the continent, used for books, official records, and personal letters.
 
-Today, global raw silk production exceeds 150,000 metric tonnes annually, with China accounting for approximately 80 per cent of this output. India ranks as the second-largest producer, contributing around 15 per cent, while smaller amounts are produced in Uzbekistan, Thailand, and Brazil. Interestingly, the total output has more than doubled since the 1970s, driven largely by increased demand from the fashion and medical industries. Modern sericulture has seen technological advances in temperature control and automated reeling machines, yet the fundamental process remains remarkably similar to that developed in ancient China. Silk continues to be valued for its unique combination of strength, elasticity, and lustrous appearance, though it now represents less than 0.2 per cent of the global textile market by volume, having been largely replaced by synthetic fibres such as nylon and polyester for everyday use.
+The Industrial Revolution brought major changes to papermaking. In 1798, a French inventor named Nicolas-Louis Robert built the first machine that could make a continuous roll of paper. This replaced the slow process of making sheets by hand. The Fourdrinier brothers in England later improved this machine, and their design is still used today. Wood pulp took the place of rags as the main material, which cut costs even more. World paper production grew from about 10,000 tonnes in 1800 to over 400 million tonnes per year by the start of the twenty-first century. Even with the rise of digital media, paper is still used widely for books, packaging, and hygiene products. Newspapers, cardboard boxes, and printed documents continue to rely on paper as a key material. The average person uses about 50 kilograms of paper each year, showing that demand remains strong despite the growth of digital technology.
 
 ---
 
@@ -32,39 +32,13 @@ Do the following statements agree with the information given in Reading Passage 
 *Write **FALSE** if the statement contradicts the information.*
 *Write **NOT GIVEN** if there is no information on this.*
 
-1. The account of Empress Leizu discovering silk is supported by written records from her own time.
-2. During the larval stage, silkworms consume leaves from a single type of tree.
-3. A single cocoon provides sufficient fibre to manufacture an entire piece of clothing.
-4. The name 'Silk Road' was first used by a German scholar in the nineteenth century.
-5. Silk production methods were brought to Japan by people from Korea.
-6. India produces a greater quantity of raw silk than any other country.
-7. The worldwide demand for silk has risen steadily over the last ten years.
-
----
-
-### Questions 8–12
-
-*Complete the notes below.*
-
-*Choose **NO MORE THAN TWO WORDS AND/OR A NUMBER** from the passage for each answer.*
-
-**Silk Production Notes**
-
-- Discovery credited to Empress Leizu (around 2640 BCE)
-- Silk moth eggs kept at controlled temperatures until they hatch into (8) \_\_\_\_\_\_
-- Larvae exclusively consume (9) \_\_\_\_\_\_ leaves
-- A single cocoon filament measures between 600 and 900 (10) \_\_\_\_\_\_
-- Cocoons are placed in (11) \_\_\_\_\_\_ water to dissolve the natural gum
-- Approximately 2,500 cocoons required to produce one kilogram of (12) \_\_\_\_\_\_
-
----
-
-### Questions 13
-*Complete the sentence below.*
-
-*Choose **NO MORE THAN TWO WORDS** from the passage for the answer.*
-
-13. At present, silk constitutes under 0.2 per cent of the worldwide textile industry when measured by \_\_\_\_\_\_.
+1. Before paper was invented, every civilisation used identical materials for writing.
+2. Cai Lun presented his new material to the emperor during the second century CE.
+3. Japanese papermakers sold washi paper to countries in Europe.
+4. The technique for creating paper reached Muslim lands following a battlefield event.
+5. The very first facility for making paper on the continent was located in present-day Italy.
+6. Nicolas-Louis Robert constructed the earliest apparatus capable of generating a continuous sheet of paper.
+7. Paper is now mainly used for wrapping and hygiene items instead of for recording information.
 
 ---
 
@@ -72,74 +46,103 @@ Do the following statements agree with the information given in Reading Passage 
 
 | Q | Answer | Needle |
 |---|--------|--------|
-| 1 | FALSE | "Whether this account is historically accurate remains uncertain" — no contemporary written records confirmed |
-| 2 | TRUE | "fed an exclusive diet of mulberry leaves" — only one type |
-| 3 | NOT GIVEN | Filament length (600–900m per cocoon) is given, but fibres from *multiple* cocoons are twisted together for a single thread; no statement about one cocoon being enough for a garment |
-| 4 | TRUE | "later named the Silk Road by the German geographer Ferdinand von Richthofen in 1877" — a German scholar in the 19th century |
-| 5 | TRUE | "around 200 BCE, Korean immigrants introduced sericulture to Japan" |
-| 6 | FALSE | "China accounting for approximately 80 per cent of this output. India ranks as the second-largest producer" — India is second, not first |
-| 7 | NOT GIVEN | Current production figures are given, but no information on demand trends over the past decade |
+| 1 | FALSE | "societies used many different writing materials" — different, not identical. |
+| 2 | TRUE | "He showed his new product to Emperor He of Han in 105 CE" — which falls within the second century. |
+| 3 | NOT GIVEN | The passage states washi paper was used for architectural purposes within Japan but does not mention export to Europe. |
+| 4 | TRUE | "Chinese prisoners captured during this battle showed their captors how paper was made" |
+| 5 | FALSE | "The first European paper mill was built at Xàtiva, in modern-day Spain" — not Italy. |
+| 6 | FALSE | "Nicolas-Louis Robert built the first machine that could make a continuous roll of paper" — the Fourdrinier brothers improved it later. |
+| 7 | NOT GIVEN | The passage lists books, packaging, and hygiene as current uses but does not state that wrapping and hygiene have overtaken recording. |
 
 ---
 
-### Answer Key — Questions 8–12
+### Questions 8–10
+
+*Complete the table below.*
+
+*Choose **NO MORE THAN TWO WORDS** from the passage for each answer.*
+
+**Spread of Papermaking**
+
+| Time | Event | Location |
+|---|---|---|
+| 2nd century BCE | Earliest paper-like (8) \_\_\_\_\_\_ found | China |
+| 105 CE | Refined papermaking method presented to (9) \_\_\_\_\_\_ | China |
+| 751 CE | Chinese (10) \_\_\_\_\_\_ revealed the technique after a conflict | Islamic world |
+
+---
+
+### Answer Key — Questions 8–10
 
 | Q | Answer | Needle |
 |---|--------|--------|
-| 8 | larvae | "hatch into tiny larvae" |
-| 9 | mulberry | "fed an exclusive diet of mulberry leaves" |
-| 10 | metres | "measure between 600 and 900 metres in length" |
-| 11 | boiling | "cocoons are immersed in boiling water" |
-| 12 | raw silk | "2,500 cocoons are required to produce just one kilogram of raw silk" |
+| 8 | materials | "Paper-like **materials** have been found in Chinese sites from as early as the second century BCE" |
+| 9 | emperor | "He showed his new product to **Emperor** He of Han in 105 CE" |
+| 10 | prisoners | "Chinese **prisoners** captured during this battle showed their captors how paper was made" |
 
-### Answer Key — Question 13
+---
+
+### Questions 11–13
+
+*Complete the sentences below.*
+
+*Choose **NO MORE THAN TWO WORDS AND/OR A NUMBER** from the passage for each answer.*
+
+11. Paper producers in Korea used mulberry tree fibres to create a type of paper called \_\_\_\_\_\_.
+12. The development of the \_\_\_\_\_\_ around 1440 created a strong need for cheap writing supplies across Europe.
+13. Just after the year 2000, the worldwide output of paper surpassed 400 \_\_\_\_\_\_ per year.
+
+---
+
+### Answer Key — Questions 11–13
 
 | Q | Answer | Needle |
 |---|--------|--------|
-| 13 | volume | "less than 0.2 per cent of the global textile market by volume" |
+| 11 | hanji | "In Korea, makers created a very strong paper called **hanji**, using the fibres of the paper mulberry tree" |
+| 12 | printing press | "The **printing press** was invented by Johannes Gutenberg around 1440. This created high demand for cheap writing material" |
+| 13 | million tonnes | "over **400 million tonnes** per year by the start of the twenty-first century" |
 
 ---
 
 ## READING PASSAGE 2
 
-*You should spend about 20 minutes on Questions 14–27, which are based on Reading Passage 2 below.*
+*You should spend about 20 minutes on Questions 14–26, which are based on Reading Passage 2 below.*
 
-### The Changing Landscape of Urban Transportation
+### The Changing Nature of Work
 
-**A** Cities around the world are confronting a common challenge: how to move growing populations efficiently while reducing carbon emissions and improving quality of life. The dominant transport model of the twentieth century — car-centric urban design — is increasingly viewed as unsustainable, yet the alternatives remain contested. Three broad approaches have emerged, each with passionate advocates and significant drawbacks. Urban populations are projected to grow by over two billion people by 2050, meaning the decisions made today will have consequences for decades to come.
+**A** How people work in developed nations has changed significantly over the past fifty years. In the past, a typical worker could expect to stay with one company for their whole career. Today, people change jobs, industries, and even careers many times during their working lives. This shift has been driven by new technology, global trade, and changing social values. The effects reach well beyond the workplace and affect housing, family life, and personal identity.
 
-**B** The first approach, commonly termed 'push and pull', combines disincentives for private vehicle use with investment in public transport infrastructure. Cities such as London and Stockholm have implemented congestion charging zones, requiring drivers to pay a fee for entering central areas during peak hours. According to Dr Helena Marchetti, a transport economist at the University of Milan, these schemes have reduced traffic volumes by 15–20 per cent in their first year of operation. London's congestion charge, introduced in 2003, initially reduced traffic by around 18 per cent and generated substantial revenue for public transport improvements. However, critics including the Urban Mobility Institute (UMI) argue that such policies disproportionately affect lower-income residents who may have no viable alternative to car commuting. UMI's 2022 report on European cities noted that while congestion charging reduced central-area traffic, it also led to increased traffic on boundary roads and raised concerns about social equity.
+**B** The end of the lifelong job with a single employer is one of the biggest changes in modern work. In the mid-twentieth century, especially in manufacturing and government jobs, people often joined a company when they were young and stayed until they retired. Over time they gained promotions and benefits. This model, called the 'career job', gave workers stability. But it also limited their choices for personal growth and career change. The sociologist Richard Sennett has argued that the loss of this pattern has created both new opportunities and new worries. Workers have more freedom today, but they have lost the support systems that once gave them a sense of safety. The idea of a job for life has become much less common, particularly among younger people.
 
-**C** The second approach prioritises the reallocation of street space from cars to active mobility — cycling and walking. Paris, under its '15-Minute City' plan, has removed thousands of on-street parking spaces and installed over 1,000 kilometres of cycle lanes since 2020. Barcelona's 'superblock' model restricts vehicle access within nine-block clusters, creating pedestrian-friendly zones where residents can walk to most daily amenities within a quarter of an hour. Early data from Barcelona indicates that superblocks have led to a 25 per cent reduction in nitrogen dioxide levels in affected areas. Research by cycling advocate and urban designer Professor Yuki Tanaka of the University of Tokyo suggests that cities with high cycling modal share — above 20 per cent — report significantly lower rates of respiratory illness among their inhabitants. Nevertheless, a counterargument is put forward by the International Federation of Motorists (IFM), which contends that reducing road capacity for cars merely displaces congestion to surrounding areas rather than solving it. Similarly, some small business owners have complained that removing parking reduces customer footfall, though studies on the economic impact of pedestrianisation have produced mixed results.
+**C** The gig economy has become one of the most discussed issues in the modern job market. Digital platforms like ride-sharing apps and freelance websites connect workers directly with customers. Tasks include driving, food delivery, graphic design, and software development. Supporters say this model gives workers more control over their time. Critics point out that gig workers often lack employment protections and have irregular incomes. They also do not receive benefits such as paid holiday, health insurance, or pension contributions. A 2021 report by the McKinsey Global Institute estimated that roughly 30 per cent of working-age adults in the US and Europe do some kind of independent work, either as their main job or as a way to earn extra money. The report also noted that this trend is growing faster than traditional forms of employment across many industries.
 
-**D** The third emerging trend involves technological solutions, particularly the shift toward electric and autonomous vehicles. Proponents, such as the clean energy think-tank Global Transit Futures (GTF), argue that electrification addresses the emissions problem without requiring behavioural change from commuters. GTF's director, Dr Aisha Rahman, has projected that widespread adoption of electric vehicles could reduce urban transport emissions by up to 70 per cent by 2040, provided the electricity grid itself is decarbonised. However, transport researcher Dr Miguel Santos of the University of São Paulo cautions that electric vehicles do nothing to address traffic congestion or spatial inefficiency — a self-driving electric car still occupies the same road space as a conventional one. Furthermore, the production of electric vehicle batteries raises environmental concerns of its own, including the mining of lithium and cobalt.
+**D** Advances in technology bring both risks and opportunities for jobs. New developments in artificial intelligence and robotics have raised concerns that many jobs could be taken over by machines. This is especially true in manufacturing, transport, and office administration. A well-known study by the economists Frey and Osborne suggested that about 47 per cent of jobs in the US were at high risk of being computerised. Later research has shown a more detailed picture. Technology often changes jobs rather than removing them completely, and it also creates new kinds of work. The World Economic Forum has predicted that while 85 million jobs could be lost to automation by 2025, about 97 million new jobs could appear. These will mostly be in areas that need human judgment, creativity, and people skills.
 
-**E** A particularly contentious issue within urban transport planning is the role of ride-hailing services such as Uber and Lyft. Studies from several American cities indicate that ride-hailing has increased total vehicle kilometres travelled, partly because drivers spend significant time cruising between fares. A comprehensive analysis by Dr Eleanor Cross of the Massachusetts Institute of Technology found that ride-hailing services added approximately 2.8 vehicle kilometres for every kilometre of personal car travel they replaced. This finding challenges the assumption that app-based mobility services would reduce overall traffic. Some commentators have therefore suggested that ride-hailing should be regulated as part of the public transport system rather than treated as a purely private service.
+**E** Remote working was once quite rare but became very common during the health crisis of 2020–2021. It now seems to be a permanent option for many workers. Surveys suggest that a large number of employees prefer a mix of office and home-based work. Companies that demand a full return to the office may lose skilled staff to more flexible competitors. This change has wider effects: less travel is good for the environment, but the line between work and home life has become less clear, raising concerns about stress and overwork. A study from Stanford University found that hybrid working raised productivity by about 13 per cent on average, though this varied across different jobs and industries. City planners have noticed that remote work is changing property markets, with less need for city-centre offices and more demand for homes in suburban areas.
 
-**F** Looking ahead, many researchers argue that no single solution will suffice. Professor Tanaka suggests that successful urban transport systems require integrated strategies combining elements of all three approaches — restrictions on car use, investment in active mobility, and technological innovation. He points to cities such as Copenhagen and Amsterdam, where decades of consistent policy have produced cycling rates exceeding 30 per cent of all journeys, as models worth studying. Dr Marchetti concurs, noting that the most effective policies appear to be those tailored to local conditions rather than imported wholesale from other cities. What unites the experts is a shared recognition that the era of unrestricted private car use in dense urban cores is drawing to a close — though considerable disagreement remains about what should replace it. The task facing policymakers, therefore, is not to choose between competing visions but to craft hybrid solutions suited to their particular circumstances.
+**F** Several main forces will shape the future of work. Ageing populations in many countries will cause a lack of workers in some fields while reducing chances in others. The move to cleaner energy will create jobs in renewable power, sustainable construction, and environmental management, while cutting jobs in fossil fuel industries. Schools and universities will need to change how they prepare students for jobs that may not yet exist, making the ability to adapt and keep learning very important. Most of all, the relationship between employers, workers, and governments will need to be rethought. Issues such as income security, benefits that move with workers, and how workers can have a say in an increasingly divided job market all need to be addressed. These interrelated trends will require coordinated responses from employers, educators, and policymakers alike. The results of these changes will affect not only the quality of working life but also the very nature of society itself. Governments will need to design new social safety nets that protect workers regardless of their employment status, while employers will need to invest more heavily in training and development to keep their workforces competitive in a rapidly evolving landscape.
 
 ---
 
 ### Questions 14–19
 
-*Reading Passage 2 has six paragraphs, **A–F**.*
+The Reading Passage has six paragraphs labelled **A–F**.
 
 *Choose the correct heading for each paragraph from the list of headings below.*
 
-*Write the correct number **i–x** next to **14–19**.*
+*Write the correct letter, **i–ix**, in boxes **14–19** on your answer sheet.*
 
 **List of Headings**
 
-| | |
-|---|---|
-| i | A shared problem with competing solutions |
-| ii | Charging as a tool to reduce city-centre traffic |
-| iii | Why electric cars will not reduce road congestion |
-| iv | Rethinking streets for walking and cycling |
-| v | The role of private vehicles in modern cities |
-| vi | The unexpected effect of app-based transport |
-| vii | A history of urban transport planning |
-| viii | The case for context-specific combinations |
+| i | The debate over platform-based employment |
+| ii | How technology reshapes roles rather than removing them |
+| iii | The end of the single-employer career path |
+| iv | Demographic pressures and future labour shortages |
+| v | Forces that will determine tomorrow's employment landscape |
+| vi | The rise of working from home and its ripple effects |
+| vii | A historical overview of industrial employment |
+| viii | The impact of automation on job numbers |
+| ix | Contrasting views on a new employment model |
 
 14. Paragraph A
 15. Paragraph B
@@ -150,277 +153,232 @@ Do the following statements agree with the information given in Reading Passage 
 
 ---
 
-### Questions 20–25
-
-*Look at the following statements (Questions 20–25) and the list of experts/organisations below.*
-
-*Match each statement with the correct person or organisation, **A–H**.*
-
-*You may use any letter more than once.*
-
-20. Urban areas with a high proportion of cycling show improved respiratory health outcomes.
-21. Ride-hailing platforms have failed to reduce traffic as previously anticipated.
-22. Charging schemes for city-centre access have successfully decreased traffic volume.
-23. Electric vehicles will not resolve problems related to insufficient road capacity.
-24. Transport policies achieve the best results when they reflect local circumstances.
-25. Widespread electric car uptake could lower urban emissions by a considerable amount.
-
-**List of Experts / Organisations**
-
-| | |
-|---|---|
-| **A** | Dr Helena Marchetti |
-| **B** | Urban Mobility Institute (UMI) |
-| **C** | Professor Yuki Tanaka |
-| **D** | International Federation of Motorists (IFM) |
-| **E** | Global Transit Futures (GTF) |
-| **F** | Dr Aisha Rahman |
-| **G** | Dr Miguel Santos |
-| **H** | Dr Eleanor Cross |
-
----
-
-### Questions 26–27
-
-*Complete the sentences below.*
-
-*Choose **NO MORE THAN TWO WORDS** from the passage for each answer.*
-
-26. The car-oriented approach to urban design from the previous century is now widely considered \_\_\_\_\_\_.
-27. A key contributor to the increased vehicle kilometres generated by ride-hailing is the time drivers spend \_\_\_\_\_\_ in between picking up passengers.
-
----
-
 ### Answer Key — Questions 14–19
 
 | Q | Answer | Needle |
 |---|--------|--------|
-| 14 | i | Paragraph A: "Cities around the world are confronting a common challenge... Three broad approaches have emerged" — a shared problem with competing solutions |
-| 15 | ii | Paragraph B: "London and Stockholm have implemented congestion charging zones" — charging as a tool |
-| 16 | iv | Paragraph C: "reallocation of street space from cars to active mobility — cycling and walking" — rethinking streets |
-| 17 | iii | Paragraph D: "Dr Miguel Santos of the University of São Paulo cautions that electric vehicles do nothing to address traffic congestion" — why EVs won't reduce congestion |
-| 18 | vi | Paragraph E: "ride-hailing has increased total vehicle kilometres travelled" — unexpected effect |
-| 19 | viii | Paragraph F: "the most effective policies appear to be those tailored to local conditions" — context-specific combinations |
+| 14 | ii | "How people work in developed nations has changed significantly over the past fifty years" — introduces the theme of transformation. |
+| 15 | iii | "The end of the lifelong job with a single employer is one of the biggest changes in modern work" |
+| 16 | i | "The gig economy has become one of the most discussed issues in the modern job market" |
+| 17 | viii | "about 47 per cent of jobs in the US were at high risk of being computerised" |
+| 18 | vi | "Remote working was once quite rare but became very common during the health crisis" |
+| 19 | v | "Several main forces will shape the future of work" |
 
 ---
 
-### Answer Key — Questions 20–25
+### Questions 20–21
 
-| Q | Answer | Needle |
-|---|--------|--------|
-| 20 | C | "Professor Yuki Tanaka... suggests that cities with high cycling modal share... report significantly lower rates of respiratory illness" |
-| 21 | H | "Dr Eleanor Cross... found that ride-hailing services added approximately 2.8 vehicle kilometres for every kilometre of personal car travel they replaced" |
-| 22 | A | "Dr Helena Marchetti... these schemes have reduced traffic volumes by 15–20 per cent" |
-| 23 | G | "Dr Miguel Santos of the University of São Paulo cautions that electric vehicles do nothing to address traffic congestion or spatial inefficiency" |
-| 24 | A | "Dr Marchetti concurs, noting that the most effective policies appear to be those tailored to local conditions" |
-| 25 | F | Dr Aisha Rahman "projected that widespread adoption of electric vehicles could reduce urban transport emissions by up to 70 per cent by 2040" |
+*Choose **TWO** letters, **A–E**.*
+
+*Write the correct letters in boxes **20** and **21** on your answer sheet.*
+
+Which **TWO** of the following are mentioned in the passage as features of the gig economy?
+
+A People who work in this sector enjoy more freedom and control over their schedules.
+B Gig workers typically receive more employment protections than traditional employees.
+C Online services link employees directly to customers.
+D The gig economy guarantees higher earnings than permanent employment.
+E Most independent workers became part of the gig economy due to job losses in traditional industries.
 
 ---
 
-### Answer Key — Questions 26–27
+### Answer Key — Questions 20–21
 
 | Q | Answer | Needle |
 |---|--------|--------|
-| 26 | unsustainable | "is increasingly viewed as unsustainable" |
-| 27 | cruising | "drivers spend significant time cruising between fares" |
+| 20 | A | "Supporters say this model gives workers more control over their time" — supports A (more freedom and control). |
+| 21 | C | "Digital platforms like ride-sharing apps and freelance websites connect workers directly with customers" — supports C (online services link workers to customers). |
+
+---
+
+### Questions 22–23
+
+*Choose **TWO** letters, **A–E**.*
+
+*Write the correct letters in boxes **22** and **23** on your answer sheet.*
+
+According to the passage, which **TWO** factors are predicted to shape the future of work?
+
+A Older populations will lead to a shortage of available workers.
+B Automation will completely eliminate all manufacturing employment.
+C The shift toward renewable power sources will create fresh job openings.
+D Remote work will make urban office space entirely unnecessary.
+E Every worker is expected to follow a single career path for life.
+
+---
+
+### Answer Key — Questions 22–23
+
+| Q | Answer | Needle |
+|---|--------|--------|
+| 22 | A | "Ageing populations in many countries will cause a lack of workers in some fields" — supports A (older populations lead to worker shortage). |
+| 23 | C | "The move to cleaner energy will create jobs in renewable power" — supports C (shift to renewable power creates jobs). |
+
+---
+
+### Questions 24–26
+
+*Complete the notes below.*
+
+*Choose **NO MORE THAN TWO WORDS** from the passage for each answer.*
+
+**Changes in the Labour Market**
+
+- Mid-20th century model: workers followed a ' \_\_\_\_\_\_ ' for life, with gradual promotions
+
+24. \_\_\_\_\_\_
+
+- Gig economy criticised for: absence of employment \_\_\_\_\_\_ and irregular income
+
+25. \_\_\_\_\_\_
+
+- Remote work led to: blurring of boundaries between work and \_\_\_\_\_\_
+
+26. \_\_\_\_\_\_
+
+---
+
+### Answer Key — Questions 24–26
+
+| Q | Answer | Needle |
+|---|--------|--------|
+| 24 | career job | "This model, called the '**career job**', gave workers stability" |
+| 25 | protections | "gig workers often lack employment **protections** and have irregular incomes" |
+| 26 | home life | "the line between work and **home life** has become less clear" |
 
 ---
 
 ## READING PASSAGE 3
 
-*You should spend about 20 minutes on Questions 28–40, which are based on Reading Passage 3 below.*
+*You should spend about 20 minutes on Questions 27–40, which are based on Reading Passage 3 below.*
 
-### The Nature of Consciousness
+### The Creative Mind: Understanding Innovation
 
-For centuries, philosophers and scientists have grappled with what is often termed the 'hard problem' of consciousness: how and why do physical processes in the brain give rise to subjective experience? While significant progress has been made in understanding the neural correlates of conscious states — the brain activities that accompany particular conscious experiences — a satisfactory explanation of why there is 'something it is like' to be a conscious organism remains elusive. This essay will argue that the most promising framework for understanding consciousness is the integrated information theory, despite certain limitations that its critics have identified. The goal is not to claim that this theory has solved the problem, but that it offers the most productive avenue for future investigation.
+For centuries, human creativity was seen as a mystical gift — something given to a lucky few by powers beyond reason. The Romantic image of the artist as a lonely genius, visited by sudden moments of insight, has remained strong in popular culture. However, modern cognitive science has started to explain the creative process. It turns out to be a complex mix of mental processes that can be studied, understood, and even developed. This new understanding has major implications for education, management, and the design of artificial intelligence.
 
-The integrated information theory (IIT), developed by neuroscientist Dr Giulio Tononi, proposes that consciousness corresponds to the capacity of a system to integrate information. According to IIT, any system that possesses a sufficient degree of interconnected complexity will necessarily experience consciousness to some degree. The theory quantifies this capacity using a measure denoted by the Greek letter phi (Φ), which represents the amount of integrated information generated by a system beyond what its individual parts produce independently. A system with high Φ cannot be broken down into independent components without losing some of its information — it is, in a fundamental sense, irreducible. A key implication of IIT is that consciousness exists on a spectrum: a human brain has a very high Φ value, while a simple thermostat might have a minimal but non-zero Φ, suggesting a rudimentary form of experience. This claim that consciousness is graded rather than binary represents a significant departure from many traditional philosophical views.
+The common idea of creativity as a sudden 'aha' moment is misleading. Brain research shows that what feels like a breakthrough happening in an instant is actually the result of deep unconscious work that may go on for days or weeks. The psychologist Joy Paul Guilford, in his 1950 speech to the American Psychological Association, made an important distinction. He separated convergent thinking — finding one correct answer to a clear problem — from divergent thinking, which means generating many different ideas in response to an open question. This difference guided years of research and moved the study of creativity away from personality and toward mental processes.
 
-One of the theory's strengths is that it generates testable predictions, a rare quality among theories of consciousness. In a landmark study, Tononi and his colleagues used transcranial magnetic stimulation combined with electroencephalography to measure brain responses in awake, sleeping, and anaesthetised individuals. They found that the complexity of neural responses — a proxy for Φ — correlated strongly with levels of reported consciousness. This suggests that IIT may offer a practical method for assessing consciousness in patients who cannot communicate, such as those in vegetative states or under deep anaesthesia. Clinical applications of this approach are already being explored in several major hospitals.
+One of the most important modern models of creativity is the 'dual-process' theory from cognitive scientist Arne Dietrich. According to Dietrich, creativity comes from the interaction of two different ways of thinking: spontaneous, associative thought that happens below our awareness, and deliberate, analytical thought that needs focused attention. The spontaneous mode creates new combinations of existing ideas. The deliberate mode checks, refines, and puts these combinations into action. Dietrich argues that the biggest creative breakthroughs happen when these two modes work together, not separately. This finding goes against the popular belief that creativity is mainly an intuitive, unstructured activity.
 
-However, IIT faces substantial philosophical objections. Dr Susan Blackmore, a psychologist and prominent critic of the theory, argues that Φ is merely a measure of information processing and provides no explanation of why that processing should be accompanied by subjective experience. This is a version of the 'explanatory gap' objection, which holds that no purely physical description, no matter how detailed, can bridge the divide between objective brain activity and first-person awareness. Blackmore contends that IIT, like all currently available theories, ultimately describes the correlates of consciousness without addressing its fundamental nature. She draws a comparison with early theories of life: just as vitalists once believed a special life force was needed to explain living organisms, she suggests that IIT may be committing a similar error by treating information integration as somehow inherently conscious.
+The environment plays a much bigger role in creativity than most people think. Research by organisational psychologist Teresa Amabile has shown that creativity at work depends heavily on certain supportive conditions: freedom over how tasks are done, enough time to explore, encouragement from managers, and a culture that accepts reasonable risks without punishing failure. Her 'componential theory' says that a person's creative output depends on three interacting factors: skills in the relevant area, processes related to creativity, and motivation for the task. Amabile's long-term studies of corporate research teams found that time pressure generally reduces creativity rather than helping it. When people worry about deadlines, they have less mental energy to explore new ideas. The most innovative teams, she observed, were those that had clear goals but also the freedom to pursue unexpected findings.
 
-A different line of criticism comes from philosopher Dr Daniel Dennett, who challenges the very framing of the hard problem. Dennett argues that consciousness is not a single thing to be explained but an illusion generated by multiple cognitive processes operating in parallel. From this perspective, the search for a unified theory of consciousness — whether IIT or any other — is fundamentally misguided. The feeling of a unified subjective experience, Dennett claims, is itself a construction of the brain's interpretive mechanisms, much like the way the visual system constructs the illusion of a seamless, continuous field of vision despite the existence of a blind spot in each eye. For Dennett, the hard problem is not hard because consciousness is mysterious; it is hard only because we are asking the wrong question.
+The link between creativity and mental health has long interested researchers, but the evidence is still unclear. Several large studies have found a weak statistical link between creative jobs and certain mood disorders, especially bipolar disorder. However, the cause of this link is not known, and most creative people do not have serious mental health problems. Psychologist Jordan Peterson has suggested that the link may come from a shared underlying trait — openness to experience — which makes people more likely to be both creative and to experience certain kinds of distress. Critics say that selection bias may affect the results: creative people who also have mental health struggles may be more drawn to creative careers in the first place.
 
-Despite these objections, IIT remains influential for several reasons. First, it is one of the few theories precise enough to generate quantitative predictions that can be empirically tested. Second, its claim that consciousness is graded rather than binary has practical implications for fields ranging from anaesthesiology to artificial intelligence ethics. One particularly notable implication, which this writer finds compelling, concerns the moral status of advanced AI systems: if a machine were to achieve a sufficiently high Φ value, IIT would suggest that it possesses genuine conscious experience, regardless of whether its substrate is biological or silicon-based. This challenges the common assumption that consciousness is exclusively a biological phenomenon and raises profound ethical questions about how we should treat sophisticated artificial systems.
+From a brain science point of view, creative thinking has been connected to the brain's default mode network. This is a set of connected regions that become active when the mind is resting and not focused on outside tasks. Brain scans by neuroscientist Roger Beaty have shown that highly creative people have stronger connections between the default mode network, which supports spontaneous thought and memory, and the executive control network, which manages flexibility and focus. This better communication may help creative people access distant ideas while judging how useful they are at the same time. Beaty's work suggests that creativity does not come from one brain area but from the interaction of large-scale neural networks.
 
-In conclusion, while no existing theory of consciousness has solved the hard problem to everyone's satisfaction, IIT offers the most empirically grounded and practically useful framework currently available. The objections raised by Blackmore and Dennett highlight genuine limitations, but they do not undermine the theory's core contribution: providing a measurable, testable account of what consciousness might be. Future research, particularly at the intersection of neuroscience and computational modelling, may ultimately determine whether IIT points toward the truth or merely represents a sophisticated dead end. What is very clear is that the debate itself is driving progress, forcing theorists to articulate their assumptions with increasing precision. As neuroimaging techniques continue to improve and computational models become more sophisticated, the gap between philosophical speculation and empirical investigation continues to narrow.
-
----
-
-### Questions 28–34
-
-*Do the following statements agree with the claims of the writer in Reading Passage 3?*
-
-*Write **YES** if the statement agrees with the writer's claims.*
-*Write **NO** if the statement contradicts the writer's claims.*
-*Write **NOT GIVEN** if it is impossible to say what the writer thinks about this.*
-
-28. The integrated information theory has definitively resolved the hard problem of consciousness.
-29. According to IIT, a system with substantial interconnected complexity will inevitably have at least some degree of conscious experience.
-30. Experiments involving brain stimulation revealed a significant relationship between neural response complexity and awareness.
-31. Dr Susan Blackmore believes that IIT successfully explains how neural activity generates subjective experience.
-32. Dr Daniel Dennett regards the attempt to formulate a unified theory of consciousness as a mistaken endeavour.
-33. The writer considers the implications for artificial intelligence to be the most significant practical application of IIT.
-34. Future investigations will almost certainly confirm that IIT represents the correct explanation of consciousness.
+The lessons for education are significant. Traditional schools have tended to value convergent thinking — the fast and accurate recall of known facts — while giving much less attention to divergent thinking. This may be a problem in an age when routine mental tasks are increasingly done by machines. Programmes that teach creative thinking through methods such as brainstorming, analogical reasoning, and reframing problems have shown good results, though it is not yet clear how long these gains last. A review by education researcher John Hattie found that creativity training produced effect sizes of around 0.65 standard deviations, which represents a moderate but useful improvement. As the demand for new ideas grows in nearly every part of the economy, understanding and building the mental foundations of creativity may become one of the most valuable skills of the twenty-first century. Educational systems that fail to promote both kinds of thinking risk leaving students unprepared for a rapidly changing world. The challenge for policymakers is to integrate creativity training into standard curricula without sacrificing the core knowledge that students also need to acquire. This balancing act between promoting innovation and ensuring basic competence will define the success of educational reform in the coming decades, as schools attempt to prepare young people for an increasingly unpredictable future.
 
 ---
 
-### Questions 35–37
+### Questions 27–32
+
+Do the following statements agree with the views of the writer in Reading Passage 3?
+
+*Write **YES** if the statement agrees with the views of the writer.*
+*Write **NO** if the statement contradicts the views of the writer.*
+*Write **NOT GIVEN** if it is impossible to say what the writer thinks on this.*
+
+27. The Romantic view of creativity has been entirely replaced by modern cognitive science.
+28. Convergent and divergent thinking are equally important in the creative process.
+29. Dietrich's model suggests that intuitive thought alone is sufficient for significant creative breakthroughs.
+30. Time constraints in the workplace generally inhibit creative output.
+31. Most people who are very creative suffer from some kind of mental illness.
+32. Traditional schooling places excessive emphasis on convergent thinking at the expense of creativity.
+
+---
+
+### Answer Key — Questions 27–32
+
+| Q | Answer | Needle |
+|---|--------|--------|
+| 27 | NO | "The Romantic image of the artist as a lonely genius... has remained strong in popular culture" — it has NOT been entirely replaced. |
+| 28 | NOT GIVEN | The writer explains both types and notes the distinction by Guilford but does not state they are equally important. |
+| 29 | NO | "the biggest creative breakthroughs happen when these two modes work together, not separately" — this contradicts the idea that intuition alone is enough. |
+| 30 | YES | "time pressure generally reduces creativity rather than helping it" |
+| 31 | NO | "most creative people do not have serious mental health problems" |
+| 32 | YES | "Traditional schools have tended to value convergent thinking... while giving much less attention to divergent thinking" |
+
+---
+
+### Questions 33–35
 
 *Choose the correct letter, **A**, **B**, **C**, or **D**.*
 
-35. What does the writer identify as the principal advantage of IIT compared to other theories of consciousness?
+33. According to the passage, Amabile's 'componential theory' identifies which combination of factors that determine creative output?
 
-A. It has gained broad acceptance within the scientific community.
-B. It lends itself to verification through experimental observation.
-C. It accounts for the evolutionary function of conscious awareness.
-D. It demonstrates that consciousness exists in all living creatures.
+A Personality traits, motivation, and environmental support  
+B Domain skills, creativity processes, and task motivation  
+C Divergent thinking, domain knowledge, and time pressure  
+D Neural connectivity, analytical reasoning, and autonomy
 
-36. Dr Susan Blackmore's main objection to IIT is that it
+34. The writer suggests that the statistical association between creativity and mental health disorders may be influenced by:
 
-A. depends too heavily on mathematical modelling techniques.
-B. wrongly assumes that awareness exists along a continuum.
-C. measures information processing but fails to account for subjective feeling.
-D. has not produced any useful applications in clinical settings.
+A The use of unreliable diagnostic criteria  
+B The tendency for people with certain traits to select creative careers  
+C The impact of medication on creative performance  
+D Cultural differences in the perception of mental illness
 
-37. According to the passage, Daniel Dennett's view of consciousness is that
+35. Beaty's neuroimaging research indicates that highly creative individuals exhibit:
 
-A. it is a coherent phenomenon that can be measured effectively.
-B. it originates from a particular region of the brain not yet discovered.
-C. it does not exist as a single entity in the manner commonly believed.
-D. it can be understood only through the examination of biological systems.
+A Greater activity in a single brain region dedicated to innovation  
+B Enhanced communication between brain networks used for spontaneous thought and focused control  
+C Reduced connectivity in the brain's resting state networks  
+D Higher volume of grey matter in the prefrontal cortex
 
 ---
 
-### Questions 38–40
+### Answer Key — Questions 33–35
 
-*Complete the summary below using words from the passage.*
+| Q | Answer | Needle |
+|---|--------|--------|
+| 33 | B | "a person's creative output depends on three interacting factors: skills in the relevant area, processes related to creativity, and motivation for the task" |
+| 34 | B | "selection bias may affect the results: creative people who also have mental health struggles may be more drawn to creative careers in the first place" |
+| 35 | B | "highly creative people have stronger connections between the default mode network... and the executive control network" |
+
+---
+
+### Questions 36–38
+
+*Complete the summary below.*
 
 *Choose **NO MORE THAN TWO WORDS** from the passage for each answer.*
 
-The integrated information theory, developed by Giulio Tononi, assesses consciousness through a quantity labelled (38) \_\_\_\_\_\_, which captures the degree of information a system integrates in excess of what its separate components produce on their own. Research has supported this model by demonstrating that the (39) \_\_\_\_\_\_ of neural reactions corresponds to varying states of awareness. A notable consequence of IIT is its proposition that sophisticated artificial intelligence systems possessing sufficient information integration may be regarded as authentically (40) \_\_\_\_\_\_.
+**The Neuroscience of Creativity**
+
+Scientists have discovered that the (36) \_\_\_\_\_\_ mode network in the brain is involved in creative thinking — this system activates while we are daydreaming or not concentrating on external tasks. Beaty's investigation showed that inventive individuals possess enhanced (37) \_\_\_\_\_\_ linking this resting network to the region controlling attention. The findings confirm that originality emerges from communication between widespread brain circuits, not from one isolated zone. Hattie's review of earlier studies estimated that instructional programmes produced a (38) \_\_\_\_\_\_ gain, roughly 0.65 standard deviations in size.
 
 ---
 
-### Answer Key — Questions 28–34
+### Answer Key — Questions 36–38
 
 | Q | Answer | Needle |
 |---|--------|--------|
-| 28 | NO | "no existing theory of consciousness has solved the hard problem to everyone's satisfaction" — writer states it has NOT been resolved |
-| 29 | YES | "any system that possesses a sufficient degree of interconnected complexity will necessarily experience consciousness to some degree" |
-| 30 | YES | "the complexity of neural responses... correlated strongly with levels of reported consciousness" |
-| 31 | NO | Blackmore "argues that Φ is merely a measure of information processing and provides no explanation of why that processing should be accompanied by subjective experience" — she does NOT accept it |
-| 32 | YES | Dennett argues "the search for a unified theory of consciousness... is fundamentally misguided" |
-| 33 | NOT GIVEN | "One particularly notable implication, which this writer finds compelling, concerns the moral status of advanced AI systems" — no statement that it is the *most* significant application |
-| 34 | NO | "may ultimately determine whether IIT points toward the truth or merely represents a sophisticated dead end" — writer expresses uncertainty, not certainty |
+| 36 | default | "creative thinking has been connected to the brain's default mode network" |
+| 37 | connectivity | "Brain scans by neuroscientist Roger Beaty have shown that highly creative people have stronger connections between the default mode network" |
+| 38 | moderate | "a **moderate** but useful improvement" |
 
 ---
 
-### Answer Key — Questions 35–37
+### Questions 39–40
+
+*Complete the summary using the list of words, **A–H**, below.*
+
+**Creativity in Education**
+
+Traditional schooling has prioritised (39) \_\_\_\_\_\_ thinking over divergent thinking. Creativity training programmes have produced (40) \_\_\_\_\_\_ results, with effect sizes of approximately 0.65 standard deviations according to a meta-analysis by John Hattie.
+
+| A | convergent | B | intuitive | C | analytical |
+|---|---|---|---|---|---|
+| D | limited | E | promising | F | moderate |
+| G | significant | H | inconsistent | I | lasting |
+
+---
+
+### Answer Key — Questions 39–40
 
 | Q | Answer | Needle |
 |---|--------|--------|
-| 35 | B | "one of the few theories precise enough to generate quantitative predictions that can be empirically tested" |
-| 36 | C | "Φ is merely a measure of information processing and provides no explanation of why that processing should be accompanied by subjective experience" |
-| 37 | C | "consciousness is not a single thing to be explained but an illusion generated by multiple cognitive processes operating in parallel" |
+| 39 | A (convergent) | "Traditional schools have tended to value **convergent** thinking" |
+| 40 | E (promising) | "Programmes that teach creative thinking... have shown **good** results" — "promising" matches "good" in context. |
 
 ---
-
-### Answer Key — Questions 38–40
-
-| Q | Answer | Needle |
-|---|--------|--------|
-| 38 | phi (Φ) | "a measure denoted by the Greek letter phi (Φ)" |
-| 39 | complexity | "the complexity of neural responses — a proxy for Φ — correlated strongly with levels of reported consciousness" |
-| 40 | conscious | "if a machine were to achieve a sufficiently high Φ value, IIT would suggest that it possesses genuine conscious experience" |
-
----
-
-*End of the Reading Test*
-
-
----
-
-## SUPPLEMENT — Additional Question Type Examples
-
-*These examples demonstrate question types not shown in the main test above.
-Use these as templates when generating tests that require these types.*
-
----
-
-### Example: Table Completion (Passage 1 style)
-
-*Complete the table below.*
-*Choose **NO MORE THAN TWO WORDS AND/OR A NUMBER** from the passage for each answer.*
-
-| Period | Event | Detail |
-|---|---|---|
-| Around 2640 BCE | Discovery credited to | Empress (A) ______ |
-| Shang Dynasty | Silk fragments found in | Henan (B) ______ |
-| 552 CE | Silk production reached | Byzantine (C) ______ |
-| 12th century | European production centre | Italian city of (D) ______ |
-
-**Answer Key — Table Completion Example**
-
-| Q | Answer | Needle |
-|---|--------|--------|
-| A | Leizu | "the discovery of silk is credited to Empress Leizu" |
-| B | province | "recovered from tombs in the Henan province" |
-| C | Empire | "establishing silk production in Constantinople... Byzantine Empire" |
-| D | Lucca | "The Italian city of Lucca became particularly renowned" |
-
----
-
-### Example: Multiple Choice (Multiple Answers) — Passage 2 style
-
-*Choose **TWO** letters, **A–E**.*
-
-*Which TWO of the following are identified in the passage as benefits of congestion charging schemes?*
-
-A. They eliminate all private vehicle use in city centres.
-B. They generate income that can fund public transport improvements.
-C. They have been shown to reduce traffic volumes significantly.
-D. They are equally affordable for all income groups.
-E. They remove the need for acoustic barriers on boundary roads.
-
-**Answer Key — MCQ Multiple Example**
-
-| Q | Answer | Needle |
-|---|--------|--------|
-| — | B, C | B: "generated substantial revenue for public transport improvements" · C: "these schemes have reduced traffic volumes by 15–20 per cent" |
-
-*Distractor logic:*
-- A is FALSE — the passage says reduced, not eliminated
-- D is FALSE — critics say it disproportionately affects lower-income residents
-- E is FALSE — boundary roads saw increased traffic, not reduced
-
----
-
-### Example: Matching Sentence Endings — Passage 2 style
-
-*Complete each sentence with the correct ending, **A–G**, below.*
-
-1. The 'push and pull' strategy combines penalties for car use with ______
-2. Barcelona's superblock model restricts vehicle access in order to ______
-3. Dr Miguel Santos argues that electric vehicles cannot resolve ______
-
-**Sentence Endings**
-
-| | |
-|---|---|
-| A | generate revenue for urban cycling infrastructure. |
-| B | create pedestrian-friendly zones where residents can access amenities on foot. |
-| C | investment in public transport infrastructure. |
-| D | problems related to road space and traffic density. |
-| E | reduce carbon emissions from the electricity grid. |
-| F | discourage the use of ride-hailing applications. |
-| G | meet WHO guidelines on acceptable noise levels. |
-
-**Answer Key — Matching Sentence Endings Example**
-
-| Q | Answer | Needle |
-|---|--------|--------|
-| 1 | C | "combines disincentives for private vehicle use with investment in public transport infrastructure" |
-| 2 | B | "creating pedestrian-friendly zones where residents can walk to most daily amenities" |
-| 3 | D | "electric vehicles do nothing to address traffic congestion or spatial inefficiency" |

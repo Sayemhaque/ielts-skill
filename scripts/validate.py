@@ -5,9 +5,72 @@ Validates generated Reading and Listening tests against spec rules.
 Usage:  python3 scripts/validate.py <file.md>
 """
 
+import json
 import re
 import sys
 from pathlib import Path
+
+# Allow local imports from scripts/
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from readability import flesch_reading_ease, coleman_liau_index, estimate_ielts_band, validate_readability
+from question_difficulty import validate_progressive_difficulty as _check_q_diff
+
+# ---------------------------------------------------------------------------
+# Question difficulty helpers (shared by reading & listening validation)
+# ---------------------------------------------------------------------------
+
+_BOILERPLATE_Q = re.compile(
+    r"(do the following statements agree with the information|"
+    r"in boxes \d+[-–]\d+ on your answer sheet|"
+    r"true if the statement|false if the statement|not given if there|"
+    r"choose the correct letter|choose the correct heading|"
+    r"complete the (notes|table|summary|sentence) below|"
+    r"write no more than \w+ words|"
+    r"match each (statement|heading|sentence ending|sentence|feature)|"
+    r"list of (headings|people|experts|statements|endings)|"
+    r"using the list of words below|"
+    r"your answers in the spaces provided|"
+    r"you may use any letter more than once|"
+    r"which paragraph contains the following information)",
+    re.IGNORECASE,
+)
+
+
+def _strip_q_boilerplate(text: str) -> str:
+    return _BOILERPLATE_Q.sub("", text).strip()
+
+
+def _detect_q_type(content: str) -> str:
+    """Detect question type from section content keywords."""
+    cl = content.lower()
+    if "yes" in cl and "no" in cl and "not given" in cl:
+        return "ynng"
+    if "true" in cl and "false" in cl and "not given" in cl:
+        return "tfng"
+    if "choose the correct heading" in cl or "list of headings" in cl:
+        return "headings"
+    # Detect MCQs: "Choose the correct letter" (standard) OR "Choose TWO letters, A–E" (demo variant)
+    has_mcq_keywords = "choose" in cl and "letter" in cl
+    if "choose the correct letter" in cl or has_mcq_keywords:
+        # Use word boundaries so "two" in "networks" doesn't cause a false positive
+        if re.search(r"\btwo\b", cl) or re.search(r"\bthree\b", cl):
+            return "mcq_multiple"
+        return "mcq_single"
+    if "match each statement" in cl or "list of people" in cl or "list of experts" in cl:
+        return "features"
+    if "match each sentence ending" in cl:
+        return "matching_sentence_endings"
+    if "complete the summary" in cl and ("list of words" in cl or "from the list" in cl):
+        return "summary_completion_from_list"
+    if "complete the summary" in cl:
+        return "summary_completion_from_text"
+    if "complete the notes" in cl:
+        return "note_completion"
+    if "complete the table" in cl:
+        return "table_completion"
+    if "complete the sentence" in cl or "complete the sentences" in cl:
+        return "sentence_completion"
+    return "completion"
 
 # ---------------------------------------------------------------------------
 # STOPWORDS — excluded from n-gram synonym overlap checks
@@ -95,7 +158,16 @@ def parse_table(lines):
         if line.startswith("|") and line.endswith("|"):
             cells = [c.strip() for c in line.split("|")[1:-1]]
             if len(cells) >= 3:
-                rows.append({"q": cells[0], "answer": cells[1], "needle": cells[2]})
+                q_raw = cells[0]
+                # Handle range format like "20-21" or "20–21"
+                range_match = re.match(r'^(\d+)\s*[–-]\s*(\d+)$', q_raw)
+                if range_match:
+                    start_q = int(range_match.group(1))
+                    end_q = int(range_match.group(2))
+                    for q_num in range(start_q, end_q + 1):
+                        rows.append({"q": str(q_num), "answer": cells[1], "needle": cells[2]})
+                else:
+                    rows.append({"q": cells[0], "answer": cells[1], "needle": cells[2]})
     return rows
 
 
@@ -425,6 +497,21 @@ def validate_reading(text, filepath):
                 "detail": f"{wc} words"
             })
 
+        # --- READABILITY CHECKS ---
+        passage_texts = [p["content"] for p in passages[:3]]
+        read_thresholds = [
+            {"min_fre": 60, "label": "FRE > 60 (accessible)"},
+            {"min_fre": 40, "max_fre": 70, "label": "FRE 40-70 (moderate)"},
+            {"max_fre": 50, "label": "FRE < 50 (challenging academic)"},
+        ]
+        read_results = validate_readability(passage_texts, read_thresholds)
+        for r in read_results:
+            checks.append({
+                "check": f"Passage {r['index']} readability {r['label']}",
+                "status": "PASS" if r["passed"] else "FAIL",
+                "detail": r["detail"],
+            })
+
     q_sections = extract_question_sections(text)
     key_sections = extract_answer_key_sections(text)
 
@@ -486,14 +573,43 @@ def validate_reading(text, filepath):
         passage = 1 if start <= 13 else (2 if start <= 26 else 3)
         content_lower = content.lower()
 
-        if "true" in content_lower and "false" in content_lower and "not given" in content_lower:
+        detected = _detect_q_type(content)
+
+        if detected == "tfng":
             passage_types[passage].add("tfng")
-        if "yes" in content_lower and "no" in content_lower and "not given" in content_lower:
+        elif detected == "ynng":
             passage_types[passage].add("ynng")
-        if "choose the correct heading" in content_lower or "list of headings" in content_lower:
+        elif detected == "headings":
             passage_types[passage].add("headings")
-        if "complete the" in content_lower or "write no more than" in content_lower:
+        elif detected == "features":
+            passage_types[passage].add("features")
+        elif detected == "matching_sentence_endings":
+            passage_types[passage].add("matching_sentence_endings")
+        elif detected == "mcq_single":
+            passage_types[passage].add("mcq_single")
+        elif detected == "mcq_multiple":
+            passage_types[passage].add("mcq_multiple")
+        elif detected == "note_completion":
+            passage_types[passage].add("note_completion")
+        elif detected == "table_completion":
+            passage_types[passage].add("table_completion")
+        elif detected == "sentence_completion":
+            passage_types[passage].add("sentence_completion")
+        elif detected == "summary_completion_from_text":
+            passage_types[passage].add("summary_completion_from_text")
+        elif detected == "summary_completion_from_list":
+            passage_types[passage].add("summary_completion_from_list")
+
+        # Also add generic "completion" for any completion subtype (used by per-passage checks)
+        if detected in ("note_completion", "table_completion", "sentence_completion",
+                        "summary_completion_from_text", "summary_completion_from_list"):
             passage_types[passage].add("completion")
+
+        if detected == "mcq_single" or detected == "mcq_multiple":
+            passage_types[passage].add("mcq")
+
+        # Detect word limits for completion questions
+        if "complete the" in content_lower or "write no more than" in content_lower:
             limit_match = re.search(r"no more than (one|two|three|four) word", content_lower)
             if limit_match:
                 num_map = {"one": 1, "two": 2, "three": 3, "four": 4}
@@ -502,11 +618,6 @@ def validate_reading(text, filepath):
                     limit += 1
                 for q in range(start, end + 1):
                     word_limits[q] = limit
-        if "match each statement" in content_lower or "list of people" in content_lower \
-                or "list of experts" in content_lower:
-            passage_types[passage].add("features")
-        if "choose the correct letter" in content_lower:
-            passage_types[passage].add("mcq")
 
         if passage == 1 and "yes" in content_lower and "no" in content_lower \
                 and "not given" in content_lower:
@@ -533,12 +644,57 @@ def validate_reading(text, filepath):
     add_check(checks, "Passage 1 required types",
               {"tfng", "completion"}.issubset(passage_types[1]),
               ", ".join(sorted(passage_types[1])))
-    add_check(checks, "Passage 2 required types",
-              {"headings", "features", "completion"}.issubset(passage_types[2]),
+    # P2: needs at least one matching type + MCQ Multiple + completion
+    p2_has_matching = bool(passage_types[2] & {"headings", "features", "matching_sentence_endings"})
+    p2_has_mcq_multi = "mcq_multiple" in passage_types[2]
+    p2_has_completion = "completion" in passage_types[2]
+    add_check(checks, "Passage 2 required types (matching + MCQ Multiple + completion)",
+              p2_has_matching and p2_has_mcq_multi and p2_has_completion,
               ", ".join(sorted(passage_types[2])))
     add_check(checks, "Passage 3 required types",
               {"ynng", "mcq", "completion"}.issubset(passage_types[3]),
               ", ".join(sorted(passage_types[3])))
+
+    # --- GLOBAL TYPE COVERAGE CHECK ---
+    global_types = set()
+    for p in passage_types:
+        global_types.update(passage_types[p])
+    required_global = {"tfng", "ynng", "mcq_single", "mcq_multiple",
+                       "note_completion", "sentence_completion",
+                       "summary_completion_from_text", "summary_completion_from_list",
+                       "table_completion"}
+    matching_used = global_types & {"headings", "features", "matching_sentence_endings"}
+    missing_global = required_global - global_types
+    if missing_global:
+        add_check(checks, "Global type coverage (all 9 non-matching types + 1 matching)",
+                  False, f"Missing: {', '.join(sorted(missing_global))}")
+    elif len(matching_used) != 1:
+        add_check(checks, "Global type coverage (all 9 non-matching types + 1 matching)",
+                  False, f"Matching types used: {', '.join(matching_used)} (need exactly 1)")
+    else:
+        add_check(checks, "Global type coverage (all 9 non-matching types + 1 matching)",
+                  True, f"All present | Matching: {', '.join(matching_used)}")
+
+    # --- QUESTION DIFFICULTY PROGRESSION (Reading) ---
+    _q_by_p = {}
+    for p_idx in range(1, 4):
+        p_sections = [s for s in q_sections if
+                      (p_idx == 1 and s["start"] <= 13) or
+                      (p_idx == 2 and 14 <= s["start"] <= 26) or
+                      (p_idx == 3 and s["start"] >= 27)]
+        _q_list = []
+        for section in p_sections:
+            section_text = _strip_q_boilerplate(section["content"])
+            if len(section_text.split()) < 3:
+                continue  # skip sections with only boilerplate
+            sec_type = _detect_q_type(section["content"])
+            _q_list.append({"text": section_text, "type": sec_type})
+        _q_by_p[p_idx] = _q_list
+
+    if any(_q_by_p.values()):
+        _q_result = _check_q_diff(_q_by_p, "Reading")
+        add_check(checks, "Progressive question difficulty (P1 < P2 < P3)",
+                  _q_result["passed"], _q_result["detail"])
 
     tables = find_answer_tables(text)
     total_answers = sum(len(t) for t in tables)
@@ -563,24 +719,30 @@ def validate_reading(text, filepath):
                     if r["needle"].strip():
                         try:
                             q_num = int(r["q"])
-                            match = re.search(r'"([^"]+)"', r["needle"])
-                            if match:
-                                clean_needle = match.group(1)
+                            # Skip NOT GIVEN needles — they contain absence notes, not passage quotes
+                            if r["answer"].strip().upper() == "NOT GIVEN":
+                                continue
+                            # Try to extract the main quoted segment
+                            quoted = re.findall(r'"([^"]+)"', r["needle"])
+                            if quoted:
+                                clean_needle = quoted[0]
                             else:
-                                clean_needle = re.sub(r'^Paragraph [A-Z]:\s*', '', r["needle"].strip())
-                                clean_needle = clean_needle.strip('"\'')
+                                # Use text before any commentary (before —, –, ;, etc.)
+                                clean_needle = re.split(r'\s*[—–;]\s*', r["needle"].strip())[0]
+                            # Strip markdown bold markers and normalize whitespace
+                            clean_needle = re.sub(r'\*\*', '', clean_needle)
+                            clean_needle = re.sub(r'\s+', ' ', clean_needle).strip()
                             p_content = " ".join(
                                 " ".join(p["content"].split()) for p in passages
                             ).lower()
+                            # Strip bold markers from passage text too
+                            p_content = re.sub(r'\*\*', '', p_content)
                             n_content = " ".join(clean_needle.split()).lower()
-                            parts = [p.strip() for p in re.split(r'\.{2,}', n_content)]
-                            missing = False
-                            for part in parts:
-                                if len(part) > 5 and part not in p_content:
-                                    missing = True
-                            if missing and len(n_content) > 10:
-                                if r["answer"].strip().upper() != "NOT GIVEN":
-                                    needles_missing.append(f"Q{q_num}")
+                            # Split on ellipsis or em-dash — take longest part (discard commentary)
+                            n_parts = re.split(r'\.{3,}|\s*[—–]\s*', n_content)
+                            best_part = max(n_parts, key=lambda s: len(s.strip())).strip()
+                            if len(best_part) > 5 and best_part not in p_content:
+                                needles_missing.append(f"Q{q_num}")
                         except ValueError:
                             pass
             checks.append({
@@ -619,12 +781,15 @@ def validate_reading(text, filepath):
                     q_num = int(r["q"])
                     p_idx = 1 if q_num <= 13 else (2 if q_num <= 26 else 3)
                     ans = r["answer"].strip().upper()
-                    if ans == "TRUE":      tfng_counts[p_idx]["T"] += 1
-                    if ans == "FALSE":     tfng_counts[p_idx]["F"] += 1
-                    if ans == "NOT GIVEN": tfng_counts[p_idx]["NG"] += 1
-                    if ans == "YES":       ynng_counts[p_idx]["Y"] += 1
-                    if ans == "NO":        ynng_counts[p_idx]["N"] += 1
-                    if ans == "NOT GIVEN": ynng_counts[p_idx]["NG"] += 1
+                    if ans == "TRUE":          tfng_counts[p_idx]["T"] += 1
+                    elif ans == "FALSE":       tfng_counts[p_idx]["F"] += 1
+                    elif ans == "YES":         ynng_counts[p_idx]["Y"] += 1
+                    elif ans == "NO":          ynng_counts[p_idx]["N"] += 1
+                    elif ans == "NOT GIVEN":
+                        if "tfng" in passage_types[p_idx]:
+                            tfng_counts[p_idx]["NG"] += 1
+                        if "ynng" in passage_types[p_idx]:
+                            ynng_counts[p_idx]["NG"] += 1
                 except ValueError:
                     pass
 
@@ -675,6 +840,9 @@ def validate_listening(text, filepath):
     scripts = extract_scripts(text)
     scripts_found = {s["part"]: s["content"] for s in scripts}
 
+    # Extract question sections early (needed by Part 4 synonym check + difficulty check)
+    q_sections = extract_question_sections(text)
+
     spec_ranges = {
         "Part 1": (250, 300), "Part 2": (350, 400),
         "Part 3": (400, 450), "Part 4": (800, 900)
@@ -692,6 +860,35 @@ def validate_listening(text, filepath):
                 "check": f"{part} script found",
                 "status": "FAIL",
                 "detail": "Not found in file"
+            })
+
+    # --- LISTENING READABILITY CHECKS ---
+    listen_part_order = ["Part 1", "Part 2", "Part 3", "Part 4"]
+    listen_thresholds = [
+        {"min_fre": 65, "label": "FRE > 65 (conversational)"},
+        {"min_fre": 50, "max_fre": 75, "label": "FRE 50-75 (moderate)"},
+        {"min_fre": 40, "max_fre": 65, "label": "FRE 40-65 (academic discussion)"},
+        {"max_fre": 50, "label": "FRE < 50 (academic lecture)"},
+    ]
+    for part_name, threshold in zip(listen_part_order, listen_thresholds):
+        if part_name in scripts_found:
+            script_text = scripts_found[part_name]
+            fre = flesch_reading_ease(script_text)
+            cli = coleman_liau_index(script_text)
+            band = estimate_ielts_band(fre)
+            min_fre = threshold.get("min_fre", 0)
+            max_fre = threshold.get("max_fre", 100)
+            passed = min_fre <= fre <= max_fre
+            detail = f"FRE={fre:.1f}, CLI={cli:.1f}, est_band={band['band']}"
+            if not passed:
+                if fre < min_fre:
+                    detail += f" (below min {min_fre})"
+                if fre > max_fre:
+                    detail += f" (above max {max_fre})"
+            checks.append({
+                "check": f"{part_name} readability {threshold['label']}",
+                "status": "PASS" if passed else "FAIL",
+                "detail": detail,
             })
 
     if "Part 1" in scripts_found:
@@ -727,7 +924,6 @@ def validate_listening(text, filepath):
 
         # --- IMPROVED SYNONYM CHECK for Listening Part 4 (lecture) ---
         # Extract corresponding questions (Q31-40)
-        q_sections = extract_question_sections(text)
         p4_q_text = " ".join(
             s["content"] for s in q_sections if s["start"] >= 31
         )
@@ -773,15 +969,39 @@ def validate_listening(text, filepath):
             "detail": f"{len(no_needle)} answers missing needle"
         })
 
+    # --- QUESTION DIFFICULTY PROGRESSION (Listening) ---
+    _l_q_by_p = {}
+    for p_idx in range(1, 5):
+        if p_idx == 1:
+            lo, hi = 1, 10
+        elif p_idx == 2:
+            lo, hi = 11, 20
+        elif p_idx == 3:
+            lo, hi = 21, 30
+        else:
+            lo, hi = 31, 40
+        p_sections = [s for s in q_sections
+                      if s["start"] >= lo and s["end"] <= hi]
+        _q_list = []
+        for section in p_sections:
+            section_text = _strip_q_boilerplate(section["content"])
+            if len(section_text.split()) < 3:
+                continue
+            sec_type = _detect_q_type(section["content"])
+            _q_list.append({"text": section_text, "type": sec_type})
+        _l_q_by_p[p_idx] = _q_list
+
+    if any(_l_q_by_p.values()):
+        _l_q_result = _check_q_diff(_l_q_by_p, "Listening")
+        add_check(checks, "Progressive question difficulty (P1 < P2 < P3 < P4)",
+                  _l_q_result["passed"], _l_q_result["detail"])
+
     return checks
 
 
-def run_validation(filepath):
+def run_validation(filepath, json_output=False):
     text = read_file(filepath)
     name = Path(filepath).name
-    print(f"\n{'='*62}")
-    print(f"  VALIDATING: {name}")
-    print(f"{'='*62}")
 
     is_reading = "READING PASSAGE" in text or "Reading Passage" in text
     is_listening = "LISTENING PART" in text or "Listening Part" in text
@@ -791,6 +1011,8 @@ def run_validation(filepath):
     elif is_listening:
         checks = validate_listening(text, filepath)
     else:
+        if json_output:
+            return {"file": name, "error": "Could not determine test type", "passed": False}
         print("ERROR: Could not determine test type (Reading or Listening)")
         return False
 
@@ -799,15 +1021,27 @@ def run_validation(filepath):
         status = c["status"]
         if status == "PASS":
             passed += 1
-            icon = "✓"
         elif status == "FAIL":
             failed += 1
-            icon = "✗"
         else:
             info += 1
-            icon = "~"
-        print(f"  {icon} {c['check']:<48s} {status:<5s}  {c['detail']}")
 
+    if json_output:
+        return {
+            "file": name,
+            "passed": failed == 0,
+            "checks": checks,
+            "summary": {"passed": passed, "failed": failed, "info": info},
+        }
+
+    # Human-readable output
+    print(f"\n{'='*62}")
+    print(f"  VALIDATING: {name}")
+    print(f"{'='*62}")
+    for c in checks:
+        status = c["status"]
+        icon = "✓" if status == "PASS" else ("✗" if status == "FAIL" else "~")
+        print(f"  {icon} {c['check']:<48s} {status:<5s}  {c['detail']}")
     print(f"\n{'─'*62}")
     print(f"  RESULTS:  {passed} passed  |  {failed} failed  |  {info} info")
     print(f"{'─'*62}\n")
@@ -816,11 +1050,25 @@ def run_validation(filepath):
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Usage: python3 scripts/validate.py <file1.md> [file2.md ...]")
+        print("Usage: python3 scripts/validate.py [--json] <file1.md> [file2.md ...]")
         sys.exit(1)
 
+    json_output = "--json" in sys.argv
+    args = [a for a in sys.argv[1:] if a != "--json"]
+
+    if json_output:
+        results = []
+        for arg in args:
+            path = Path(arg)
+            if path.exists():
+                results.append(run_validation(path, json_output=True))
+            else:
+                results.append({"file": arg, "error": "File not found", "passed": False})
+        print(json.dumps(results, indent=2))
+        sys.exit(0 if all(r.get("passed", False) for r in results) else 1)
+
     all_pass = True
-    for arg in sys.argv[1:]:
+    for arg in args:
         path = Path(arg)
         if path.exists():
             if not run_validation(path):

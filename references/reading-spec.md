@@ -290,3 +290,8 @@ Passage text — 900+ words.
 - Boolean distributions: T/F/NG has ≥2 TRUE, ≥2 FALSE, ≥2 NOT GIVEN; Y/N/NG has ≥1 YES, ≥1 NO, ≥1 NOT GIVEN.
 - Each answer has one needle; NOT GIVEN has an absence note, not a fake quote.
 - Stems are paraphrased from answer sentences — no 3-gram content-word overlap.
+- Passage 1 readability: FRE > 60 (accessible / Band 5.5–6.5)
+- Passage 2 readability: FRE 40–70 (moderate / Band 6.0–7.0)
+- Passage 3 readability: FRE < 50 (challenging academic / Band 7.0–8.0+)
+- Question difficulty progression: Passage 1 score < Passage 2 score < Passage 3 score
+- Passage 3 category is selected from get_reading_p3_category rotation (never repeat the same category consecutively)

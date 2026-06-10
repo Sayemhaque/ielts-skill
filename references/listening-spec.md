@@ -278,3 +278,9 @@ Complete the notes below. Write **NO MORE THAN TWO WORDS** for each answer.
 - Part 4 questions follow chronological lecture order.
 - Dialogue in Parts 1 and 3 sounds natural, not robotic.
 - Part 4 lecture uses academic attribution, not personal opinion.
+- Part 1 readability: FRE > 65 (conversational)
+- Part 2 readability: FRE 50–75 (moderate)
+- Part 3 readability: FRE 40–65 (academic discussion)
+- Part 4 readability: FRE < 50 (academic lecture)
+- Question difficulty progression: Part 1 < Part 2 < Part 3 < Part 4
+- Part 4 category is selected from get_listening_p4_category rotation (never repeat the same category consecutively)

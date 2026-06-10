@@ -3,13 +3,23 @@
 IELTS Topic Tracker
 Logs used topics from generated tests so Claude never repeats them across sessions.
 
+Also manages category rotation for Passage 3 (Reading) and Part 4 (Listening)
+to ensure topic diversity at the hardest proficiency level.
+
 Usage:
   python3 scripts/topic_tracker.py log   <file.md>        # log topics from a new test
   python3 scripts/topic_tracker.py check <topic_phrase>   # check if a topic is too similar to used ones
   python3 scripts/topic_tracker.py list                   # list all used topics
   python3 scripts/topic_tracker.py reset                  # clear all history (use carefully)
 
+  # Category rotation (Passage 3 / Part 4 diversity):
+  python3 scripts/topic_tracker.py get_reading_p3_category   # print the recommended Passage 3 category
+  python3 scripts/topic_tracker.py log_reading_p3_category   # increment the Passage 3 cycle counter
+  python3 scripts/topic_tracker.py get_listening_p4_category # print the recommended Listening Part 4 category
+  python3 scripts/topic_tracker.py log_listening_p4_category # increment the Listening Part 4 cycle counter
+
 Topic log is stored in: references/used-topics.json
+Category rotation state: references/usage-state.json
 """
 
 import json
@@ -19,6 +29,22 @@ from pathlib import Path
 from difflib import SequenceMatcher
 
 TOPIC_LOG = Path(__file__).parent.parent / "references" / "used-topics.json"
+USAGE_STATE = Path(__file__).parent.parent / "references" / "usage-state.json"
+
+# Category rotation definitions — cycle through these to ensure topic diversity.
+READING_P3_CATEGORIES = [
+    "Psychology",
+    "Cognitive Science",
+    "Philosophy of Science",
+    "Sociology",
+]
+
+LISTENING_P4_CATEGORIES = [
+    "Science",
+    "History",
+    "Social Science",
+    "Health",
+]
 
 # ---------------------------------------------------------------------------
 # Similarity threshold — topics scoring above this are considered "too close"
@@ -39,6 +65,40 @@ def save_log(data):
     TOPIC_LOG.parent.mkdir(parents=True, exist_ok=True)
     with open(TOPIC_LOG, "w") as f:
         json.dump(data, f, indent=2)
+
+
+def load_usage_state():
+    """Load or create usage-state.json for category rotation tracking."""
+    default = {"reading_p3_cycle": 0, "listening_p4_cycle": 0}
+    if USAGE_STATE.exists():
+        with open(USAGE_STATE) as f:
+            return json.load(f)
+    return default
+
+
+def save_usage_state(state):
+    USAGE_STATE.parent.mkdir(parents=True, exist_ok=True)
+    with open(USAGE_STATE, "w") as f:
+        json.dump(state, f, indent=2)
+
+
+def get_next_category(categories, cycle_key, label):
+    """
+    Get the next category in the rotation cycle.
+    Returns (category_name, cycle_counter_before).
+    """
+    state = load_usage_state()
+    cycle = state.get(cycle_key, 0)
+    cat = categories[cycle % len(categories)]
+    return cat, cycle
+
+
+def log_category(cycle_key):
+    """Increment the cycle counter for a given key. Returns the new counter."""
+    state = load_usage_state()
+    state[cycle_key] = state.get(cycle_key, 0) + 1
+    save_usage_state(state)
+    return state[cycle_key]
 
 
 def similarity(a, b):
@@ -159,6 +219,45 @@ def cmd_reset():
         print("Cancelled.")
 
 
+# ---------------------------------------------------------------------------
+# Category rotation commands
+# ---------------------------------------------------------------------------
+
+
+def cmd_get_reading_p3_category():
+    cat, cycle = get_next_category(READING_P3_CATEGORIES, "reading_p3_cycle", "Reading P3")
+    print(f"\n  → Recommended Passage 3 category: {cat} (cycle position {cycle % len(READING_P3_CATEGORIES)})\n")
+
+
+def cmd_log_reading_p3_category():
+    state = load_usage_state()
+    old_cycle = state.get("reading_p3_cycle", 0)
+    old_cat = READING_P3_CATEGORIES[old_cycle % len(READING_P3_CATEGORIES)]
+    new_cycle = log_category("reading_p3_cycle")
+    new_cat = READING_P3_CATEGORIES[new_cycle % len(READING_P3_CATEGORIES)]
+    print(f"\n  ✓ Reading P3 category logged: {old_cat}")
+    print(f"    Next cycle → {new_cat}\n")
+
+
+def cmd_get_listening_p4_category():
+    cat, cycle = get_next_category(LISTENING_P4_CATEGORIES, "listening_p4_cycle", "Listening P4")
+    print(f"\n  → Recommended Listening Part 4 category: {cat} (cycle position {cycle % len(LISTENING_P4_CATEGORIES)})\n")
+
+
+def cmd_log_listening_p4_category():
+    state = load_usage_state()
+    old_cycle = state.get("listening_p4_cycle", 0)
+    old_cat = LISTENING_P4_CATEGORIES[old_cycle % len(LISTENING_P4_CATEGORIES)]
+    new_cycle = log_category("listening_p4_cycle")
+    new_cat = LISTENING_P4_CATEGORIES[new_cycle % len(LISTENING_P4_CATEGORIES)]
+    print(f"\n  ✓ Listening P4 category logged: {old_cat}")
+    print(f"    Next cycle → {new_cat}\n")
+
+
+# ---------------------------------------------------------------------------
+# CLI dispatch
+# ---------------------------------------------------------------------------
+
 if __name__ == "__main__":
     if len(sys.argv) < 2:
         print(__doc__)
@@ -174,6 +273,14 @@ if __name__ == "__main__":
         cmd_list()
     elif cmd == "reset":
         cmd_reset()
+    elif cmd == "get_reading_p3_category":
+        cmd_get_reading_p3_category()
+    elif cmd == "log_reading_p3_category":
+        cmd_log_reading_p3_category()
+    elif cmd == "get_listening_p4_category":
+        cmd_get_listening_p4_category()
+    elif cmd == "log_listening_p4_category":
+        cmd_log_listening_p4_category()
     else:
         print(__doc__)
         sys.exit(1)
