@@ -618,6 +618,14 @@ def validate_reading(text, filepath):
                     limit += 1
                 for q in range(start, end + 1):
                     word_limits[q] = limit
+        if "match each statement" in content_lower or "list of people" in content_lower \
+                or "list of experts" in content_lower:
+            passage_types[passage].add("features")
+        if "match each sentence" in content_lower or "sentence endings" in content_lower \
+                or "correct ending" in content_lower:
+            passage_types[passage].add("sentence_endings")
+        if "choose the correct letter" in content_lower:
+            passage_types[passage].add("mcq")
 
         if passage == 1 and "yes" in content_lower and "no" in content_lower \
                 and "not given" in content_lower:
