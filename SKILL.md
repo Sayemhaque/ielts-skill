@@ -13,7 +13,7 @@ description: >
 
 ## How to Use This Skill
 
-### ⚠ CRITICAL — Do NOT Skip Steps 1 and 2
+### ⚠ CRITICAL — Do NOT Skip These Steps
 
 1. **Check topic availability FIRST** — before choosing any topic, run:
    ```bash
@@ -22,19 +22,44 @@ description: >
    If BLOCKED, choose a different topic and check again. Only proceed once you get OK.
 
 2. **Read the matching example file** — before generating anything. The example in `examples/` is the single source of truth for format, structure, and quality.
-   - Reading: `examples/reading/example.md` (340 lines)
-   - Listening: `examples/listening/example.md` (480 lines)
-   - If you skip this step, your output will have structural errors.
+   - Reading: `examples/reading/example.md`
+   - Listening: `examples/listening/example.md`
 
-3. Read the module spec from `references/` for whichever module you are generating.
-4. Generate following the spec and example pattern exactly.
-5. Run the QA checklist (at bottom of each module reference) before outputting anything.
-6. Format output following the Answer Placement Format below.
-7. **After output is accepted** — log the topics:
+3. **Read the module spec** from `references/` for whichever module you are generating.
+
+4. **Plan your question types** — follow the coverage rule:
+   - All non-matching question types must appear in the test.
+   - Exactly ONE matching type per test (rotate: see spec).
+
+5. Generate following the spec and example pattern exactly.
+
+6. Run the QA checklist (at bottom of each module reference) before outputting anything.
+
+7. Format output following the Answer Placement Format below.
+
+8. **After output is accepted** — log topics and validate:
    ```bash
    python3 scripts/topic_tracker.py log <generated-file.md>
    python3 scripts/validate.py <generated-file.md>
    ```
+
+---
+
+## ⚠ MATCHING RULE — The Most Important Structural Rule
+
+### Reading
+Choose exactly **ONE** of these three per test:
+- Matching Headings
+- Matching Features
+- Matching Sentence Endings
+
+### Listening
+Choose exactly **ONE** of these two per test:
+- Matching (General)
+- Matching Features
+
+**All other question types must all appear somewhere in the test.**
+See `references/question-types.md` → Placement Master Table for the full required list.
 
 ---
 
@@ -67,8 +92,7 @@ Passage 1 / Part 1 = accessible. Passage 3 / Part 4 = abstract and challenging. 
 
 ### Rule 2 — Synonym Rule (No Word-Matching)
 Question stems must NEVER repeat exact words from the source text or script.
-Always paraphrase. The validator now catches **3-gram AND 4-gram** content-word overlaps.
-A question that shares even a 3-word content phrase with its answer sentence will FAIL validation.
+Always paraphrase. The validator catches **3-gram AND 4-gram** content-word overlaps.
 See `references/synonym-reference.md` for synonym pairs.
 
 | Source Says | Question Must Say |
@@ -100,33 +124,21 @@ Generate a complete test in a single output. Do NOT generate passages/parts indi
 ```
 1. Check topic availability (topic_tracker.py check) — REQUIRED
 2. Choose topics / contexts from the module spec
-3. Write ALL source content FIRST (3 passages / 4 scripts)
+3. Decide which matching type to use this test (rotate)
+4. Write ALL source content FIRST (3 passages / 4 scripts)
    → Embed distractors and traps BEFORE writing questions
-4. Draft ALL questions — apply Synonym Rule to every stem
-5. Confirm every answer has a Needle
-6. Run the module QA checklist
-7. Format output using Answer Placement Format
-8. After acceptance: run topic_tracker.py log + validate.py
+5. Draft ALL questions — apply Synonym Rule to every stem
+   → Confirm every non-matching type is covered
+   → Confirm only one matching type is used
+6. Confirm every answer has a Needle
+7. Run the module QA checklist
+8. Format output using Answer Placement Format
+9. After acceptance: run topic_tracker.py log + validate.py
 ```
-
-## Official-Style Quality Gate
-
-Before final output, reject and rewrite any test that fails these checks:
-
-- Question stems are paraphrased; no stem should copy the answer sentence structure.
-- Every wrong MCQ/matching option is sourced from the text or script, not invented.
-- Completion answers are verbatim from the source and obey the word limit.
-- TRUE/FALSE/NO answers have direct contradiction/support; NOT GIVEN has no confirmation or contradiction anywhere.
-- Question difficulty rises across passages/parts without making Passage 1 artificially tricky.
-- Answer keys appear immediately after each question set, not at the end of a passage or full test.
-- Run `python3 scripts/validate.py <generated-file.md>` when working in this repo and fix every FAIL.
-- **Boolean distribution: T/F/NG sets must have ≥2 TRUE, ≥2 FALSE, ≥2 NOT GIVEN.**
 
 ---
 
 ## Module Reference Files
-
-Read the relevant file before generating:
 
 | Module | Reference File | Example File |
 |---|---|---|
@@ -145,8 +157,9 @@ Read the relevant file before generating:
 |---|---|
 | Yes/No/Not Given | NEVER in Reading Passage 1 |
 | True/False/Not Given | NEVER in Reading Passage 3 |
-| Note Completion | ONLY in Listening Part 1 |
+| Note Completion | Part 1 is always Note Completion |
 | Academic Attribution | ONLY in Listening Part 4 |
+| Matching types | MAXIMUM ONE per test |
 
 ---
 
@@ -154,17 +167,17 @@ Read the relevant file before generating:
 
 | Failure | Why It Fails | Fix |
 |---|---|---|
-| Passage uses opinions/arguments in Passage 1 | Passage 1 must be purely factual | Rewrite — no opinions, no writer's voice |
-| Matching Features entities are not named in the text | AI invents opinions not actually stated | Every entity must have a direct quote in the passage |
-| Topic is too technical or niche | Wind turbines, AI algorithms — not standard IELTS | Use topic-bank.md — pick from approved categories only |
-| NOT GIVEN when text actually discusses the topic | AI assumes not mentioned without checking thoroughly | Search the entire passage, not just nearby sentences |
-| Listening dialogue sounds robotic | "Could you please provide your date of birth?" | Write naturally: "And when were you born?" |
-| Part 1 dialogue is symmetrical (equal turns) | Real conversations have one speaker driving | Official asks most questions; customer gives short answers |
-| MCQ distractors are invented | Wrong options must come from the source text | Every distractor must be traceable to a real sentence |
-| Question stem copies passage wording exactly | Violates Synonym Rule — now caught at 3-gram level | Read each stem → find the source sentence → change 80% of the words |
-| Passage 3 summary uses simple vocabulary | Must match academic register | Use nominalisation, hedging, complex structures |
-| Part 4 lecture has opinion language | Lectures present research findings, not personal views | "Studies show..." not "I believe..." |
-| Repeat topic from previous test | Bores Vasha Academy students, reduces exam realism | Always run topic_tracker.py check before choosing a topic |
+| Using two matching types in one test | Violates the matching rule | Pick one and use it consistently across the whole test |
+| Skipping a non-matching question type | Every type must appear | Plan the type coverage before writing any questions |
+| Passage uses opinions in Passage 1 | Passage 1 must be purely factual | Rewrite — no opinions, no writer's voice |
+| Matching Features entities not named in text | AI invents opinions not actually stated | Every entity must have a direct quote in the passage |
+| Topic too technical or niche | Not standard IELTS | Use topic-bank.md — pick from approved categories only |
+| NOT GIVEN when text actually discusses the topic | Careless reading | Search the entire passage, not just nearby sentences |
+| Listening dialogue sounds robotic | Unnatural phrasing | Write naturally: "And when were you born?" not "Please provide your date of birth" |
+| Question stem copies passage wording | Violates Synonym Rule — caught at 3-gram level | Change 80% of the words in every stem |
+| Passage 3 uses simple vocabulary | Must match academic register | Use nominalisation, hedging, complex structures |
+| Part 4 lecture has opinion language | Lectures present findings, not personal views | "Studies show..." not "I believe..." |
+| Repeat topic from previous test | Reduces exam realism | Always run topic_tracker.py check before choosing |
 
 ---
 
@@ -172,12 +185,14 @@ Read the relevant file before generating:
 
 | Mistake | Fix |
 |---|---|
-| Same words in question as source | Remap every stem with synonyms — validator catches 3-gram hits now |
+| Two matching types in one test | Remove one — keep only the planned matching type |
+| A question type missing from the test | Add it; consult question-types.md for placement rules |
+| Same words in question as source | Remap every stem with synonyms |
 | FALSE when text just doesn't mention it | Only FALSE if text directly contradicts |
 | Gap answer exceeds word limit | Rewrite sentence so answer fits |
 | Distractor is obviously wrong | Use real source info, make it plausible |
 | Part 4 researcher names sound similar | Use phonetically distinct names |
 | Answer needs two sentences to prove | Rewrite — one Needle only |
-| Matching Features word list has too few options | At least 2 extra options beyond number of questions |
-| T/F/NG set has no NOT GIVEN | Add at least 2 genuinely absent claims |
+| Matching word list has too few options | At least 2 extra options beyond number of questions |
+| T/F/NG set has fewer than 2 NOT GIVEN | Add genuinely absent claims |
 | Topic already used in a previous test | Check used-topics.json; if similar — pick something else |
