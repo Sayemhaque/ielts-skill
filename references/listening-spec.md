@@ -9,6 +9,38 @@
 
 ---
 
+## ⚠ MATCHING RULE — Read Before Planning Questions
+
+Each Listening test must use **exactly ONE** of these two matching types:
+- Matching (General) — typically Part 2
+- Matching Features — typically Part 3 or 4
+
+All other question types (non-matching) **must all appear** in every test.
+Never use both matching types in the same test.
+
+**Rotate the matching type across tests:**
+- Test 1 → Matching (General)
+- Test 2 → Matching Features
+- Test 3 → Matching (General) (cycle repeats)
+
+---
+
+## Required Question Type Coverage Per Test
+
+All of the following must appear in every Listening test:
+
+| # | Type | Part |
+|---|---|---|
+| 1 | Note Completion | Part 1 (required) |
+| 2 | Multiple Choice (Single) | Part 2–4 |
+| 3 | Multiple Choice (Multiple) | Part 2–4 |
+| 4 | Table Completion | Part 3–4 |
+| 5 | Sentence Completion | Part 3–4 |
+| 6 | Summary Completion | Part 3–4 |
+| 7 | **ONE matching type** (rotate per test) | Part 2–4 |
+
+---
+
 ## Part 1 — Everyday Social Dialogue
 
 | Parameter | Specification |
@@ -48,10 +80,13 @@
 |---|---|
 | Format | One speaker presenting practical information |
 | Context | Tour of a facility · local radio announcement · community event briefing |
-| Primary Task | Multiple Choice (Single) (5 questions) |
-| Secondary Task | Matching or Note Completion (5 questions) |
+| Primary Task | Multiple Choice (Single) — 5 questions |
+| Secondary Task | Matching (General) OR Note/Table Completion — 5 questions |
 | Difficulty | Moderate (Band 5.5–6.5) |
 | Script Length | 350–400 words spoken |
+
+If this test's chosen matching type is **Matching (General)**, place it here as the secondary task.
+If this test's chosen matching type is **Matching Features**, use Note Completion or Table Completion here instead.
 
 **Script structure:**
 | Section | Content | Questions |
@@ -59,7 +94,7 @@
 | Opening | Speaker introduces themselves, welcomes audience, states purpose | — |
 | Background | Brief history or context of the venue/topic | MCQ 1 |
 | Key details | Facilities, opening times, services, practical info | MCQ 2–3 |
-| Directions/Locations | Description of where things are located | Matching Qs |
+| Directions/Locations | Description of where things are located | Matching / Note Qs |
 | Closing | Final instructions, thanks, next steps | MCQ 4–5 |
 
 ---
@@ -70,10 +105,12 @@
 |---|---|
 | Format | 2–3 speakers (students + tutor, or research partners) |
 | Context | Discussing research project · reviewing assignment · planning presentation |
-| Primary Task | Matching (speakers to opinions) |
-| Secondary Task | Multiple Choice (Single) |
+| Primary Task | Multiple Choice (Multiple Answers) — 5 questions |
+| Secondary Task | Table Completion OR Sentence Completion OR Matching Features — 5 questions |
 | Difficulty | Challenging (Band 6.0–7.5) |
 | Script Length | 400–450 words spoken |
+
+If this test's chosen matching type is **Matching Features**, place it here as the secondary task (match researchers/studies to findings discussed in the conversation).
 
 **Mandatory script features:**
 - **AGREEMENT & DISAGREEMENT TRACKING:** Script clearly shows agreeing, partially agreeing, disagreeing
@@ -85,16 +122,11 @@
 | Section | Content | Questions |
 |---|---|---|
 | Opening | Tutor sets agenda, asks for update | — |
-| Topic selection | Students discuss focus, disagree → one convinces the other (OPINION CHANGE) | Matching 1–2 |
-| Methodology | Debate on research methods, agreement/rejection | Matching 3–4 |
-| Concerns | Practical concerns raised, solutions offered | MCQ 1–2 |
-| Guidance | Tutor gives timeline/methodology advice | MCQ 3–4 |
-| Closing | Summary of decisions, next steps | MCQ 5 |
-
-**Matching rules:**
-- Each question asks who holds a specific view
-- Options: A. [Name] only / B. [Name] only / C. Both [Name] and [Name]
-- Distractor: another speaker mentions same topic but does NOT hold same opinion
+| Topic selection | Students discuss focus, disagree → one convinces the other | MCQ Multiple 1–2 |
+| Methodology | Debate on research methods, agreement/rejection | MCQ Multiple 3–4 |
+| Concerns | Practical concerns raised, solutions offered | MCQ Multiple 5 |
+| Guidance | Tutor gives timeline/methodology advice | Table / Sentence / Matching Qs |
+| Closing | Summary of decisions, next steps | — |
 
 ---
 
@@ -104,13 +136,13 @@
 |---|---|
 | Format | Single academic speaker, no interruptions |
 | Context | University lecture — science · history · social science · research findings |
-| Primary Task | Note / Summary Completion |
-| Secondary Task | Matching Features (match researcher to finding) |
+| Primary Task | Note Completion + Summary Completion |
+| Secondary Task | Sentence Completion |
 | Difficulty | Most challenging (Band 7.0–8.5) |
 | Script Length | 800–900 words spoken (~6 minutes) |
 
 **Mandatory script features:**
-- **HIGH-LEVEL SYNONYMS:** Script uses advanced vocabulary; questions use paraphrases. Synonym Rule is critical here.
+- **HIGH-LEVEL SYNONYMS:** Script uses advanced vocabulary; questions use paraphrases. Synonym Rule critical here.
 - **ACADEMIC ATTRIBUTION:** At least 3 named researchers/institutions, each attributed to a distinct finding. Use phonetically distinct names.
 - **SIGNPOST LANGUAGE:** "Turning now to...," "What is particularly noteworthy is...," "This brings us to the question of..."
 - **LOGICAL STRUCTURE:** Cause → effect, problem → solution, or chronological
@@ -127,9 +159,9 @@
 Every listening test must follow this exact heading hierarchy and section order. AI must read the example in `examples/listening/example.md` before generating, but this template shows the bare skeleton.
 
 ```markdown
-# IELTS Listening — Full Practice Test
+# IELTS Academic Listening — Full Practice Test
 
-**Time:** Approx. 30 minutes | **Questions:** 40
+**Time:** Approximately 30 minutes | **Questions:** 40
 
 ---
 
@@ -138,30 +170,22 @@ Every listening test must follow this exact heading hierarchy and section order.
 *You will hear a conversation between a [role] and a [role].*
 *First, you have 30 seconds to read Questions 1–10.*
 
----
-
 ### Questions 1–10
-
 Complete the notes below.
 Write **NO MORE THAN TWO WORDS AND/OR A NUMBER** for each answer.
 
 | | |
 |---|---|
-| **Example:** Membership type: | Annual |
-| **Membership Application** | |
-| 1 Name: | \_\_\_\_\_\_\_\_\_\_\_ |
-| 2 Date of birth: | \_\_\_\_\_\_\_\_\_\_\_ |
+| **Field:** | (1) ______ |
 ...
 
----
+### Script: Part 1
+[dialogue]
 
 ### Answer Key — Questions 1–10
-
 | Q | Answer | Needle |
 |---|--------|--------|
-| 1 | Kowalczyk | "that's K-O-W-A-L-C-Z-Y-K" |
-
-**Mandatory traps used:** Spelling: Q1 — Self-correction: Q2 — Distractor: Q7
+**Mandatory traps used:** Spelling: Q? — Self-correction: Q? — Distractor: Q?
 
 ---
 
@@ -170,23 +194,16 @@ Write **NO MORE THAN TWO WORDS AND/OR A NUMBER** for each answer.
 *You will hear a [role] speaking to [audience].*
 *First, you have 30 seconds to read Questions 11–20.*
 
----
-
 ### Questions 11–15
-
 Choose the correct letter, A, B, or C.
 
-11. ...
-...
-
 ### Questions 16–20
+[Matching (General) OR Note/Table Completion]
 
-What is the location of each of the following...?
-
----
+### Script: Part 2
+[monologue]
 
 ### Answer Key — Questions 11–20
-
 | Q | Answer | Needle |
 |---|--------|--------|
 
@@ -194,25 +211,19 @@ What is the location of each of the following...?
 
 ## LISTENING PART 3
 
-*You will hear [two/three] students discussing [topic] with their [tutor/supervisor].*
+*You will hear [speakers] discussing [topic].*
 *First, you have 30 seconds to read Questions 21–30.*
 
----
-
 ### Questions 21–25
-
-What opinion does each person express...?
-
----
+Choose TWO letters, A–E. (Multiple Choice Multiple)
 
 ### Questions 26–30
+[Table Completion / Sentence Completion / Matching Features]
 
-Choose the correct letter, A, B, or C.
-
----
+### Script: Part 3
+[discussion]
 
 ### Answer Key — Questions 21–30
-
 | Q | Answer | Needle |
 |---|--------|--------|
 
@@ -223,17 +234,16 @@ Choose the correct letter, A, B, or C.
 *You will hear a lecture on [topic].*
 *First, you have 30 seconds to read Questions 31–40.*
 
----
+### Questions 31–36
+Complete the notes below. Write **NO MORE THAN TWO WORDS** for each answer.
 
-### Questions 31–40
+### Questions 37–40
+[Summary Completion / Sentence Completion]
 
-Complete the notes below.
-Write **NO MORE THAN TWO WORDS** for each answer.
-
----
+### Script: Part 4
+[lecture]
 
 ### Answer Key — Questions 31–40
-
 | Q | Answer | Needle |
 |---|--------|--------|
 ```
@@ -241,11 +251,11 @@ Write **NO MORE THAN TWO WORDS** for each answer.
 **Critical format rules:**
 - `## LISTENING PART N` — level 2 heading for each part
 - `### Questions N–M` — level 3 heading, en-dash between numbers
+- `### Script: Part N` — level 3 heading for each script
 - `### Answer Key — Questions N–M` — level 3 heading
 - Questions numbered sequentially across the whole test (1–40)
 - Each question set followed immediately by its answer key
 - `---` horizontal rule between sections
-- Script content embedded inside its part section (see example for script placement)
 
 ---
 
@@ -253,16 +263,18 @@ Write **NO MORE THAN TWO WORDS** for each answer.
 
 - 40 questions exactly; ranges are continuous and non-overlapping (1–10, 11–20, 21–30, 31–40).
 - Every question set is followed immediately by its matching answer key.
+- ALL non-matching question types appear somewhere in the test.
+- Exactly ONE matching type used across the entire test (Matching General OR Matching Features — never both).
 - Part 1 uses Note Completion only; script includes a spelling trap, a self-correction, and a distractor.
-- Part 2 uses Multiple Choice (Single) plus Matching or Note Completion.
-- Part 3 uses Matching (speakers to opinions) plus Multiple Choice (Single); script includes opinion change and hedged language.
-- Part 4 uses Note/Summary Completion plus Matching Features; script includes ≥3 named researchers with phonetically distinct names and signpost language.
+- Part 2 uses MCQ Single plus Matching (General) or Note/Table Completion.
+- Part 3 uses MCQ Multiple plus Table/Sentence Completion or Matching Features.
+- Part 4 uses Note Completion plus Summary Completion and/or Sentence Completion.
 - Script word counts are within spec: Part 1 (250–300), Part 2 (350–400), Part 3 (400–450), Part 4 (800–900).
 - All completion answers are verbatim from the script and obey the stated word limit.
 - Matching lists include at least two extra options beyond the number of questions.
 - Each answer has one needle quoting the exact script line; NOT GIVEN is not used in Listening.
-- Stems are paraphrased from script sentences — no stem copies 4+ consecutive content words from the answer line.
+- Stems are paraphrased — no 3-gram content-word overlap with answer line.
 - Part 1 questions follow chronological script order.
 - Part 4 questions follow chronological lecture order.
 - Dialogue in Parts 1 and 3 sounds natural, not robotic.
-- Part 4 lecture uses academic attribution, not personal opinion ("Studies show..." not "I believe...").
+- Part 4 lecture uses academic attribution, not personal opinion.
