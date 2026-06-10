@@ -505,6 +505,9 @@ def validate_reading(text, filepath):
         if "match each statement" in content_lower or "list of people" in content_lower \
                 or "list of experts" in content_lower:
             passage_types[passage].add("features")
+        if "match each sentence" in content_lower or "sentence endings" in content_lower \
+                or "correct ending" in content_lower:
+            passage_types[passage].add("sentence_endings")
         if "choose the correct letter" in content_lower:
             passage_types[passage].add("mcq")
 
@@ -534,7 +537,8 @@ def validate_reading(text, filepath):
               {"tfng", "completion"}.issubset(passage_types[1]),
               ", ".join(sorted(passage_types[1])))
     add_check(checks, "Passage 2 required types",
-              {"headings", "features", "completion"}.issubset(passage_types[2]),
+              {"completion"}.issubset(passage_types[2]) and
+              bool({"headings", "features", "sentence_endings"} & passage_types[2]),
               ", ".join(sorted(passage_types[2])))
     add_check(checks, "Passage 3 required types",
               {"ynng", "mcq", "completion"}.issubset(passage_types[3]),
