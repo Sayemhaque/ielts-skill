@@ -1,5 +1,33 @@
 # Synonym Reference
 
+## ⚠ Proper Noun Rule — Read First
+
+**Proper nouns and named entities must NEVER be paraphrased in question stems or answer options.**
+
+This includes:
+- Person names: "Dr Sarah Chen", "Professor Ericsson" → keep exactly as written
+- Place names: "the Appalachian mountains", "the Great Barrier Reef" → keep exactly as written  
+- Theory/framework names: "the block universe model", "deliberate practice theory" → keep exactly as written
+- Organisation names: "the Urban Mobility Foundation", "the WHO" → keep exactly as written
+
+The Synonym Rule applies to **content verbs, adjectives, and common nouns only** — never to proper nouns.
+
+---
+
+## ⚠ Context Rule — Always Check Before Substituting
+
+A synonym must match the **exact semantic context** of the original word. The wrong synonym in the wrong context produces worse output than leaving the original word unchanged.
+
+- "constructed" → "erected" ✓ for buildings
+- "constructed" → "fabricated" ✗ sounds like deception in academic context
+- "argued" → "contended" ✓ for academic debate
+- "argued" → "quarrelled" ✗ implies personal conflict
+
+Always read the full sentence before choosing a synonym. If no synonym fits naturally, restructure the sentence rather than force an awkward substitution.
+
+---
+
+
 Use this to build question stems that comply with the Synonym Rule.
 Always seek the most natural paraphrase for the specific context — never mechanically substitute.
 
