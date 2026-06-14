@@ -10,15 +10,15 @@
 
 ### The Migration of the Arctic Tern
 
-The arctic tern holds the record for the longest annual migration of any animal on Earth. Each year, these small seabirds travel from their breeding grounds in the Arctic and sub-Arctic regions to their wintering areas near Antarctica, and then back again — a round trip that can exceed 90,000 kilometres. For most of the twentieth century, scientists estimated this distance based on the few ring-return records available, as the birds were too small and light to carry conventional tracking devices. The true scale of the journey was not confirmed until 2010, when researchers from several European institutions attached miniature geolocators to a small group of arctic terns breeding in Greenland and the Netherlands. The data revealed that the birds' actual routes were considerably longer than previously assumed, involving sweeping detours across open ocean to exploit favourable wind systems.
+The arctic tern holds the record for the longest annual migration of any animal on Earth. Each year, these small seabirds travel from their breeding grounds in the Arctic to their wintering areas near Antarctica, and then back again — a round trip that can exceed 90,000 kilometres. For most of the twentieth century, scientists estimated this distance based on the few ring-return records available, as the birds were too small to carry normal tracking devices. The true scale of the journey was not confirmed until 2010, when researchers from several European institutions attached miniature geolocators to a small group of arctic terns breeding in Greenland and the Netherlands. The data revealed that the birds' actual routes were considerably longer than previously assumed, involving large detours across open ocean to make use of helpful wind systems.
 
-The arctic tern is a slender bird, weighing approximately 100 grams, with a wingspan of around 75 to 85 centimetres. Its plumage is predominantly white and grey, with a distinctive black cap and a bright red bill. The birds nest in loose colonies on rocky coastlines, tundra, and offshore islands. Breeding occurs during the Arctic summer, when food is abundant and daylight is continuous. A typical clutch consists of one to three eggs, which both parents incubate for approximately three to four weeks. Chicks are semi-precocial — they hatch with open eyes and a covering of down, and are capable of leaving the nest within a day or two, though they remain dependent on their parents for food until they can fly, typically around three to four weeks after hatching.
+The arctic tern is a slender bird, weighing around 100 grams, with a wingspan of about 75 to 85 centimetres. Its feathers are mostly white and grey, with a striking black cap and a bright red bill. The birds nest in loose groups on rocky coastlines, tundra, and offshore islands. Breeding takes place during the Arctic summer, when food is plentiful and daylight is continuous. A typical clutch consists of one to three eggs, which both parents protect and warm for around three to four weeks. Chicks come out of the egg with open eyes and a covering of down, and can leave the nest within a day or two, though they still need their parents for food until they can fly, which usually happens about three to four weeks after hatching.
 
-After breeding, arctic terns begin their southward journey in late summer. Rather than taking the most direct route, they follow wind and current patterns that assist their flight. Tracking data show that birds breeding in Europe tend to swing east across the North Atlantic before heading south along the African coast. North American breeders take a different path, flying southeast across the Atlantic and then turning south. Both populations converge in the South Atlantic before continuing to the Antarctic feeding grounds, where they exploit the rich productivity of the Southern Ocean during the austral summer. The birds spend around three to four months at these southern latitudes before beginning the return journey north. This northern passage tends to be faster than the southward one, as the birds travel more directly and take advantage of prevailing tailwinds across the central Atlantic. During both legs of the migration, arctic terns feed actively, plunging into the sea to catch small fish near the surface, and are rarely observed resting on the water for extended periods.
+After breeding, arctic terns begin their southward journey in late summer. Rather than taking the shortest route, they follow wind and current patterns that make their flight easier. Tracking data show that birds breeding in Europe tend to swing east across the North Atlantic before heading south along the African coast. North American breeders take a different path, flying southeast across the Atlantic and then turning south. Both populations meet in the South Atlantic before continuing to the Antarctic feeding grounds, where they feed on the rich resources of the Southern Ocean during the austral summer. The birds spend around three to four months at these southern latitudes before starting the return journey north. This northern trip tends to be faster than the southward one, as the birds travel more directly and make use of helpful tailwinds across the central Atlantic. During both parts of the migration, arctic terns feed actively, diving into the sea to catch small fish near the surface, and are rarely seen resting on the water for long periods.
 
-One of the most striking features of arctic tern migration is the sheer duration of life over which these journeys accumulate. Arctic terns are exceptionally long-lived for birds of their size, with some individuals recorded at over 30 years of age. Over a lifetime, a single bird may therefore travel the equivalent of three round trips to the moon. Their longevity is thought to be related partly to their migratory lifestyle: by following summer from pole to pole, they experience more hours of daylight — and therefore more feeding opportunity — than almost any other creature. This continuous access to productive feeding grounds may support their immune systems and reduce the rate of cellular ageing. Terns also benefit from spending the vast majority of their lives over open ocean, where terrestrial predators cannot reach them, which may further contribute to their unusual lifespan relative to similarly sized land birds.
+One of the most striking features of arctic tern migration is how far these journeys add up over a lifetime. Arctic terns are exceptionally long-lived for birds of their size, with some individuals recorded at over 30 years of age. Over a lifetime, a single bird may therefore travel the same distance as three round trips to the moon. Their longevity is thought to be related partly to their migratory lifestyle: by following summer from one pole to the other, they experience more hours of daylight — and therefore more feeding time — than almost any other creature. This continuous access to rich feeding grounds may support their immune systems and slow the rate of cellular ageing. Terns also benefit from spending most of their lives over open ocean, where land predators cannot reach them, which may further add to their unusual lifespan compared to similar-sized land birds.
 
-Despite being widely distributed, arctic terns face growing pressures. Changes in sea surface temperatures linked to climate change have affected the availability of the small fish and crustaceans they prey upon, leading to reduced breeding success in some colonies. Pollution, particularly the accumulation of plastic particles in ocean food chains, poses a further threat. Several colonies in northern Europe have shown significant population declines over the past two decades, and in some areas, breeding failure has become almost routine. Conservation efforts have focused on protecting nesting sites from disturbance by predators and humans, but addressing the broader ecological changes affecting their prey will require large-scale intervention.
+Despite being found across the world, arctic terns face growing threats. Changes in sea surface temperatures linked to climate change have affected the availability of the small fish and crustaceans they feed on, leading to lower breeding success in some groups. Pollution, especially the build-up of plastic particles in ocean food chains, is another threat. Several groups in northern Europe have shown significant population drops over the past twenty years, and in some areas, breeding failure has become almost normal. Conservation efforts have focused on protecting nesting sites from disturbance by predators and humans, but dealing with the broader ecological changes affecting their prey will require large-scale action.
 
 ---
 
@@ -46,10 +46,10 @@ Despite being widely distributed, arctic terns face growing pressures. Changes i
 |---|--------|--------|
 | 1 | FALSE | "scientists estimated this distance based on the few ring-return records available... The true scale of the journey was not confirmed until 2010" — confirmed by geolocators, not satellite |
 | 2 | TRUE | "The data revealed that the birds' actual routes were considerably longer than previously assumed" |
-| 3 | TRUE | "they hatch with open eyes and a covering of down, and are capable of leaving the nest within a day or two" |
+| 3 | TRUE | "Chicks come out of the egg with open eyes and a covering of down, and can leave the nest within a day or two" — confirms chicks can leave nest soon after hatching |
 | 4 | NOT GIVEN | The passage does not mention squid or larger prey at any point — not stated anywhere in the text |
 | 5 | TRUE | "The birds spend around three to four months at these southern latitudes" |
-| 6 | FALSE | "Their longevity is thought to be related partly to their migratory lifestyle: by following summer from pole to pole, they experience more hours of daylight" — the passage attributes longevity to daylight and feeding, not predator avoidance |
+| 6 | FALSE | "Their longevity is thought to be related partly to their migratory lifestyle: by following summer from one pole to the other, they experience more hours of daylight" — the passage attributes longevity to daylight and feeding, not predator avoidance |
 | 7 | NOT GIVEN | The passage does not state whether declines have been reversed — conservation efforts are mentioned but outcomes are not described |
 
 ---
@@ -75,11 +75,11 @@ Despite being widely distributed, arctic terns face growing pressures. Changes i
 
 | Q | Answer | Needle |
 |---|--------|--------|
-| 8 | 100 | "weighing approximately 100 grams" |
+| 8 | 100 | "weighing around 100 grams" |
 | 9 | red | "a bright red bill" |
 | 10 | one | "A typical clutch consists of one to three eggs" |
-| 11 | three to four | "which both parents incubate for approximately three to four weeks" |
-| 12 | three to four | "they can fly, typically around three to four weeks after hatching" |
+| 11 | three to four | "which both parents protect and warm for around three to four weeks" |
+| 12 | three to four | "they can fly, which usually happens about three to four weeks after hatching" |
 | 13 | 30 | "some individuals recorded at over 30 years of age" |
 
 ---
@@ -116,9 +116,9 @@ Looking ahead, most specialists agree that micro-mobility is unlikely to disappe
 
 ### Questions 14–19
 
-*Complete each sentence with the correct ending. Match each sentence beginning with the correct ending, **A–H**, below.*
+*Match each sentence ending with the correct beginning. Write the correct letter, **A–H**, next to Questions 14–19.*
 
-*Write the correct letter, **A–H**, next to Questions 14–19.*
+*Select from the endings **A–H** below.*
 
 14. Proponents of micro-mobility suggest it addresses the challenge of ______
 15. Dr Dubois observed that cities which incorporated micro-mobility into their wider transport systems ______
@@ -190,13 +190,14 @@ E. Linking shared vehicle services to unified urban fare systems.
 
 ### Questions 24–26
 
-*Complete the sentences below.*
+*Complete the notes below.*
 
 *Choose **NO MORE THAN TWO WORDS** from the passage for each answer.*
 
-24. Industry representatives dispute Professor Adeyemi's findings by pointing to advances in battery ______ and vehicle durability in more recent models.
-25. The Urban Mobility Foundation suggested a ______ framework in which rules are adjusted to suit local conditions rather than applied the same way everywhere.
-26. According to Dr Sundaram, ______ investment is the key factor that will determine whether safety and adoption reach their potential.
+**Micro-mobility — points of contention**
+- Industry response: battery (24) ______ and vehicle durability have improved in newer models
+- Regulation: a (25) ______ framework adapted to local conditions is recommended
+- Infrastructure: (26) ______ investment is the key factor for safety and adoption
 
 ---
 
@@ -307,35 +308,40 @@ D. They develop metacognitive skills only after reaching expert-level domain kno
 
 ---
 
-### Questions 37–40
+### Questions 37–38
 
 *Complete the summary below.*
 
-*Choose the correct letter, **A–I**, for each answer.*
+*Choose **NO MORE THAN TWO WORDS** from the passage for each answer.*
 
-The passage argues that expertise cannot be explained by practice hours alone. According to Dr Lopes, expert chess players have built large libraries of (37) ______ — compressed cognitive units that allow them to process board positions rapidly. This ability develops not from mere repetition but from exposure to high-quality (38) ______ environments. The writer also draws on Professor Diallo's work to highlight the role of (39) ______ — the capacity to monitor and self-correct — as an independently developable skill. The overall conclusion is that training institutions must not only allocate time but also shape the environments in which truly (40) ______ mental structures can develop.
-
-**Word List**
-
-| | |
-|---|---|
-| A | intuitive |
-| B | chunks |
-| C | instructional |
-| D | competitive |
-| E | metacognition |
-| F | layered |
-| G | deliberate |
-| H | expert |
-| I | calibration |
+The passage argues that expertise cannot be explained by practice hours alone. According to Dr Lopes, expert chess players have built large libraries of (37) ______ — compressed cognitive units that allow them to process board positions rapidly. This ability develops not from mere repetition but from exposure to high-quality (38) ______ environments.
 
 ---
 
-### Answer Key — Questions 37–40
+### Answer Key — Questions 37–38
 
 | Q | Answer | Needle |
 |---|--------|--------|
-| 37 | B | "Lopes describes this as chunking: the compression of multiple low-level perceptual elements into a single high-level cognitive unit" |
-| 38 | C | "it requires exposure to high-quality instructional environments that deliberately build pattern libraries" |
-| 39 | E | "metacognition — the capacity to monitor and regulate one's own cognitive processes" |
-| 40 | F | "the construction of layered cognitive structures" |
+| 37 | chunks | "Lopes describes this as chunking: the compression of multiple low-level perceptual elements into a single high-level cognitive unit" |
+| 38 | instructional | "it requires exposure to high-quality instructional environments that deliberately build pattern libraries" |
+
+---
+
+### Questions 39–40
+
+*Complete the summary using the list of words, **A–H**, below.*
+
+Professor Diallo's work highlights the role of (39) ______ — the capacity to monitor and self-correct — as a skill that can be developed independently. The overall conclusion is that training institutions must shape the conditions under which truly (40) ______ cognitive architecture can be built.
+
+| A | B | C | D | E | F | G | H |
+|---|---|---|---|---|---|---|---|
+| intuitive | competitive | metacognition | layered | deliberate | expert | calibration | varied |
+
+---
+
+### Answer Key — Questions 39–40
+
+| Q | Answer | Needle |
+|---|--------|--------|
+| 39 | C (metacognition) | "metacognition — the capacity to monitor and regulate one's own cognitive processes" |
+| 40 | F (expert) | "truly expert cognitive architecture can be built" |
