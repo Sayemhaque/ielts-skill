@@ -82,9 +82,14 @@ All of the following must appear in every Reading test:
 
 **Writing rules:**
 - Facts only. No opinions, no arguments.
+- **Flowing prose only** — never stack attributes as list-like sentences.
+  BAD: 'It has a red bill, a black cap, and a white body with a wingspan of 80cm.'
+  GOOD: 'The bird is immediately recognisable by its vivid red bill and jet-black cap, set against predominantly white plumage.'
+- Every paragraph must carry narrative momentum — each sentence must connect logically to the next.
 - Short-to-medium sentences. Avoid complex subordinate clauses.
 - At least one concrete example or statistic per paragraph.
 - T/F/NG statements should include at least two tempting traps: wrong period, wrong quantity, wrong origin, or over-generalised claim.
+- **NOT GIVEN quality rule:** every NOT GIVEN statement must be on a topic the passage discusses but leaves unresolved. Never create NOT GIVEN on a topic completely absent from the text — these are too transparent. The reader must be genuinely tempted to mark TRUE or FALSE before concluding it is NOT GIVEN.
 - Completion/table answers must be short, concrete, and exactly copied from the passage.
 
 **Structure template (5 paragraphs):**
@@ -122,6 +127,7 @@ All of the following must appear in every Reading test:
 - Each paragraph carries a distinct sub-theme.
 - Use hedging: "suggests," "appears to indicate," "according to."
 - Include at least one counterargument paragraph.
+- **Paragraph density rule:** every paragraph must contain at minimum one claim + one piece of supporting evidence + one expert attribution. Thin paragraphs that only summarise without cause-effect texture fail Cambridge standard.
 - Label paragraphs A–F.
 - Matching Headings must test paragraph purpose, not a single detail.
 - Matching Features must include at least 2 extra options, and every option must be named in the passage.
@@ -173,7 +179,7 @@ All of the following must appear in every Reading test:
 | 3 | Evidence | Study or experimental support for the theory |
 | 4 | Criticism | Opposing view or limitation of the theory |
 | 5 | Alternative | Different perspective or counter-framework |
-| 6 | Evaluation | Writer's final assessment — strengths vs limitations |
+| 6 | Evaluation | Writer's **qualified evaluation** — must introduce new nuance, open questions, or implications not yet explored. Must NOT simply restate the thesis or summarise earlier paragraphs. Cambridge P3 conclusions always advance the argument one step beyond what was already said. |
 
 **Permitted:** Yes / No / Not Given · Multiple Choice (Single) · Multiple Choice (Multiple) · Summary Completion (From Text) · Summary Completion (From List) · Matching Features · Matching Sentence Endings (one only)
 **Avoid:** Table Completion · True / False / Not Given · Matching Headings
@@ -286,7 +292,10 @@ Passage text — 900+ words.
 - Passage 3 uses Y/N/NG, MCQ Single, and summary completion; no T/F/NG.
 - Matching lists include at least two extra options.
 - MCQ distractors are source-based and plausible.
+- Every wrong MCQ option must be eliminatable ONLY by reading the passage — not by general knowledge or common sense. Wrong options an intelligent non-reader could dismiss must be rewritten.
 - No completion answer breaks the stated word limit.
+- No two questions in the same completion set share the same answer — duplicates are a critical error.
+- Every completion answer is copied verbatim from the passage — never paraphrase.
 - Boolean distributions: T/F/NG has ≥2 TRUE, ≥2 FALSE, ≥2 NOT GIVEN; Y/N/NG has ≥1 YES, ≥1 NO, ≥1 NOT GIVEN.
 - Each answer has one needle; NOT GIVEN has an absence note, not a fake quote.
 - Stems are paraphrased from answer sentences — no 3-gram content-word overlap.

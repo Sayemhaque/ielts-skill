@@ -54,7 +54,7 @@ All of the following must appear in every Listening test:
 **Mandatory script features — ALL THREE required:**
 - **SPELLING TRAP:** One speaker spells out a name/address letter by letter (e.g., "that's K-O-W-A-L-C-Z-Y-K")
 - **SELF-CORRECTION:** One speaker changes a detail just given (e.g., "the 14th... no wait, it's the 15th")
-- **DISTRACTOR:** An incorrect option mentioned then clearly discarded before correct answer confirmed
+- **DISTRACTOR:** An incorrect option mentioned then clearly discarded before correct answer confirmed. The wrong option MUST be spoken BEFORE the correct answer — never after. The listener must hear the distractor first, then hear it rejected, then hear the correct answer.
 
 **Structure template:**
 | Turn | Speaker | Purpose | Trap |
@@ -271,6 +271,7 @@ Complete the notes below. Write **NO MORE THAN TWO WORDS** for each answer.
 - Part 4 uses Note Completion plus Summary Completion and/or Sentence Completion.
 - Script word counts are within spec: Part 1 (250–300), Part 2 (350–400), Part 3 (400–450), Part 4 (800–900).
 - All completion answers are verbatim from the script and obey the stated word limit.
+- No two questions in the same completion set share the same answer — duplicates are a critical error.
 - Matching lists include at least two extra options beyond the number of questions.
 - Each answer has one needle quoting the exact script line; NOT GIVEN is not used in Listening.
 - Stems are paraphrased — no 3-gram content-word overlap with answer line.
@@ -278,6 +279,7 @@ Complete the notes below. Write **NO MORE THAN TWO WORDS** for each answer.
 - Part 4 questions follow chronological lecture order.
 - Dialogue in Parts 1 and 3 sounds natural, not robotic.
 - Part 4 lecture uses academic attribution, not personal opinion.
+- Part 4 researcher names are phonetically distinct — no two names should sound similar when spoken aloud.
 - Part 1 readability: FRE > 65 (conversational)
 - Part 2 readability: FRE 50–75 (moderate)
 - Part 3 readability: FRE 40–65 (academic discussion)

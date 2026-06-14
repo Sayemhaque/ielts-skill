@@ -1,3 +1,10 @@
+<!-- ⚠ AI GENERATION NOTE — Read before using this example as a template:
+1. DUPLICATE ANSWERS: No two questions in the same completion set may share the same answer.
+2. PART 1 DISTRACTOR: Wrong option must be spoken BEFORE the correct answer, then explicitly rejected.
+3. PART 4 NAMES: All researcher names must be phonetically distinct from each other.
+4. MCQ DISTRACTORS: Every wrong option must require listening carefully to eliminate.
+-->
+
 # IELTS Academic Listening — Full Practice Test
 
 **Time:** Approximately 30 minutes | **Questions:** 40
@@ -76,9 +83,11 @@
 
 **Customer:** I was thinking of trying the yoga classes.
 
-**Receptionist:** We have excellent yoga sessions. Also, many new members go for spinning — but you can add that later.
+**Receptionist:** We have excellent yoga sessions. Many of our most popular classes are spinning, actually — lots of members love it.
 
-**Customer:** Yoga sounds perfect for now.
+**Customer:** That's good to know, but I think I'd rather start with the yoga classes, actually.
+
+**Receptionist:** Yoga it is, then. Great choice.
 
 **Receptionist:** How did you find out about Hillside?
 

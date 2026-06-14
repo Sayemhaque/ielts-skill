@@ -1,3 +1,10 @@
+<!-- ⚠ AI GENERATION NOTE — Read before using this example as a template:
+1. DUPLICATE ANSWERS: No two questions in the same completion set may share the same answer.
+2. PROSE QUALITY: Passage 1 must use flowing prose — never list-style sentences stacking attributes.
+3. NOT GIVEN: Every NOT GIVEN topic must be discussed in the passage but left unresolved — not absent entirely.
+4. MCQ DISTRACTORS: Every wrong option must require passage reading to eliminate — not general knowledge.
+-->
+
 # IELTS Academic Reading — Full Practice Test
 
 **Time:** 60 minutes | **Questions:** 40
