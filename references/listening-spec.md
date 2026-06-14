@@ -272,13 +272,21 @@ Complete the notes below. Write **NO MORE THAN TWO WORDS** for each answer.
 - Script word counts are within spec: Part 1 (250–300), Part 2 (350–400), Part 3 (400–450), Part 4 (800–900).
 - All completion answers are verbatim from the script and obey the stated word limit.
 - No two questions in the same completion set share the same answer — duplicates are a critical error.
+- Every question is tagged with difficulty (🟢 EASY / 🟡 MEDIUM / 🔴 HARD) in the answer key.
+- Difficulty distribution: Part 1 mostly easy; Part 2 easy–medium; Part 3 medium–hard; Part 4 hard.
+- No wrong MCQ option uses absolute language (all, always, never, entirely, solely) unless spoken verbatim in the script.
 - Matching lists include at least two extra options beyond the number of questions.
 - Each answer has one needle quoting the exact script line; NOT GIVEN is not used in Listening.
 - Stems are paraphrased — no 3-gram content-word overlap with answer line.
 - Part 1 questions follow chronological script order.
 - Part 4 questions follow chronological lecture order.
 - Dialogue in Parts 1 and 3 sounds natural, not robotic.
+- All wrong MCQ options are sourced from the script — never invented. Each wrong option must be mentioned in the script and then either contradicted or superseded by the correct answer.
+- No wrong MCQ option is eliminatable by general knowledge alone — every distractor must tempt a listener who heard the script but was not paying close enough attention.
 - Part 4 lecture uses academic attribution, not personal opinion.
+- Part 4 lecture uses signpost language to connect sections — the listener must be able to follow the argument structure, not just isolated facts.
+- Part 3 discussion must show genuine idea development — speakers must respond to what the previous speaker said, not just take turns stating independent views.
+- Part 4 hard questions require listening across two separate sections of the lecture to answer correctly (cross-section synthesis).
 - Part 4 researcher names are phonetically distinct — no two names should sound similar when spoken aloud.
 - Part 1 readability: FRE > 65 (conversational)
 - Part 2 readability: FRE 50–75 (moderate)
