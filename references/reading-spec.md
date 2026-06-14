@@ -128,6 +128,8 @@ All of the following must appear in every Reading test:
 - Use hedging: "suggests," "appears to indicate," "according to."
 - Include at least one counterargument paragraph.
 - **Paragraph density rule:** every paragraph must contain at minimum one claim + one piece of supporting evidence + one expert attribution. Thin paragraphs that only summarise without cause-effect texture fail Cambridge standard.
+- **Connectivity rule:** at least 40% of sentences must use logical connectors (however, furthermore, consequently, nevertheless, in contrast, as a result, this suggests) or explicit cross-sentence referencing (pronouns, demonstratives, lexical chains). Isolated factual sentences stacked without connection reduce the passage to a list.
+- **Idea connection rule:** every sentence must build on the previous one. Reader should be able to trace the argument from first to last sentence within each paragraph without information gaps.
 - Label paragraphs A–F.
 - Matching Headings must test paragraph purpose, not a single detail.
 - Matching Features must include at least 2 extra options, and every option must be named in the passage.
@@ -165,11 +167,16 @@ All of the following must appear in every Reading test:
 
 **Writing rules:**
 - Writer must have a clear, traceable argument or thesis.
+- **Academic register minimum per paragraph:** 3+ nominalisations (e.g. "the construction of expertise" not "how expertise is built"), 2+ hedging expressions ("may partly account for", "one interpretation holds that", "appears to suggest"), at least one sentence of 30+ words with an embedded clause.
+- **Deliberate difficulty:** P3 passages should NOT read smoothly. The density of subordinate clauses, the abstractness of the argument, and the complexity of the sentence structure should create genuine comprehension difficulty. If the passage is easy to read, it is not at Cambridge P3 standard.
+- **No informal verbs:** never use "shows", "thinks", "says", "looks at", "points out", "talks about" in academic prose. Use "demonstrates", "posits", "contends", "elucidates", "interrogates", "suggests".
 - Use complex sentences, nominalisation, hedged academic claims.
 - Include at least one named theory, study, or framework.
 - Use nuanced language: "this may partly account for," "one interpretation holds that."
 - Keep the argument readable: abstract but not overloaded with named researchers or technical terms.
 - MCQs should test global purpose, inference, function of examples, or the writer's evaluation, not isolated facts.
+- **Synthesis requirement:** at least 2 MCQ or Y/N/NG questions per passage must require synthesising information from two non-adjacent paragraphs. The correct answer must be derivable only by connecting information from both locations — not from either alone.
+- **Distractor sourcing:** every wrong MCQ option must be sourced from a specific passage sentence and be plausible to a student who has partially understood the passage. Options eliminatable by general knowledge or common sense must be rewritten.
 
 **Structure template (6 paragraphs):**
 | Para | Purpose | Content |
@@ -295,6 +302,10 @@ Passage text — 900+ words.
 - Every wrong MCQ option must be eliminatable ONLY by reading the passage — not by general knowledge or common sense. Wrong options an intelligent non-reader could dismiss must be rewritten.
 - No completion answer breaks the stated word limit.
 - No two questions in the same completion set share the same answer — duplicates are a critical error.
+- Every question is tagged with difficulty (🟢 EASY / 🟡 MEDIUM / 🔴 HARD) in the answer key.
+- Difficulty distribution per passage: P1 has 4–5 easy, 5–6 medium, 2–3 hard; P2 has 3–4 easy, 5–6 medium, 3–4 hard; P3 has 2–3 easy, 4–5 medium, 5–6 hard.
+- At least 2 questions per passage require cross-paragraph synthesis (two non-adjacent paragraphs needed).
+- No wrong MCQ option uses absolute language (all, always, never, entirely, solely) unless that exact wording appears in the passage.
 - Every completion answer is copied verbatim from the passage — never paraphrase.
 - Boolean distributions: T/F/NG has ≥2 TRUE, ≥2 FALSE, ≥2 NOT GIVEN; Y/N/NG has ≥1 YES, ≥1 NO, ≥1 NOT GIVEN.
 - Each answer has one needle; NOT GIVEN has an absence note, not a fake quote.
