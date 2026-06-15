@@ -299,17 +299,17 @@ Whether a more faithful application of flow theory could be recovered for purpos
 
 33. What is the writer's central argument in Reading Passage 3?
 
-A. The psychological concept is poorly supported by evidence and ought to be superseded by brain-science approaches.
-B. Flow is a genuine psychological phenomenon whose managerial adoption distorts its original purpose.
-C. Csikszentmihalyi's data collection technique proves that optimal experience is universally achievable.
-D. Managerial applications of the concept have measurably enhanced the wellbeing of those in salaried roles.
+A) The psychological concept is poorly supported by evidence and ought to be superseded by brain-science approaches.
+B) Flow is a genuine psychological phenomenon whose managerial adoption distorts its original purpose.
+C) Csikszentmihalyi's data collection technique proves that optimal experience is universally achievable.
+D) Managerial applications of the concept have measurably enhanced the wellbeing of those in salaried roles.
 
 34. According to the passage, what creates a fundamental measurement problem in flow research?
 
-A. Participants in flow studies are drawn from insufficiently diverse occupational groups.
-B. The random-interval signalling devices used in Csikszentmihalyi's data-collection technique frequently malfunction.
-C. Reporting on a flow state requires interrupting the very absorption that defines it.
-D. Neural imaging cannot detect activity in the prefrontal cortex during complex tasks.
+A) Participants in flow studies are drawn from insufficiently diverse occupational groups.
+B) The random-interval signalling devices used in Csikszentmihalyi's data-collection technique frequently malfunction.
+C) Reporting on a flow state requires interrupting the very absorption that defines it.
+D) Neural imaging cannot detect activity in the prefrontal cortex during complex tasks.
 
 ---
 
@@ -349,16 +349,14 @@ Flow theory proposes that optimal experience arises when an individual's perceiv
 
 **List of Words**
 
-| | |
-|---|---|
-| A | boredom |
-| B | challenge |
-| C | self-consciousness |
-| D | external evaluation |
-| E | cost |
-| F | creativity |
-| G | anxiety |
-| H | autonomy |
+A) boredom
+B) challenge
+C) self-consciousness
+D) external evaluation
+E) cost
+F) creativity
+G) anxiety
+H) autonomy
 
 ---
 

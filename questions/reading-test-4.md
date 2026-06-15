@@ -74,7 +74,7 @@ The impact of the domestic horse on human societies was very large and wide-rang
 
 | Q | Answer | Needle | Difficulty |
 |---|--------|--------|-----------|
-| 8 | 3500 BCE | "around 3500 BCE" (para 2: "in what is now northern Kazakhstan, around 3500 BCE") | 🟢 EASY |
+| 8 | 3500 BCE | "around 3500 BCE" (para 2: "in what is now northern Kazakhstan, around 3500 BCE") | 🟢 EASY | 
 | 9 | Przewalski's | "the Botai horses were the ancestors of Przewalski's horse" (para 3) | 🟢 EASY |
 | 10 | gait | "ambling, which is a smooth way of walking with four beats" (para 4) — gait described | 🟡 MEDIUM |
 
@@ -141,11 +141,11 @@ The impact of the domestic horse on human societies was very large and wide-rang
 
 **List of Experts**
 
-| | |
-|---|---|
-| A) Dr. Dickson Despommier | D) Dr. Stan Cox |
-| B) Dr. Toyoki Kozai | E) No expert mentioned |
-| C) Dr. Louise Manning | |
+A) Dr. Dickson Despommier
+B) Dr. Toyoki Kozai
+C) Dr. Louise Manning
+D) Dr. Stan Cox
+E) No expert mentioned
 
 ---
 
@@ -163,24 +163,25 @@ The impact of the domestic horse on human societies was very large and wide-rang
 ---
 
 ### Questions 20–23
+*Multiple Choice (Multiple Answers)*
 
 *Choose **TWO** letters, **A–E**, for each question.*
 
 **20–21.** Which TWO advantages of vertical farming are mentioned in the passage?
 
 A) It requires less land space than traditional farming.
-B) It is currently the most profitable method for growing wheat and rice.
+B) The start-up costs for equipment are extremely high.
 C) It eliminates the need for chemical pest control.
-D) It relies entirely on renewable energy sources.
-E) It significantly increases the nutritional value of the crops grown.
+D) The electricity used often results in a larger carbon footprint.
+E) Vertical produce may be too expensive for poorer communities.
 
 **22–23.** Which TWO challenges associated with vertical farming are mentioned?
 
-A) The technology is too complex for workers to operate safely.
-B) Staple crops do not yield enough to be cost-effective in vertical systems.
-C) The LED lights generate too much heat, damaging the plants.
-D) The high initial setup costs limit the types of crops that can be profitably grown.
-E) Hydroponic systems consume more water than traditional irrigation.
+A) A single 30-story vertical farm could supply food for up to 50,000 residents.
+B) Staple crops like wheat and rice are not cost-effective in vertical systems.
+C) LED lighting consumes far less water than conventional irrigation.
+D) High initial costs restrict profitability to expensive, fast-growing crops.
+E) Falling costs for LED technology and renewable energy are boosting the sector.
 
 ---
 
@@ -332,10 +333,14 @@ The Fermi Paradox questions why we have not detected alien life given the univer
 
 **List of Words**
 
-| | | | |
-|---|---|---|---|
-| A) communication | C) terror | E) bleak | G) destruction |
-| B) technology | D) civilisations | F) optimistic | H) natural |
+A) communication
+B) technology
+C) terror
+D) civilisations
+E) bleak
+F) optimistic
+G) destruction
+H) natural
 
 ---
 

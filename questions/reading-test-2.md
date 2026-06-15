@@ -140,12 +140,14 @@ The Silk Road went into decline slowly over many years, for several reasons. Whe
 
 **List of Experts**
 
-| | |
-|---|---|
-| A) Dr. Helena Kowalski | E) Prof. Robert Chen |
-| B) Prof. James Okafor | F) Dr. Sarah Webb |
-| C) Prof. Maria Santos | G) Prof. David Park |
-| D) Dr. Yuki Tanaka | H) Dr. Anna Lindqvist |
+A) Dr. Helena Kowalski
+B) Prof. James Okafor
+C) Prof. Maria Santos
+D) Dr. Yuki Tanaka
+E) Prof. Robert Chen
+F) Dr. Sarah Webb
+G) Prof. David Park
+H) Dr. Anna Lindqvist
 
 ### Answer Key — Questions 14–19
 

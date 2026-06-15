@@ -23,6 +23,7 @@ Despite being found across the world, arctic terns face growing threats. Changes
 ---
 
 ### Questions 1–7
+*True / False / Not Given*
 
 *Do the following statements agree with the information given in Reading Passage 1?*
 
@@ -55,6 +56,7 @@ Despite being found across the world, arctic terns face growing threats. Changes
 ---
 
 ### Questions 8–13
+*Table Completion*
 
 *Complete the table below.*
 
@@ -115,6 +117,7 @@ Looking ahead, most specialists agree that micro-mobility is unlikely to disappe
 ---
 
 ### Questions 14–19
+*Matching Sentence Endings*
 
 *Match each sentence ending with the correct beginning. Write the correct letter, **A–H**, next to Questions 14–19.*
 
@@ -129,16 +132,14 @@ Looking ahead, most specialists agree that micro-mobility is unlikely to disappe
 
 **Sentence Endings**
 
-| | |
-|---|---|
-| A | recorded stronger shifts away from car use than cities where operators acted independently. |
-| B | may undermine the environmental benefits gained through reduced car journeys. |
-| C | bridging the gap between residential areas and transit stops at both ends of a journey. |
-| D | recorded fewer accidents but also less uptake and smaller reductions in car use. |
-| E | have invested heavily in dockless bicycle infrastructure. |
-| F | a service used predominantly by higher-earning urban residents. |
-| G | have invested in physical infrastructure separating scooters from other road users. |
-| H | require operators to demonstrate vehicle durability before entering new markets. |
+A) recorded stronger modal shift effects.
+B) may cancel out emissions savings.
+C) the first and last mile.
+D) had fewer accidents but less uptake.
+E) invest in dockless bicycle networks.
+F) a premium service for the wealthy.
+G) provide separated cycling lanes.
+H) require battery improvements.
 
 ---
 
@@ -146,34 +147,35 @@ Looking ahead, most specialists agree that micro-mobility is unlikely to disappe
 
 | Q | Answer | Needle |
 |---|--------|--------|
-| 14 | C | "the first- and last-mile problem: the difficulty of connecting people from their homes to public transport hubs and from stations to final destinations" |
-| 15 | A | "cities such as Paris and Oslo, which have embedded micro-mobility within broader transport planning, show stronger modal shift effects than cities where operators have been permitted to function without integration" |
-| 16 | B | "the carbon footprint of manufacturing, shipping, and maintaining a shared electric scooter... may offset the emissions saved through use" |
-| 17 | G | "in cities where separated cycling lanes are widespread, e-scooter injury rates are considerably lower" |
-| 18 | D | "Cities with the tightest restrictions showed lower injury rates but also lower adoption and therefore smaller modal shift benefits" |
-| 19 | F | "pricing structures must ensure these vehicles are accessible to lower-income populations rather than functioning as a premium service for wealthier commuters" |
+| 14 | C | "the first- and last-mile problem" (Para A) |
+| 15 | A | "show stronger modal shift effects than cities where operators have been permitted to function without integration" (Para B) |
+| 16 | B | "the carbon footprint... may offset the emissions saved through use" (Para C) |
+| 17 | G | "in cities where separated cycling lanes are widespread, e-scooter injury rates are considerably lower" (Para D) |
+| 18 | D | "Cities with the tightest restrictions showed lower injury rates but also lower adoption and therefore smaller modal shift benefits" (Para E) |
+| 19 | F | "a premium service for wealthier commuters" (Para F) |
 
 ---
 
 ### Questions 20–23
+*Multiple Choice (Multiple Answers)*
 
 *Choose **TWO** letters, **A–E**, for each question.*
 
 **20–21.** Which **TWO** concerns about shared e-scooters are mentioned in the passage?
 
-A. They are frequently stolen from public spaces.
-B. Their manufacture and disposal may cancel out emissions savings.
-C. They replace journeys that would otherwise involve beneficial physical activity such as walking or cycling.
-D. Their batteries cannot currently be recycled at scale.
-E. They are poorly maintained by operators in most cities.
+A) Integrating e-scooters with public transport ticketing improves their use.
+B) Their manufacture and disposal may cancel out emissions savings.
+C) They replace journeys that would otherwise involve walking or cycling.
+D) Newer scooter models have longer battery life and better durability.
+E) Local infrastructure should determine how e-scooters are regulated.
 
 **22–23.** Which **TWO** recommendations for improving micro-mobility outcomes are made in the passage?
 
-A. Restricting operations to wealthier districts where infrastructure is better.
-B. Building more protected lanes separated from general traffic.
-C. Requiring manufacturers to extend battery life and improve recyclability.
-D. Removing helmet laws to increase adoption rates.
-E. Linking shared vehicle services to unified urban fare systems.
+A) E-scooter trips can replace car journeys in well-managed networks.
+B) Building more protected lanes separated from general traffic.
+C) Requiring manufacturers to extend battery life and improve recyclability.
+D) E-scooter injury rates are higher than those for conventional bicycles.
+E) The environmental benefits of shared e-scooters may be overstated.
 
 ---
 
@@ -189,6 +191,7 @@ E. Linking shared vehicle services to unified urban fare systems.
 ---
 
 ### Questions 24–26
+*Note Completion*
 
 *Complete the notes below.*
 
@@ -234,6 +237,7 @@ The emerging picture of expertise is therefore considerably more complex than ea
 ---
 
 ### Questions 27–32
+*Yes / No / Not Given*
 
 *Do the following statements agree with the views of the writer in Reading Passage 3?*
 
@@ -264,36 +268,37 @@ The emerging picture of expertise is therefore considerably more complex than ea
 ---
 
 ### Questions 33–36
+*Multiple Choice (Single)*
 
 *Choose the correct letter, **A**, **B**, **C**, or **D**.*
 
 33. What is the writer's main argument in Reading Passage 3?
 
-A. Deliberate practice is the sole determinant of expert performance.
-B. The ten-thousand-hour rule has been definitively disproved by recent research.
-C. Accumulated practice is important but insufficient without the right cognitive structures.
-D. Innate talent is more important than practice in all complex domains.
+A) Deliberate practice is the sole determinant of expert performance.
+B) The ten-thousand-hour rule has been definitively disproved by recent research.
+C) Accumulated practice is important but insufficient without the right cognitive structures.
+D) Innate talent is more important than practice in all complex domains.
 
 34. According to the passage, what did the Macnamara meta-analysis reveal about deliberate practice in education?
 
-A. It accounted for the majority of differences in student performance.
-B. It explained less than one in twenty cases of performance variation.
-C. It had a stronger effect in education than in sport or music.
-D. It was the single most important factor in educational achievement.
+A) It accounted for the majority of differences in student performance.
+B) It explained less than one in twenty cases of performance variation.
+C) It had a stronger effect in education than in sport or music.
+D) It was the single most important factor in educational achievement.
 
 35. What does the passage suggest about how expert surgeons differ from competent ones?
 
-A. They have performed a significantly higher number of routine operations.
-B. Their training involved a greater diversity of challenging and unusual cases.
-C. They began their surgical training at an earlier age than their peers.
-D. They spent more hours in deliberate practice during their residency years.
+A) They have performed a significantly higher number of routine operations.
+B) Their training involved a greater diversity of challenging and unusual cases.
+C) They began their surgical training at an earlier age than their peers.
+D) They spent more hours in deliberate practice during their residency years.
 
 36. According to Professor Diallo's research, what distinguishes high-achieving experts in terms of self-assessment?
 
-A. They tend to overestimate their own abilities more than less skilled peers.
-B. They are better at identifying their own errors and gaps in knowledge.
-C. They rely primarily on external feedback rather than internal evaluation.
-D. They develop metacognitive skills only after reaching expert-level domain knowledge.
+A) They tend to overestimate their own abilities more than less skilled peers.
+B) They are better at identifying their own errors and gaps in knowledge.
+C) They rely primarily on external feedback rather than internal evaluation.
+D) They develop metacognitive skills only after reaching expert-level domain knowledge.
 
 ---
 
@@ -309,6 +314,7 @@ D. They develop metacognitive skills only after reaching expert-level domain kno
 ---
 
 ### Questions 37–38
+*Summary Completion (From Text)*
 
 *Complete the summary below.*
 
@@ -328,14 +334,20 @@ The passage argues that expertise cannot be explained by practice hours alone. A
 ---
 
 ### Questions 39–40
+*Summary Completion (From List)*
 
 *Complete the summary using the list of words, **A–H**, below.*
 
 Professor Diallo's work highlights the role of (39) ______ — the capacity to monitor and self-correct — as a skill that can be developed independently. The overall conclusion is that training institutions must shape the conditions under which truly (40) ______ cognitive architecture can be built.
 
-| A | B | C | D | E | F | G | H |
-|---|---|---|---|---|---|---|---|
-| intuitive | competitive | metacognition | layered | deliberate | expert | calibration | varied |
+A) intuitive
+B) competitive
+C) metacognition
+D) layered
+E) deliberate
+F) expert
+G) calibration
+H) varied
 
 ---
 
