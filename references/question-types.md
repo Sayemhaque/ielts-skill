@@ -41,12 +41,14 @@ Every wrong MCQ option must:
 - Tests inference and global understanding — not simple detail retrieval
 - Stem must be a complete sentence or meaningful question
 - All wrong options must require passage reading to eliminate
+- **EXTREME LANGUAGE BAN:** wrong options must never use absolute language (all, always, never, entirely, completely, solely, only, every, none) unless that exact wording appears in the source. Absolute language is a test-taking giveaway that allows elimination without reading.
+- **Cross-paragraph synthesis:** at least one MCQ per passage should require connecting information from two non-adjacent paragraphs
 
 **Answer format:**
 ```
-| Q | Answer | Needle |
-|---|--------|--------|
-| 35 | B | "the exact sentence that proves B is correct" |
+| Q | Answer | Needle | Difficulty |
+|---|--------|--------|-----------|
+| 35 | B | "the exact sentence that proves B is correct" | 🟡 MEDIUM |
 ```
 
 ---
@@ -66,14 +68,15 @@ Every wrong MCQ option must:
 - ⚠ NOT GIVEN ≠ "topic not mentioned at all" — the topic must appear but remain unresolved
 - ⚠ NEVER mark FALSE just because something is not mentioned
 - Distribution per set: ≥2 TRUE, ≥2 FALSE, ≥2 NOT GIVEN
+- **Difficulty distribution within the set:** first 1–2 statements should be EASY (directly confirmable), middle statements MEDIUM (require paraphrasing), final 1–2 statements HARD (require careful elimination across multiple paragraphs)
 - Reserved for Passage 1 and Passage 2 only
 
 **Answer format:**
 ```
-| Q | Answer | Needle |
-|---|--------|--------|
-| 1 | FALSE  | "exact sentence that contradicts the statement" |
-| 3 | NOT GIVEN | "passage discusses [topic] in para 2 but does not state whether [specific claim] — not mentioned anywhere" |
+| Q | Answer | Needle | Difficulty |
+|---|--------|--------|-----------|
+| 1 | FALSE  | "exact sentence that contradicts the statement" | 🟢 EASY |
+| 3 | NOT GIVEN | "passage discusses [topic] in para 2 but does not state whether [specific claim] — not mentioned anywhere" | 🔴 HARD |
 ```
 
 ---
@@ -117,6 +120,7 @@ Every wrong MCQ option must:
 - Each completed sentence must be **grammatically correct and semantically coherent**
 - Endings must be specific enough to be unambiguous — avoid endings that could complete multiple stems
 - Tests cause-effect, chronology, and logical relationships
+- At least one sentence beginning should require understanding the relationship between two paragraphs to select the correct ending
 
 ---
 
@@ -164,6 +168,18 @@ Every wrong MCQ option must:
 ---
 
 ## Placement Master Table
+
+### Difficulty Distribution Per Test (Required)
+
+| Passage | Easy (🟢) | Medium (🟡) | Hard (🔴) |
+|---|---|---|---|
+| Passage 1 | 4–5 questions | 5–6 questions | 2–3 questions |
+| Passage 2 | 3–4 questions | 5–6 questions | 3–4 questions |
+| Passage 3 | 2–3 questions | 4–5 questions | 5–6 questions |
+
+Hard questions MUST require cross-paragraph synthesis. If a question is answerable from one sentence, it is never HARD.
+
+---
 
 ### Reading — Required Coverage Per Test
 

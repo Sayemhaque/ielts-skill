@@ -77,6 +77,70 @@ See `references/question-types.md` → Placement Master Table.
 ```
 
 Never dump all answers at the end. Each question set gets its answer key immediately after it.
+---
+
+## ⚠ DIFFICULTY TAGGING RULE — Every Question Must Be Labelled
+
+Every question must be tagged with a difficulty level before finalising the answer key.
+This is the closest approximation to Cambridge's pretesting discrimination process.
+
+**Tag each question as:**
+- 🟢 EASY — retrievable from a single sentence; Band 4–5 students should get this correct
+- 🟡 MEDIUM — requires paraphrasing or mild inference; Band 5.5–6.5 students should get this correct  
+- 🔴 HARD — requires cross-paragraph synthesis or writer's nuanced view; Band 7+ students should get this correct
+
+**Required distribution per passage/part:**
+| Passage/Part | Easy | Medium | Hard |
+|---|---|---|---|
+| Passage 1 / Part 1 | 4–5 | 5–6 | 2–3 |
+| Passage 2 / Part 2–3 | 3–4 | 5–6 | 3–4 |
+| Passage 3 / Part 4 | 2–3 | 4–5 | 5–6 |
+
+**Hard question rule:** At least 2 questions per passage must require reading and synthesising information from TWO OR MORE non-adjacent paragraphs. A question answerable from a single sentence is never HARD, no matter how academic the vocabulary.
+
+Include difficulty tags in your answer key like this:
+```
+| Q | Answer | Needle | Difficulty |
+|---|--------|--------|-----------|
+| 1 | TRUE | "exact sentence" | 🟢 EASY |
+| 5 | NOT GIVEN | "passage discusses X but never states Y..." | 🟡 MEDIUM |
+| 7 | FALSE | "exact sentence contradicting statement" | 🔴 HARD |
+```
+
+
+---
+
+## ⚠ MCQ EXTREME LANGUAGE BAN
+
+Wrong MCQ options must NEVER use absolute language unless that exact language appears in the passage.
+
+**Banned in wrong options:**
+- all, always, never, entirely, completely, solely, only, every, none, no (when used as absolute claims)
+
+**Why:** Test-takers can eliminate these options using general knowledge without reading the passage — this destroys the question's ability to discriminate between levels.
+
+**BAD distractor:** "Electric vehicles completely eliminate all urban transport emissions."
+**GOOD distractor:** "Electric vehicles reduce transport emissions regardless of how the electricity grid is powered." (sourced from passage, requires reading to eliminate)
+
+**Check before output:** Read every wrong MCQ option. If a student who has never read the passage could eliminate it using common sense or general knowledge alone — rewrite it.
+
+
+---
+
+## ⚠ CROSS-PARAGRAPH SYNTHESIS RULE
+
+At least **2 questions per passage** must require synthesising information from two or more non-adjacent paragraphs. These become your HARD questions.
+
+**How to create a synthesis question:**
+- Find two paragraphs that contain related but not identical information
+- Write a question where the correct answer requires connecting both
+- The wrong options should be supportable from only ONE of the two paragraphs
+
+**Example:** If Para 2 says "technology X reduces cost" and Para 5 says "technology X has been adopted in cities with strong planning frameworks", a synthesis question might ask: "What does the passage suggest is necessary for technology X to deliver economic benefits?" — requiring the reader to connect cost reduction (P2) with the planning prerequisite (P5).
+
+**Completion sets cannot be synthesis questions** — only MCQ, Y/N/NG, and Matching types can test cross-paragraph synthesis.
+
+
 
 ---
 
@@ -215,6 +279,9 @@ A NOT GIVEN statement must:
 | MCQ distractor eliminatable by common sense | Source every wrong option from a specific passage sentence |
 | Paraphrasing proper nouns in question stems | Keep all names, titles, and place names exactly as in the passage |
 | Two matching types in one test | Remove one — keep only the planned matching type |
+| P2 paragraphs are factually correct but ideas don't connect | Minimum 40% of sentences in P2 must use logical connectors or explicit cross-sentence referencing. Each sentence should build on the previous one — not just add another isolated fact. |
+| P3 passage reads too clearly and fluently | P3 must be deliberately dense — use nominalisation, hedging chains, complex subordination. Aim for 3+ nominalisations per paragraph, 2+ hedging chains, sentences of 30+ words with embedded clauses. |
+
 | Answer requires two sentences to prove | Rewrite question — one Needle only |
 | Part 4 researcher names sound similar | Use phonetically distinct names |
 | Repeat topic from previous test | Run topic_tracker.py check first |
